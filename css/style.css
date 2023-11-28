@@ -268,7 +268,7 @@ main .srch1 p {
     font-size: 1.1rem;
 }
 
-#mapbox .mapText {
+#mapbox .mapText{
     width: 80%;
     height: fit-content;
     /* overflow: hidden; */
@@ -279,9 +279,22 @@ main .srch1 p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-
 }
 
+#mapbox .mapText .gray p {
+    font-size: 2rem;
+    text-align: left;
+    line-height: 60%;
+}
+
+#mapbox .mapText .gray>p:first-child {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#mapbox .mapText .gray {
+    margin-bottom: 40px;
+}
 #mapbox .mapText .right {
     width: 50%;
     float: right;
@@ -300,36 +313,39 @@ main .srch1 p {
     /* display: none; */
     position: absolute;
     top: 0;
-    right: 15vh;
+    /* right: 15vh; */
+    right: 10vw;
 }
 
 #mapbox .mapText .right .t2 {
     /* display: none; */
     position: absolute;
-    top: 11vh;
-    right: 23vh;
+    top: 8vw;
+    right: 8vw;
 }
 
 #mapbox .mapText .right .t3 {
     /* display: none; */
     position: absolute;
-    top: 24vh;
-    left: 42vh;
+    /* top: 15rem;
+    left: 20rem; */
+    top: 15vw;
+    left: 23vw;
 }
 
 #mapbox .mapText .right .t4 {
     /* display: none; */
     position: absolute;
-    top: 38vh;
-    left: 25vh;
+    top: 23vw;
+    left: 15vw;
 }
 
 #mapbox .mapText .left .t5 {
     /* display: none; */
     position: absolute;
     /* top:-20px; */
-    top: -2vh;
-    right: 20vh;
+    top: -6vw;
+    right: 15vw;
     /* right: 180px ; */
 }
 
@@ -337,8 +353,8 @@ main .srch1 p {
     /* display: none; */
     position: absolute;
     /* top:60px; */
-    top: 6vh;
-    right: 35vh;
+    top: 0;
+    right: 18vw;
     /* right: 350px ; */
 }
 
@@ -346,8 +362,8 @@ main .srch1 p {
     /* display: none; */
     position: absolute;
     /* top:180px; */
-    top: 18vh;
-    right: 45vh;
+    top: 9vw;
+    right: 20vw;
     /* right: 400px; */
 
 }
@@ -356,25 +372,9 @@ main .srch1 p {
     /* display: none; */
     position: absolute;
     /* top: 300px; */
-    top: 30vh;
-    right: 35vh;
+    top: 18vw;
+    right: 23vw;
     /* right: 350px; */
-}
-
-
-#mapbox .mapText .gray p {
-    font-size: 2rem;
-    text-align: left;
-    line-height: 60%;
-}
-
-#mapbox .mapText .gray>p:first-child {
-    color: #333;
-    font-size: 1.2rem;
-}
-
-#mapbox .mapText .gray {
-    margin-bottom: 40px;
 }
 
 .all {
@@ -625,6 +625,16 @@ footer .sns .icon span {
     /* slide 2개씩 보여지게 */
 
 }
+/* #mapbox .mapText .gray p {
+    font-size: 2rem;
+    text-align: left;
+    line-height: 60%;
+}
+
+#mapbox .mapText .gray>p:first-child {
+    color: #333;
+    font-size: 1.2rem;
+} */
 
 @media screen and (max-width:991px) {
     header h1 {
@@ -643,47 +653,53 @@ footer .sns .icon span {
     }
 
     /* 지도 글씨 위치 조정 */
-    #mapbox .mapText .right .t1 {
-        top: 0;
-        right: 2vh;
+    #mapbox .mapText .gray p{
+    font-size: 1.7rem;
     }
-
-    #mapbox .mapText .right .t2 {
-        top: 7vh;
+#mapbox .mapText .gray>p:first-child {
+    color: #333;
+    font-size: 1rem;
+} 
+    #mapbox .mapText .right .t1 {
+        top: -1vw;
         right: 0;
     }
 
+    #mapbox .mapText .right .t2 {
+        top: 10vw;
+        right: -3vw;
+    }
+
     #mapbox .mapText .right .t3 {
-        top: 14vh;
-        left: 20vh;
+        top: 20vw;
+        left: 27vw;
     }
 
     #mapbox .mapText .right .t4 {
-        top: 14vh;
-        left: 60vh;
+        top: 35vw;
+        left: 20vw;
     }
 
     #mapbox .mapText .left .t5 {
-        top: -4vh;
-        right: 20vh;
+        top: -4vw;
+        right: 20vw;
     }
 
     #mapbox .mapText .left .t6 {
-        top: 4vh;
-        right: 20vh;
+        top: 4vw;
+        right: 25vw;
 
     }
 
     #mapbox .mapText .left .t7 {
-        top: 15vh;
-        right: 20vh;
+        top: 15vw;
+        right: 26vw;
 
     }
 
     #mapbox .mapText .left .t8 {
-        top: 28vh;
-        right: 21vh;
-        /* left: 10vh; */
+        top: 28vw;
+        right: 27vw;
     }
 
     /* slide 한개씩 */
@@ -719,7 +735,7 @@ footer .sns .icon span {
 
     }
     #mapbox{
-        margin-top: 200vw;
+        margin-top: 180vw;
     }
     main h2 {
         font-size: 2.4rem;
@@ -762,19 +778,27 @@ footer .sns .icon span {
     }
 
     #mapbox .mapText .right .t1 {
-        top: 0;
-        right: -2vh;
+        top: -3vw;
+        right: -2vw;
     }
     #mapbox .mapText .right .t2 {
-        top: 6vh;
-        right: -3vh;
+        top: 8vw;
+        right: -3vw;
     }
 
     #mapbox .mapText .right .t3 {
-        top: 14vh;
-        left:17vh;
+        top: 23vw;
+        left:25vw;
     }
+    #mapbox .mapText .right .t4 {
+        top: 40vw;
+        left:18vw;
+    }
+    #mapbox .mapText .left .t6 {
+        top: 4vw;
+        right: 23vw;
 
+    }
     section h2 {
         font-size: 2rem;
     }
@@ -782,11 +806,69 @@ footer .sns .icon span {
         margin-bottom: 0;
     } ..???*/
 
-}
+} 
+
 @media screen and (max-width:575px) {
     #textLine>span {
         font-size: 6.5vw;
     }
+    
+    #mapbox .mapText .gray p {
+        font-size: 1.2rem;
+    }
+
+    #mapbox .mapText .gray>p:first-child {
+        font-size: 0.8rem;
+
+    }
+   
+    #mapbox .mapText .right{
+        top:20px;
+    }
+    #mapbox .mapText .left {
+        top:50px;
+
+    }
+    #mapbox .mapText .right .t3 {
+        top: 28vw;
+        left:26vw;
+    }
+    #mapbox .mapText .right .t4 {
+        top: 50vw;
+        left:16vw;
+    }
+    #mapbox .mapText .left .t8 {
+        top: 30vw;
+        right: 25vw;
+        
+    }
+    #mapbox .mapText .left .t5 {
+        top: -5vw;
+        right: 15vw;
+    }
+
+    #mapbox .mapText .left .t6 {
+        top: 4vw;
+        right: 23vw;
+
+    }
+
+    #mapbox .mapText .left .t7 {
+        top: 20vw;
+        right: 26vw;
+
+    }
+
+    #mapbox .mapText .left .t8 {
+        top: 33vw;
+        right: 24vw;
+        /* left: 10vh; */
+    }
+
+    #textLine>span {
+        margin:10px auto;
+    }
+
 }
 
 
