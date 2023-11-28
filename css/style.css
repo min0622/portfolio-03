@@ -727,13 +727,13 @@ footer .sns .icon span {
 
 } */
 @media screen and (max-width:767px) {
-    main{
+    /* main{
         background-image: url(../img/moba_main1.png);
     padding: 80% 0;
     background-size: cover;
    
 
-    }
+    } */
     #mapbox{
         margin-top: 180vw;
     }
@@ -873,6 +873,12 @@ footer .sns .icon span {
 
 
 @media screen and (max-width:450px) {
+    main{
+        background-image: url(../img/moba_main1.png);
+    padding: 80% 0;
+    background-size: cover;
+
+    }
     header h1 {
         font-size: 1rem;
     }
