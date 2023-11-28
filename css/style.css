@@ -523,11 +523,12 @@ section .container:nth-of-type(2) {
 }
 
 
-section .col-4 .notiBox {
+section .col-md-4 .notiBox {
     /* width: 353px; */
     width: 97.78%;
     /* (751-390=361)  353/361*100 = 97.78 */
     height: 336px;
+    margin: auto;
     background-color: rgba(202, 189, 172, .8);
     border-radius: 0 152px 0 0;
     /* box-shadow:5px 5px 8px rgba(180, 168, 153, 0.9); */
@@ -539,10 +540,10 @@ section .col-4 .notiBox {
     /* display: none; */
 
 }
-section .col-4 .notiBox h3{
+section .col-md-4 .notiBox h3{
     font-size: 1.6rem;
 }
-section .col-4 .notiBox p {
+section .col-md-4 .notiBox p {
     font-size: 1.2rem;
     margin-top: 1rem;
 }
@@ -733,31 +734,17 @@ footer .sns .icon span {
     
     }
    
-    section .col-4 .notiBox h3{
+    section .col-md-4 .notiBox h3{
         font-size: 1.4rem;
     }
-    section .col-4 .notiBox p {
+    section .col-md-4 .notiBox p {
         font-size: 1.1rem;
-        /* margin-top: 1rem; */
     }
     
 }
 
 
-/* section .col-4 .notiBox {
-    width: 97.78%;
-    
-    height: 336px;
-    background-color: rgba(202, 189, 172, .8);
-    border-radius: 0 152px 0 0;
-   
-    text-align: left;
-    padding-top: 5rem;
-    padding-left: 3rem;
-    font-family: "cjw-g";
-    display: none;
 
-} */
 
 @media screen and (max-width:767px) {
   
@@ -846,9 +833,36 @@ footer .sns .icon span {
         margin-top: 150px;
         /* background-color: beige; */
     }
+    section .col-md-4 .notiBox{
+        width: 100%;
+        height:250px;
+        padding-top: 2.5rem;
+        margin-bottom: 30px;
+    }
+    section .col-md-4 .notiBox h3{
+        font-size: 1.6rem;
+    }
+    section .col-md-4 .notiBox p {
+        font-size: 1.3rem;
+    }
+    
    
 } 
+/* section .col-md-4 .notiBox {
+    width: 97.78%;
+    margin: auto;
+    
+    height: 336px;
+    background-color: rgba(202, 189, 172, .8);
+    border-radius: 0 152px 0 0;
+   
+    text-align: left;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    font-family: "cjw-g";
+    display: none;
 
+} */
 
 @media screen and (max-width:575px) {
     .ham {
@@ -857,7 +871,7 @@ footer .sns .icon span {
     }
     main{
     /* background-image: url(../img/moba_main1.png); */
-    padding: 50% 0;
+    padding: 60% ;
     background-size: cover;
     }
     /* #mapbox{
@@ -867,12 +881,18 @@ footer .sns .icon span {
         font-size: 6.5vw;
     }
     
+
+    
+    #mapbox{
+        margin-top: 80vw;
+    }
+    
     #mapbox .mapText .gray p {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     #mapbox .mapText .gray>p:first-child {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
 
     }
    
@@ -972,9 +992,69 @@ section .container .row .colbox {
         transform: translate(-50%, -50%);
 
     }
+     
+    #mapbox{
+        margin-top: 150vw;
+    }
+
+    #mapbox .srch2 .sbox2 {
+        width: 150px;
+    }
+    #mapbox input[type="text"] {
+        width: 100px;
+        height: 30px;
+      font-size: 1rem;
+
+    }
+    #mapbox span {
+        font-size: 1.3rem;
+        margin: auto 8px;
+
+    }
+    #mapbox .srch2 p {
+        font-size: 0.8rem;
+    }
+
 
     section h2 {
         font-size: 1.8rem;
     }
     
 }
+
+/* #mapbox .srch2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#mapbox .srch2 .sbox2 {
+    width: 250px;
+    align-self: flex-end;
+}
+
+#mapbox input[type="text"] {
+    width: 200px;
+    height: 45px;
+    border: #000 solid 3px;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    font-family: "cjw-g";
+    font-size: 1.5rem;
+}
+
+#mapbox span {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+#mapbox .srch2 p {
+    align-self: flex-end;
+    padding-right: 3rem;
+    margin-top: 0.5vw;
+    font-size: 1.1rem;
+} */
