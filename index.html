@@ -28,19 +28,27 @@
             <a href="#">대구 디저트 맛집</a>
         </h1>
 
-        <nav>
-            <span>
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-            </span>
-            <ul>
-                <li><a href="#">구검색</a></li>
-                <li><a href="#">신상정보</a></li>
-                <li><a href="#">공유하기</a></li>
-                <li><a href="#">이벤트</a></li>
-            </ul>
-        </nav>
+        <!-- <span class="ham">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </span> -->
+        <div class="ham">
+            <div class="line" id="top"></div> 
+            <div class="line" id="mid"></div> 
+            <div class="line" id="btm"></div> 
+        </div>
     </header>
     <!-- header -->
+    <nav>
+        <!-- <span class="close">
+            <i class="fa-solid fa-xmark" style="color: #333;"></i>
+        </span> -->
+        <ul>
+            <li><a href="#">구검색</a></li>
+            <li><a href="#">신상정보</a></li>
+            <li><a href="#">공유하기</a></li>
+            <li><a href="#">이벤트</a></li>
+        </ul>
+    </nav>
 
     <!--main -->
     <main>
@@ -174,7 +182,7 @@
 
                 <!-- 달성군 -->
                 <g>
-                    <g>
+                    <g class="all dsn">
                         <path class="st0" d="M306.9,288.62l-13.32-11.91l-9.84,8.43l-16.21,10.42l2.32,18.53l-28.95,5.79l-8.11-11.58h-17.37l-33.58-33.58
        v-11.58c-10.35-7.17-25.09-9.95-33.28-10.99c-1.09,3.47-2.62,6.89-3.68,9.73c-3.3,8.8-39.61-1.1-56.11-2.2
        c-16.5-1.1-46.21,55.01-50.61,67.11c-4.4,12.1,38.51,36.31,51.71,44.01c13.2,3.3,4.4,20.9,0,31.91c-4.4,11-47.31-1.1-69.31-7.7
@@ -212,7 +220,7 @@
                 <!-- //달성군 -->
 
                 <!-- 수성구 -->
-                <g>
+                <g class="all ssg">
                     <path class="st0" d="M422.49,192.42c-11.58-8.11-12.74-18.53-12.74-18.53l-18.53-1.16l-17.37-11.58L343.75,182l-13.9,2.32
    c0,0-11.58,10.42-9.26,28.95l1.16,10.42l-13.9,40.53l-14.48,12.41l13.32,11.91c0,0,35.9-9.26,48.63-8.11
    c11.36,1.03,41.14,8.52,60.59,19.98c-4.81-17.55,8.21-15.51,8.21-15.51c16.5-8.8,31.91-13.2,20.9-30.81
@@ -234,7 +242,7 @@
 
                 <!-- 서구 -->
                 <g>
-                    <g>
+                    <g class="all sg">
                         <polygon class="st0" points="271.95,154.21 255.74,155.37 245.32,144.95 226.79,141.47 210.58,157.69 198.75,152.37 
        182.79,184.32 224.48,206.32 265,190.11 271.95,161.16 		" />
                         <polygon class="st1" points="271.95,154.21 255.74,155.37 245.32,144.95 226.79,141.47 210.58,157.69 198.75,152.37 
@@ -249,7 +257,7 @@
 
                 <!-- 동구 -->
                 <g>
-                    <g>
+                    <g class="all dg">
                         <path class="st0" d="M501.14,140.77l-22-23.1l2.2-63.81L425.23,1.04l-100.12,11l-10.52,13.14l15.26,13.22l6.95,26.63l15.05,30.11
        l-2.32,31.26c0,0,1.16,10.42-13.9,12.74c-15.05,2.32-17.37,19.69-17.37,19.69l11.58,25.48l13.9-2.32l30.11-20.84l17.37,11.58
        l18.53,1.16c0,0,1.16,10.42,12.74,18.53l50.95,2.32l12.83,11.84l14.87-11.9V140.77z" />
@@ -265,9 +273,10 @@
                     </g>
                 </g>
                 <!-- //동구 -->
+
                 <!-- 중구 -->
                 <g>
-                    <g>
+                    <g class="all jg">
                         <path class="st0" d="M265,190.11l2.32,16.21l25.48,12.74l27.79-5.79c-2.32-18.53,9.26-28.95,9.26-28.95l-11.58-25.48l-46.32,2.32
        L265,190.11z" />
                         <path class="st1" d="M265,190.11l2.32,16.21l25.48,12.74l27.79-5.79c-2.32-18.53,9.26-28.95,9.26-28.95l-11.58-25.48l-46.32,2.32
@@ -302,7 +311,7 @@
                 <!--// 이름없음 -->
 
                 <!-- 남구 -->
-                <g>
+                <g class="all ng">
                     <polygon class="st0" points="267.32,206.32 247.63,220.22 247.63,235.27 283.53,285.06 293.37,276.63 293.37,276.63 293.37,276.63 
    307.85,264.22 321.74,223.69 320.59,213.27 292.79,219.06 	" />
                     <polygon class="st1" points="267.32,206.32 247.63,220.22 247.63,235.27 283.53,285.06 293.37,276.63 293.37,276.63 293.37,276.63 
@@ -315,8 +324,10 @@
                 <!-- //남구 -->
 
             </svg>
+           
         </div>
         <!-- //map -->
+
     </div>
     <!-- //mapbox -->
 
@@ -382,13 +393,13 @@
 
             <div class="row" data-aos="fade-up"
                 data-aos-duration="1000">
-                <div class="col-6"  >
+                <div class="col-md-6 col-sm-12">
                     <div class="imgBox">
                         <img src="./img/main4-1.png" alt="4-1">
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="colbox">
                         <p>Name : 헤이븐스 미쉘 (Havens michel)</p>
                         <p>Location : 대구 중구 중앙대로 376-20 1F</p>
@@ -409,13 +420,13 @@
 
             <div class="row" data-aos="fade-up"
             data-aos-duration="1500">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="imgBox">
                         <img src="./img/main4-2.png" alt="4-2">
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="colbox">
                         <p>Name : 카페 화이트 메모리 (Cafe White Memory)</p>
                         <p>Location : 대구 중구 중앙대로 376-20 1F</p>
@@ -436,13 +447,13 @@
 
             <div class="row" data-aos="fade-up"
             data-aos-duration="2000">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="imgBox">
                         <img src="./img/main4-3.png" alt="4-3">
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="colbox">
                         <p>Name : 커피인구</p>
                         <p>Location : 대구 중구 진골목길 6 1F</p>
