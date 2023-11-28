@@ -380,6 +380,7 @@ main .srch1 p {
 .all {
     cursor: pointer;
 }
+
 #textLine{
     width: 100%;
     animation-name: move;
@@ -824,7 +825,7 @@ footer .sns .icon span {
     }
     main{
     /* background-image: url(../img/moba_main1.png); */
-    padding: 40% 0;
+    /* padding: 40% 0; */
     background-size: cover;
     }
     #mapbox{
