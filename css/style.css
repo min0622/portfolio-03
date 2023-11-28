@@ -809,6 +809,10 @@ footer .sns .icon span {
 } 
 
 @media screen and (max-width:575px) {
+    .ham {
+        background-color: gold;
+       
+    }
     #textLine>span {
         font-size: 6.5vw;
     }
