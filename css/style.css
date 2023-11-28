@@ -381,25 +381,31 @@ main .srch1 p {
     cursor: pointer;
 }
 
-#textLine>span {
+#textLine>span{
     display: inline-block;
     width: 100%;
+    overflow-x: hidden;
     font-size: 3.4vw;
     /* font-size: 4rem; */
     margin: 180px auto;
     color: #E4DDD4;
     text-align: center;
-    /* animation: move infinite 0 linear; */
-}
 
-/* @keyframes move{
-    0%{
-        transform:translateX(0) ;
-    }
+    animation-name: move;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes move{
+   0%{
+       transform:translateX(0) ;
+   }
     100%{
-        transform: translateX(100%);
+        transform: translateX(500px);
     }
-} */
+}
 
 #slide {
     width: 90%;
@@ -735,7 +741,7 @@ footer .sns .icon span {
 
     } */
     #mapbox{
-        margin-top: 180vw;
+        margin-top: 80vw;
     }
     main h2 {
         font-size: 3rem;
@@ -810,8 +816,17 @@ footer .sns .icon span {
 
 @media screen and (max-width:575px) {
     .ham {
-        background-color: gold;
+        background-color: salmon;
        
+    }
+    main{
+        background-image: url(../img/moba_main1.png);
+    padding: 60% 0;
+    /* background-size: cover; */
+
+    }
+    #mapbox{
+        margin-top: 180vw;
     }
     #textLine>span {
         font-size: 6.5vw;
@@ -872,17 +887,24 @@ footer .sns .icon span {
     #textLine>span {
         margin:10px auto;
     }
+    /* 슬라이드깨고, 세로로 줄세우기 */
+   
 
 }
+/* #slide {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+}
 
+#slide .itembox {
+    width: 24.26%;
+    overflow: hidden;
+    margin: 0 70px;
+} */
 
 @media screen and (max-width:450px) {
-    main{
-        background-image: url(../img/moba_main1.png);
-    padding: 80% 0;
-    background-size: cover;
-
-    }
     header h1 {
         font-size: 1rem;
     }
@@ -907,13 +929,3 @@ footer .sns .icon span {
     }
     
 }
-/* main {
-    width: 100%;
-    padding: 26% 0;
-    background-image: url(../img/main1.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    color: #fff;
-} */
