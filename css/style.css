@@ -819,12 +819,11 @@ footer .sns .icon span {
         background-color: salmon;
        
     }
-    main{
-        background-image: url(../img/moba_main1.png);
+    /* main{
+    background-image: url(../img/moba_main1.png);
     padding: 60% 0;
-    /* background-size: cover; */
-
-    }
+    background-size: cover;
+    } */
     #mapbox{
         margin-top: 180vw;
     }
