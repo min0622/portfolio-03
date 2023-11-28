@@ -382,7 +382,7 @@ main .srch1 p {
 }
 
 #textLine{
-    width: 100%;
+    width: 100%;    
     animation-name: move;
     animation-duration: 10s;
     animation-delay: 0;
@@ -390,8 +390,10 @@ main .srch1 p {
     animation-timing-function: linear;
 }
 #textLine>span{
-    display: inline-block;
-    width: 100%;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 100%; */
     font-size: 3.4vw;
     margin: 180px auto;
     color: #E4DDD4;
@@ -468,7 +470,9 @@ section h2 {
     font-size: 2.5rem;
     margin-bottom: 35px;
 }
-
+section .container .row .col-md-6{
+    margin-bottom: 0;
+}
 section .container .row .col-md-6:nth-child(1){
     margin-bottom: 15px;
 }
@@ -484,12 +488,13 @@ section .container .row .col-md-6 .imgBox {
 
 section .container .row .colbox {
     width: 100%;
+    /* height: 95%; */
     height: 321px;
+    line-height: 150%;
     margin-top: 10px;
     text-align: left;
-    padding-top: 1rem;
+    padding: 1rem 0;
     padding-left: 3rem;
-    line-height: 150%;
     font-family: "cjw-g";
     font-size: 1.4rem;
     background-color: rgba(224, 194, 152, 0.6);
@@ -717,6 +722,18 @@ footer .sns .icon span {
     /* slide 한개씩 */
 
     /* section 사진, 텍스트 세로로 정렬 */
+    section .container .row .colbox {
+        font-size: 1rem;
+        height: 200px;
+        /* height: fit-content; */
+        line-height: 100%;
+        padding-left: 2rem;
+    
+    }
+    section .container .row .colbox p:nth-of-type(4)>span {
+        font-size: 1.1rem;
+    
+    }
     
 }
 /* main {
@@ -739,11 +756,7 @@ footer .sns .icon span {
 
 } */
 @media screen and (max-width:767px) {
-    main{
-        background-image: url(../img/moba_main1.png);
-    padding: 80% 0;
-    background-size: cover;
-    }
+  
     #mapbox{
         margin-top: 80vw;
     }
@@ -812,10 +825,31 @@ footer .sns .icon span {
     section h2 {
         font-size: 2rem;
     }
-    /* section .container .row .col-sm-12:nth-child(1){
-        margin-bottom: 0;
-    } ..???*/
+    section .container .row .colbox {
+        font-size: 1.2rem;
+        /* height: 200px; */
+        height: fit-content;
+        line-height: 120%;
 
+    }
+    section .container .row .colbox p:nth-of-type(4)>span {
+        font-size: 1.2rem;
+    
+    }
+    section .container .row .col-md-6 .imgBox {
+        margin-top: 100px;
+    }
+    section .container .row .col-md-6{
+        margin-bottom: 5px;
+    }
+    
+    /* section .container .row .col-md-6:nth-child(1){
+        margin-bottom: 80px;
+    }
+    section .container .row .col-md-6:nth-child(2){
+        margin-bottom: 80px;
+    } */
+    
 } 
 
 @media screen and (max-width:575px) {
@@ -893,6 +927,7 @@ footer .sns .icon span {
     /* 슬라이드깨고, 세로로 줄세우기 */
    
 
+
 }
 /* #slide {
     width: 90%;
@@ -906,7 +941,20 @@ footer .sns .icon span {
     overflow: hidden;
     margin: 0 70px;
 } */
-
+/* 
+section .container .row .colbox {
+    width: 100%;
+    height: 321px;
+    margin-top: 10px;
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    line-height: 150%;
+    font-family: "cjw-g";
+    font-size: 1.4rem;
+    background-color: rgba(224, 194, 152, 0.6);
+    font-weight: 500;
+} */
 @media screen and (max-width:450px) {
     header h1 {
         font-size: 1rem;
