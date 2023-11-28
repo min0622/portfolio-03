@@ -691,11 +691,35 @@ footer .sns .icon span {
     /* section 사진, 텍스트 세로로 정렬 */
     
 }
+/* main {
+    width: 100%;
+    padding: 26% 0;
+    background-image: url(../img/main1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    color: #fff;
+} */
+/* #mapbox {
+    width: 100%;
+    position: relative;
+    margin-top: 60vw;
+    text-align: center;
+    padding: 0 5vw;
+    font-family: "cjw-g";
 
+} */
 @media screen and (max-width:767px) {
     main{
-        background-size: cover;
-        padding: 40% 0;
+        background-image: url(../img/moba_main1.png);
+    padding: 80% 0;
+    background-size: cover;
+   
+
+    }
+    #mapbox{
+        margin-top: 200vw;
     }
     main h2 {
         font-size: 2.4rem;
