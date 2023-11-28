@@ -380,22 +380,27 @@ main .srch1 p {
 .all {
     cursor: pointer;
 }
-
-#textLine>span{
-    display: inline-block;
+#textLine{
     width: 100%;
-    overflow-x: hidden;
-    font-size: 3.4vw;
-    /* font-size: 4rem; */
-    margin: 180px auto;
-    color: #E4DDD4;
-    text-align: center;
-
     animation-name: move;
     animation-duration: 10s;
     animation-delay: 0;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+#textLine>span{
+    display: inline-block;
+    width: 100%;
+    font-size: 3.4vw;
+    margin: 180px auto;
+    color: #E4DDD4;
+    text-align: center;
+
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
 
 }
 @keyframes move{
@@ -403,7 +408,7 @@ main .srch1 p {
        transform:translateX(0) ;
    }
     100%{
-        transform: translateX(500px);
+        transform: translateX(-100%);
     }
 }
 
@@ -733,13 +738,11 @@ footer .sns .icon span {
 
 } */
 @media screen and (max-width:767px) {
-    /* main{
+    main{
         background-image: url(../img/moba_main1.png);
     padding: 80% 0;
     background-size: cover;
-   
-
-    } */
+    }
     #mapbox{
         margin-top: 80vw;
     }
@@ -819,11 +822,11 @@ footer .sns .icon span {
         background-color: salmon;
        
     }
-    /* main{
-    background-image: url(../img/moba_main1.png);
-    padding: 60% 0;
+    main{
+    /* background-image: url(../img/moba_main1.png); */
+    padding: 40% 0;
     background-size: cover;
-    } */
+    }
     #mapbox{
         margin-top: 180vw;
     }
