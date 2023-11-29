@@ -393,7 +393,7 @@ main .srch1 p {
 #textLine span:nth-child(1){
     display: inline;
 }
-#textLine span:nth-child(2){
+#textLine span:nth-child(3),#textLine span:nth-child(2){
     display: none;
 }
 #textLine span{
@@ -423,6 +423,7 @@ main .srch1 p {
     overflow: hidden;
     /* background-color: beige; */
     display: flex;
+    flex-direction: row;
 }
 
 #slide .itembox {
@@ -647,7 +648,12 @@ footer .sns .icon span {
     }
 
     /* slide 2개씩 보여지게 */
-
+    #slide{
+        width: 100%;
+    }
+    #slide .itembox {
+        width: 100%;
+    }
 
 }
 
@@ -722,6 +728,12 @@ footer .sns .icon span {
     }
     #textLine span{
         font-size: 6vw;
+    }
+    #textLine span:nth-child(1),  #textLine span:nth-child(3){
+        display: none;
+    }
+    #textLine span:nth-child(2){
+        display: inline;
     }
 
     /* slide 한개씩 */
@@ -824,6 +836,7 @@ footer .sns .icon span {
     #textLine span{
         font-size: 8vw;
     }
+ 
     section h2 {
         font-size: 2rem;
     }
@@ -869,22 +882,18 @@ footer .sns .icon span {
         height: 55px;
 
     }
-   
 } 
-/* section .col-md-4 .notiBox {
-    width: 97.78%;
+/* #slide {
+    width: 90%;
     margin: auto;
-    
-    height: 336px;
-    background-color: rgba(202, 189, 172, .8);
-    border-radius: 0 152px 0 0;
-   
-    text-align: left;
-    padding-top: 5rem;
-    padding-left: 3rem;
-    font-family: "cjw-g";
-    display: none;
+    overflow: hidden;
+    display: flex;
+}
 
+#slide .itembox {
+    width: 24.26%;
+    overflow: hidden;
+    margin: 0 70px;
 } */
 
 @media screen and (max-width:575px) {
@@ -974,10 +983,10 @@ footer .sns .icon span {
     #textLine>span {
         margin:10px auto;
     }
-    #textLine span:nth-child(1){
+    #textLine span:nth-child(1),  #textLine span:nth-child(2){
         display: none;
     }
-    #textLine span:nth-child(2){
+    #textLine span:nth-child(3){
         display: inline;
     }
     /* 슬라이드깨고, 세로로 줄세우기 */
@@ -999,49 +1008,31 @@ footer .sns .icon span {
         height: 50px;
 
     }
-
-}
-/* #signup {
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    margin: 110px auto;
-}
-
-#signup h2 {
-    color: #7B296B;
-    font-family: "roboto";
-    font-weight: 600;
-    font-size: 2.5rem;
-}
-
-.emailbox {
-    width: 700px;
-    display: flex;
+    #slide {
     flex-direction: column;
-    margin: 30px auto;
-    font-family: "roboto";
 
+
+    }
+    #slide .itembox{
+    width: 80%;
+    margin: 200px auto;
+    }
 }
 
-.emailbox input[type="email"] {
-    width: 700px;
-    height: 60px;
-    margin: 20px 0;
-    border: 2px solid rgb(202, 189, 172);
-    text-align: center;
-    font-size: 1.2rem
+/* #slide {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
-.emailbox button {
-    width: 700px;
-
-    display: block;
-    height: 60px;
-    border: none;
-    background-color: rgb(202, 189, 172);
-    font-size: 1.2rem
+#slide .itembox {
+    width: 24.26%;
+    overflow: hidden;
+    margin: 0 70px;
 } */
+
 
 @media screen and (max-width:450px) {
     .ham {
