@@ -436,22 +436,25 @@ main .srch1 p {
 #slide .itembox .text {
     /* width:100% ; */
     width: 460px;
-    height: 160px;
+    height: fit-content;
+    /* height: 160px; */
     background-color: rgba(224, 209, 189, 0.8);
-    /* background-color: rgb(224, 209, 189); */
     margin-right: 67px;
     font-family: "cjw-m";
-    padding-top: 1.2vw;
+    padding: 1.2vw 0;
     padding-left: 1.8vw;
 }
 
 #slide .itembox .text h3 {
-    line-height: 100%;
+    font-size: 1.6rem;
+    line-height: 150%;
+    /* background-color: cornflowerblue; */
 }
 
 #slide .itembox .text p {
     font-size: 1.2rem;
     line-height: 100%;
+    /* background-color: #7B296B; */
 }
 
 .line {
@@ -498,20 +501,26 @@ section .container .row .colbox {
     line-height: 150%;
     margin-top: 10px;
     text-align: left;
-    padding: 1rem 0;
+    padding-top: 2rem;
+    padding-bottom: 0;
     padding-left: 3rem;
     font-family: "cjw-g";
     font-size: 1.4rem;
     background-color: rgba(224, 194, 152, 0.6);
     font-weight: 500;
 }
-
+section .container .row .colbox p{
+    margin: auto;
+}
 section .container .row .colbox a {
     display: inline-block;
     padding-left: 5rem;
+    
     margin-bottom: 10px;
 }
-
+section .container .row .colbox p:nth-of-type(3)>span{
+    line-height: 150%;
+}
 section .container .row .colbox p:nth-of-type(3) span:not(:nth-of-type(1)) {
     display: block;
     /* color: cadetblue; */
@@ -540,8 +549,6 @@ section .col-md-4 .notiBox {
     padding-top: 5rem;
     padding-left: 3rem;
     font-family: "cjw-g";
-
-    display: none;
 
 }
 section .col-md-4 .notiBox h3{
@@ -656,10 +663,28 @@ footer .sns .icon span {
     }
     #slide .itembox {
         width: 100%;
-    margin: 0 30px;
+        margin: 0 30px;
 
     }
+    #slide .itembox .text{
+        padding: 1.2vw 0;
+        padding-left: 2vw;
+    }
+    
+    section .container .row .colbox {
+        height: fit-content;
+        line-height: 120%;
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    #slide .itembox .text h3{
+        font-size: 1.4rem;
+    }
 
+    #slide .itembox .text p{
+      font-size: 1rem;
+    }
 }
 
 
@@ -741,16 +766,14 @@ footer .sns .icon span {
         display: inline;
     }
 
-
-
-    /* section 사진, 텍스트 세로로 정렬 */
     section .container .row .colbox {
         font-size: 1rem;
-        height: 200px;
-        /* height: fit-content; */
-        line-height: 100%;
+        /* height: 200px; */
+        height: fit-content;
+        line-height: 120%;
         padding-left: 2rem;
-    
+        padding-top: 1rem;
+
     }
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.1rem;
@@ -764,6 +787,19 @@ footer .sns .icon span {
     }
     #slide .itembox {
     margin: 0 15px;
+
+    }
+    #slide .itembox .text{
+        padding: 1.3vw 0;
+        padding-left: 2vw;
+    }
+    #slide .itembox .text h3{
+        font-size: 1.2rem;
+    }
+
+    #slide .itembox .text p{
+      font-size: 0.9rem;
+    line-height: 80%;
 
     }
     
@@ -845,6 +881,18 @@ footer .sns .icon span {
     #textLine span{
         font-size: 8vw;
     }
+
+    #slide .itembox .text{
+        padding: 2vw 0;
+        padding-left: 3vw;
+    }
+    #slide .itembox .text h3{
+        font-size: 1.4rem;
+    }
+
+    #slide .itembox .text p{
+      font-size: 1rem;
+    }
  
     section h2 {
         font-size: 2rem;
@@ -853,11 +901,14 @@ footer .sns .icon span {
         font-size: 1.2rem;
         /* height: 200px; */
         height: fit-content;
-        line-height: 120%;
+        line-height: 170%;
     margin-top: -28px;
-
+    padding-top: 01rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
 
     }
+    
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.2rem;
     
@@ -891,18 +942,7 @@ footer .sns .icon span {
 
     }
 } 
-/* #slide {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-}
 
-#slide .itembox {
-    width: 24.26%;
-    overflow: hidden;
-    margin: 0 70px;
-} */
 
 @media screen and (max-width:575px) {
     .ham {
@@ -997,7 +1037,33 @@ footer .sns .icon span {
     #textLine span:nth-child(3){
         display: inline;
     }
-    /* 슬라이드깨고, 세로로 줄세우기 */
+
+    #slide .itembox .text{
+        padding: 3vw 0;
+        padding-left: 4vw;
+    }
+    #slide .itembox .text h3{
+        font-size: 1.5rem;
+    line-height: 150%;
+
+    }
+
+    #slide .itembox .text p{
+      font-size: 1.1rem;
+     line-height: 100%;
+    }
+
+
+    section .container .row .colbox {
+        /* font-size: 1.2rem;
+        height: fit-content; */
+        /* line-height: 170%; */
+    margin-top: -40px;
+    /* padding-top: 01rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem; */
+
+    }
 
 
     #signup h2{
@@ -1026,22 +1092,6 @@ footer .sns .icon span {
     margin: 200px auto;
     }
 }
-
-/* section .container .row .col-md-6 .imgBox {
-    margin-top: 150px;
-}
-section .col-md-4 .notiBox{
-    width: 100%;
-    height:250px;
-    padding-top: 2.5rem;
-    margin-bottom: 30px;
-}
-section .col-md-4 .notiBox h3{
-    font-size: 1.6rem;
-}
-section .col-md-4 .notiBox p {
-    font-size: 1.3rem;
-} */
 
 
 @media screen and (max-width:450px) {
@@ -1090,10 +1140,36 @@ section .col-md-4 .notiBox p {
         font-size: 0.8rem;
     }
 
+    
+    #slide .itembox .text{
+        padding: 3.5vw 0;
+        padding-left: 5vw;
+    }
+    #slide .itembox .text h3{
+        font-size: 1.1rem;
+    line-height: 120%;
+
+    }
+
+    #slide .itembox .text p{
+      font-size: 0.9rem;
+     line-height: 40%;
+    }
 
     section h2 {
         font-size: 1.8rem;
     }
+    section .container .row .colbox {
+        /* font-size: 1.2rem;
+        height: fit-content; */
+        /* line-height: 170%; */
+    margin-top: -100px;
+    /* padding-top: 01rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem; */
+
+    }
+
 
     .emailbox {
         width: 340px;
