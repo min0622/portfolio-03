@@ -478,13 +478,12 @@ section h2 {
     color: #7B296B;
     font-family: "roboto";
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 35px;
     /* background-color: aquamarine; */
 }
 section .container .row .col-md-6{
     margin-bottom: 0;
-    /* background-color: brown; */
 }
 section .container .row .col-md-6:nth-child(1){
     margin-bottom: 15px;
@@ -563,7 +562,7 @@ section .col-md-4 .notiBox h3{
 
 }
 section .col-md-4 .notiBox p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 160%;
     /* margin-top: 1rem; */
 }
@@ -583,7 +582,7 @@ section .col-md-4 .notiBox p {
     color: #7B296B;
     font-family: "roboto";
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size:3rem;
 }
 
 .emailbox {
@@ -695,7 +694,23 @@ footer .sns .icon span {
     #slide .itembox .text p{
       font-size: 1rem;
     }
+    section .container .row .colbox {
+        font-size: 1.4rem;
+        line-height: 150%;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        /* height: fit-content;
+    margin-top: -28px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem; */
+
+    }
     
+    section .container .row .colbox p:nth-of-type(4)>span {
+        font-size: 1.4rem;
+    
+    }
 }
 
 
@@ -820,12 +835,12 @@ footer .sns .icon span {
 
     }
     section .col-md-4 .notiBox h3{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     line-height: 180%;
 
     }
     section .col-md-4 .notiBox p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     line-height: 130%;
 
     }
@@ -930,7 +945,7 @@ footer .sns .icon span {
         height: fit-content;
         line-height: 170%;
     margin-top: -28px;
-    padding-top: 01rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2.5rem;
 
