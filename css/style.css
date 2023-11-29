@@ -880,7 +880,7 @@ footer .sns .icon span {
 
     main{
     /* background-image: url(../img/moba_main1.png); */
-    padding: 60% ;
+    padding: 60% 0 ;
     background-size: cover;
     }
     main h2 {
