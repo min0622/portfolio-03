@@ -260,7 +260,6 @@ main .srch1 p {
     margin: auto 10px;
     cursor: pointer;
 }
-
 #mapbox .srch2 p {
     align-self: flex-end;
     padding-right: 3rem;
@@ -390,6 +389,12 @@ main .srch1 p {
     animation-timing-function: linear;
     display: flex;
 
+}
+#textLine span:nth-child(1){
+    display: inline;
+}
+#textLine span:nth-child(2){
+    display: none;
 }
 #textLine span{
     font-size: 4vw;
@@ -969,6 +974,12 @@ footer .sns .icon span {
     #textLine>span {
         margin:10px auto;
     }
+    #textLine span:nth-child(1){
+        display: none;
+    }
+    #textLine span:nth-child(2){
+        display: inline;
+    }
     /* 슬라이드깨고, 세로로 줄세우기 */
 
 
@@ -1033,6 +1044,10 @@ footer .sns .icon span {
 } */
 
 @media screen and (max-width:450px) {
+    .ham {
+        background-color: slateblue;
+       
+    }
     header h1 {
         font-size: 1rem;
     }
@@ -1077,6 +1092,20 @@ footer .sns .icon span {
 
     section h2 {
         font-size: 1.8rem;
+    }
+
+    .emailbox {
+        width: 340px;
+    }
+    .emailbox input[type="email"] {
+        width: 340px;
+        height: 45px;
+
+    }
+    .emailbox button {
+        width: 340px;
+        height: 45px;
+
     }
     
 }
