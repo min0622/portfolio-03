@@ -883,7 +883,7 @@ footer .sns .icon span {
 
     }
     #textLine span{
-        font-size: 8vw;
+        font-size: 10vw;
     }
 
     #slide .itembox .text{
@@ -972,7 +972,7 @@ footer .sns .icon span {
     }
    
     #textLine>span {
-        font-size: 9vw;
+        font-size: 12vw;
     }
     
 
@@ -1045,18 +1045,18 @@ footer .sns .icon span {
     }
 
     #slide .itembox .text{
-        padding: 3vw 0;
+        padding: 4vw 0;
         padding-left: 4vw;
     }
     #slide .itembox .text h3{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     line-height: 150%;
 
     }
 
     #slide .itembox .text p{
-      font-size: 1.1rem;
-     line-height: 100%;
+      font-size: 1.3rem;
+     line-height: 110%;
     }
 
 
