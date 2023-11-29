@@ -541,7 +541,7 @@ section .col-md-4 .notiBox {
     padding-left: 3rem;
     font-family: "cjw-g";
 
-    /* display: none; */
+    display: none;
 
 }
 section .col-md-4 .notiBox h3{
