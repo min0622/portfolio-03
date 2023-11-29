@@ -24,6 +24,17 @@ $(function(){
         $("header").css({display:'block'});
         
       }
+
+    //   let size = innerWidth;
+    //   console.log(size)
+    //   if(size <= 767){
+    //     $("#slick").slick("unslick");
+       
+    // } else{
+    //   $("#slick").slick();
+
+    // }
+
     });
 
     // top버튼
@@ -65,11 +76,21 @@ $("#slide").slick({
     dots:true,
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint:991,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '5px',
+          centerPadding: '1px',
+          slidesToShow: 3,
+          dots:true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '1px',
           slidesToShow: 2,
           dots:true
         }
@@ -77,16 +98,12 @@ $("#slide").slick({
       ,
       {
         breakpoint: 575,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1,
-          dots:true
-        }
+        settings:'unslick'
       }
     ]
   });
+
+
     
 
     // 스크롤 내렸을때 new에서 아래->위 나타남
