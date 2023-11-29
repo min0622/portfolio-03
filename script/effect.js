@@ -45,15 +45,16 @@ $(function(){
 
         // 스크롤 내렸을때 notice 시간차 두고 하나씩 fadein
         
-        if(top>=4100){
-            $(".noti1 .notiBox").stop(true).fadeIn(100);
-            $(".noti2 .notiBox").stop(true).fadeIn(500);
-            $(".noti3 .notiBox").stop(true).fadeIn(900);
-        }else{
-            $(".noti1 .notiBox").stop(true).fadeOut();
-            $(".noti2 .notiBox").stop(true).fadeOut();
-            $(".noti3 .notiBox").stop(true).fadeOut();
-        }
+        // if(top>=3400){
+        //     $(".noti1 .notiBox").stop(true).fadeIn(100);
+        //     $(".noti2 .notiBox").stop(true).fadeIn(500);
+        //     $(".noti3 .notiBox").stop(true).fadeIn(900);
+        // }else{
+        //     $(".noti1 .notiBox").stop(true).fadeOut();
+        //     $(".noti2 .notiBox").stop(true).fadeOut();
+        //     $(".noti3 .notiBox").stop(true).fadeOut();
+        // }
+      
     });
 
 
