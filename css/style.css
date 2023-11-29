@@ -382,8 +382,8 @@ main .srch1 p {
 }
 
 #textLine{
-    width: 100%;   
-    overflow: hidden; 
+    /* width: 100%;    */
+  
     animation-name: move;
     animation-duration: 15s;
     animation-delay: 0;
