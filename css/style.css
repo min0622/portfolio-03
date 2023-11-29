@@ -384,23 +384,20 @@ main .srch1 p {
 #textLine{
     width: 100%;    
     animation-name: move;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-delay: 0;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
-#textLine>span{
-    /* display: inline-block; */
     display: flex;
-    justify-content: space-evenly;
-    /* width: 100%; */
+
+}
+#textLine span{
     font-size: 3.4vw;
     margin: 180px auto;
     color: #E4DDD4;
-    text-align: center;
-
+    
     /* animation-name: move;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-delay: 0;
     animation-iteration-count: infinite;
     animation-timing-function: linear; */
@@ -772,7 +769,7 @@ footer .sns .icon span {
     #mapbox input[type="text"] {
         width: 100px;
         height: 30px;
-    font-size: 1rem;
+        font-size: 1rem;
 
     }
     #mapbox span {
@@ -883,9 +880,7 @@ footer .sns .icon span {
     background-size: cover;
     }
     main h2 {
-        /* background-color: saddlebrown; */
-        /* top: 50%;
-        left: 50%; */
+        font-size: 3.5rem;
         transform: translate(-50%, -50%);
     }
    
@@ -897,7 +892,7 @@ footer .sns .icon span {
     
     #mapbox{
         /* margin-top: 80vw; */
-        margin-top: 150vw;
+        margin-top: 130vw;
     }
     
     #mapbox .mapText .gray p {
