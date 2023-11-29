@@ -25,16 +25,6 @@ $(function(){
         
       }
 
-    //   let size = innerWidth;
-    //   console.log(size)
-    //   if(size <= 767){
-    //     $("#slick").slick("unslick");
-       
-    // } else{
-    //   $("#slick").slick();
-
-    // }
-
     });
 
     // top버튼
@@ -55,15 +45,15 @@ $(function(){
 
         // 스크롤 내렸을때 notice 시간차 두고 하나씩 fadein
         
-        // if(top>=4100){
-        //     $(".noti1 .notiBox").stop(true).fadeIn(100);
-        //     $(".noti2 .notiBox").stop(true).fadeIn(500);
-        //     $(".noti3 .notiBox").stop(true).fadeIn(900);
-        // }else{
-        //     $(".noti1 .notiBox").stop(true).fadeOut();
-        //     $(".noti2 .notiBox").stop(true).fadeOut();
-        //     $(".noti3 .notiBox").stop(true).fadeOut();
-        // }
+        if(top>=4100){
+            $(".noti1 .notiBox").stop(true).fadeIn(100);
+            $(".noti2 .notiBox").stop(true).fadeIn(500);
+            $(".noti3 .notiBox").stop(true).fadeIn(900);
+        }else{
+            $(".noti1 .notiBox").stop(true).fadeOut();
+            $(".noti2 .notiBox").stop(true).fadeOut();
+            $(".noti3 .notiBox").stop(true).fadeOut();
+        }
     });
 
 
@@ -80,7 +70,7 @@ $("#slide").slick({
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '1px',
+          centerPadding: '8px',
           slidesToShow: 3,
           dots:true
         }
@@ -90,13 +80,14 @@ $("#slide").slick({
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '1px',
+          centerPadding: '3px',
           slidesToShow: 2,
           dots:true
         }
       }
       ,
       {
+        // 모바일에서 슬릭깨기!!
         breakpoint: 575,
         settings:'unslick'
       }
