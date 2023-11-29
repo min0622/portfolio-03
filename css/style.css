@@ -550,17 +550,22 @@ section .col-md-4 .notiBox {
     background-color: rgba(202, 189, 172, .8);
     border-radius: 0 152px 0 0;
     text-align: left;
-    padding-top: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 0;
     padding-left: 3rem;
     font-family: "cjw-g";
 
 }
 section .col-md-4 .notiBox h3{
     font-size: 1.6rem;
+    line-height: 200%;
+    font-weight: 600;
+
 }
 section .col-md-4 .notiBox p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 160%;
+    /* margin-top: 1rem; */
 }
 
 .l2 {
@@ -690,6 +695,7 @@ footer .sns .icon span {
     #slide .itembox .text p{
       font-size: 1rem;
     }
+    
 }
 
 
@@ -771,35 +777,6 @@ footer .sns .icon span {
         display: inline;
     }
 
-    section .container .row .colbox {
-        font-size: 1.1rem;
-        /* height: 200px; */
-        height: fit-content;
-        /* line-height: 140%; */
-        padding-left: 2rem;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-
-    }
-
-    /* section .container .row .colbox {
-        font-size: 1.3rem;
-        height: fit-content;
-        line-height: 150%;
-        padding-left: 2rem;
-        padding-top: 1.3rem;
-        padding-bottom: 1.3rem;
-    } */
-    section .container .row .colbox p:nth-of-type(4)>span {
-        font-size: 1.1rem;
-    
-    }
-    section .col-md-4 .notiBox h3{
-        font-size: 1.4rem;
-    }
-    section .col-md-4 .notiBox p {
-        font-size: 1.1rem;
-    }
     #slide .itembox {
     margin: 0 15px;
 
@@ -815,6 +792,41 @@ footer .sns .icon span {
     #slide .itembox .text p{
       font-size: 0.9rem;
     line-height: 80%;
+
+    }
+
+    section .container .row .colbox {
+        font-size: 1.1rem;
+        /* height: 200px; */
+        height: fit-content;
+        /* line-height: 140%; */
+        padding-left: 2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+
+    }
+
+    section .container .row .colbox p:nth-of-type(4)>span {
+        font-size: 1.1rem;
+    
+    }
+    section .col-md-4 .notiBox{
+    height: 250px;
+    border-radius: 0 100px 0 0;
+    padding-top: 2.5rem;
+    padding-bottom:2.5rem ;
+    padding-left: 1.5rem;
+
+
+    }
+    section .col-md-4 .notiBox h3{
+        font-size: 1.3rem;
+    line-height: 180%;
+
+    }
+    section .col-md-4 .notiBox p {
+        font-size: 1.1rem;
+    line-height: 130%;
 
     }
     
@@ -934,9 +946,13 @@ footer .sns .icon span {
     section .col-md-4 .notiBox{
         width: 100%;
         height:250px;
-        padding-top: 2.5rem;
-        margin-bottom: 30px;
+        padding-top: 2rem;
+        padding-top: 2rem;
+        padding-left: 2.5rem;
+        margin-bottom: 80px;
     }
+
+
     section .col-md-4 .notiBox h3{
         font-size: 1.6rem;
     }
@@ -957,6 +973,7 @@ footer .sns .icon span {
 
     }
 } 
+
 
 
 @media screen and (max-width:575px) {
@@ -1172,6 +1189,26 @@ footer .sns .icon span {
     margin-top: -100px; 
     }
 
+    section .col-md-4 .notiBox{
+        height:200px;
+        /* padding-top: 2rem;
+        padding-top: 2rem;
+        padding-left: 2.5rem;
+        margin-bottom: 80px; */
+    }
+
+
+    section .col-md-4 .notiBox h3{
+        font-size: 1.3rem;
+    line-height: 150%;
+        
+    }
+    section .col-md-4 .notiBox p {
+        font-size: 1rem;
+    line-height: 110%;
+
+    }
+
 
     .emailbox {
         width: 340px;
@@ -1188,40 +1225,22 @@ footer .sns .icon span {
     }
     
 }
+/* section .col-md-4 .notiBox{
+    height: 250px;
+    border-radius: 0 100px 0 0;
+    padding-top: 2.5rem;
+    padding-bottom:2.5rem ;
+    padding-left: 1.5rem;
 
-/* #mapbox .srch2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 
-}
+    }
+    section .col-md-4 .notiBox h3{
+        font-size: 1.3rem;
+    line-height: 180%;
 
-#mapbox .srch2 .sbox2 {
-    width: 250px;
-    align-self: flex-end;
-}
+    }
+    section .col-md-4 .notiBox p {
+        font-size: 1.1rem;
+    line-height: 130%;
 
-#mapbox input[type="text"] {
-    width: 200px;
-    height: 45px;
-    border: #000 solid 3px;
-    border-radius: 10px;
-    background: transparent;
-    outline: none;
-    font-family: "cjw-g";
-    font-size: 1.5rem;
-}
-
-#mapbox span {
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin: auto 10px;
-    cursor: pointer;
-}
-
-#mapbox .srch2 p {
-    align-self: flex-end;
-    padding-right: 3rem;
-    margin-top: 0.5vw;
-    font-size: 1.1rem;
-} */
+    } */
