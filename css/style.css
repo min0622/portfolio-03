@@ -747,7 +747,9 @@ footer .sns .icon span {
 
 
 @media screen and (max-width:767px) {
-  
+    .ham {
+        background-color: violet;
+    }
     #mapbox{
         margin-top: 80vw;
     }
