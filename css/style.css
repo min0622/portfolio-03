@@ -650,6 +650,9 @@ footer .sns .icon span {
 
 
 @media screen and (max-width:991px) {
+    .ham {
+        background-color: gold;
+    }
     header h1 {
         font-size: 1.8rem;
     }
