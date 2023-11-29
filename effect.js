@@ -24,6 +24,7 @@ $(function(){
         $("header").css({display:'block'});
         
       }
+
     });
 
     // top버튼
@@ -44,45 +45,57 @@ $(function(){
 
         // 스크롤 내렸을때 notice 시간차 두고 하나씩 fadein
         
-        if(top>=4100){
-            $(".noti1 .notiBox").stop(true).fadeIn(100);
-            $(".noti2 .notiBox").stop(true).fadeIn(500);
-            $(".noti3 .notiBox").stop(true).fadeIn(900);
-        }else{
-            $(".noti1 .notiBox").stop(true).fadeOut();
-            $(".noti2 .notiBox").stop(true).fadeOut();
-            $(".noti3 .notiBox").stop(true).fadeOut();
-        }
+        // if(top>=3400){
+        //     $(".noti1 .notiBox").stop(true).fadeIn(100);
+        //     $(".noti2 .notiBox").stop(true).fadeIn(500);
+        //     $(".noti3 .notiBox").stop(true).fadeIn(900);
+        // }else{
+        //     $(".noti1 .notiBox").stop(true).fadeOut();
+        //     $(".noti2 .notiBox").stop(true).fadeOut();
+        //     $(".noti3 .notiBox").stop(true).fadeOut();
+        // }
+      
     });
 
 
     // slick...
     
-// $("#slide").slick({
-//     centerMode: true,
-//     centerPadding: '60px',
-//     slidesToShow: 3,
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 3
-//         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 1
-//         }
-//       }
-//     ]
-//   });
+$("#slide").slick({
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 3,
+    dots:true,
+    responsive: [
+      {
+        breakpoint:991,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '8px',
+          slidesToShow: 3,
+          dots:true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '3px',
+          slidesToShow: 2,
+          dots:true
+        }
+      }
+      ,
+      {
+        // 모바일에서 슬릭깨기!!
+        breakpoint: 575,
+        settings:'unslick'
+      }
+    ]
+  });
+
+
     
 
     // 스크롤 내렸을때 new에서 아래->위 나타남

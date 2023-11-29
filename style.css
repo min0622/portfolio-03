@@ -147,6 +147,7 @@ nav ul li {
     position: fixed;
     right: 50px;
     bottom: 50px;
+    z-index: 999;
     font-family: "roboto";
     font-size: 1rem;
     font-weight: 800;
@@ -260,7 +261,6 @@ main .srch1 p {
     margin: auto 10px;
     cursor: pointer;
 }
-
 #mapbox .srch2 p {
     align-self: flex-end;
     padding-right: 3rem;
@@ -310,7 +310,7 @@ main .srch1 p {
 }
 
 #mapbox .mapText .right .t1 {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 0;
     /* right: 15vh; */
@@ -318,14 +318,14 @@ main .srch1 p {
 }
 
 #mapbox .mapText .right .t2 {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 8vw;
     right: 8vw;
 }
 
 #mapbox .mapText .right .t3 {
-    /* display: none; */
+    display: none;
     position: absolute;
     /* top: 15rem;
     left: 20rem; */
@@ -334,14 +334,14 @@ main .srch1 p {
 }
 
 #mapbox .mapText .right .t4 {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 23vw;
     left: 15vw;
 }
 
 #mapbox .mapText .left .t5 {
-    /* display: none; */
+    display: none;
     position: absolute;
     /* top:-20px; */
     top: -6vw;
@@ -350,7 +350,7 @@ main .srch1 p {
 }
 
 #mapbox .mapText .left .t6 {
-    /* display: none; */
+    display: none;
     position: absolute;
     /* top:60px; */
     top: 0;
@@ -359,7 +359,7 @@ main .srch1 p {
 }
 
 #mapbox .mapText .left .t7 {
-    /* display: none; */
+    display: none;
     position: absolute;
     /* top:180px; */
     top: 9vw;
@@ -369,7 +369,7 @@ main .srch1 p {
 }
 
 #mapbox .mapText .left .t8 {
-    /* display: none; */
+    display: none;
     position: absolute;
     /* top: 300px; */
     top: 18vw;
@@ -390,6 +390,12 @@ main .srch1 p {
     animation-timing-function: linear;
     display: flex;
 
+}
+#textLine span:nth-child(1){
+    display: inline;
+}
+#textLine span:nth-child(3),#textLine span:nth-child(2){
+    display: none;
 }
 #textLine span{
     font-size: 4vw;
@@ -418,6 +424,7 @@ main .srch1 p {
     overflow: hidden;
     /* background-color: beige; */
     display: flex;
+    flex-direction: row;
 }
 
 #slide .itembox {
@@ -466,9 +473,11 @@ section h2 {
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 35px;
+    /* background-color: aquamarine; */
 }
 section .container .row .col-md-6{
     margin-bottom: 0;
+    /* background-color: brown; */
 }
 section .container .row .col-md-6:nth-child(1){
     margin-bottom: 15px;
@@ -489,20 +498,26 @@ section .container .row .colbox {
     line-height: 150%;
     margin-top: 10px;
     text-align: left;
-    padding: 1rem 0;
+    padding-top: 2rem;
+    padding-bottom: 0;
     padding-left: 3rem;
     font-family: "cjw-g";
     font-size: 1.4rem;
     background-color: rgba(224, 194, 152, 0.6);
     font-weight: 500;
 }
-
+section .container .row .colbox p{
+    margin: auto;
+}
 section .container .row .colbox a {
     display: inline-block;
     padding-left: 5rem;
+    
     margin-bottom: 10px;
 }
-
+section .container .row .colbox p:nth-of-type(3)>span{
+    line-height: 150%;
+}
 section .container .row .colbox p:nth-of-type(3) span:not(:nth-of-type(1)) {
     display: block;
     /* color: cadetblue; */
@@ -531,8 +546,6 @@ section .col-md-4 .notiBox {
     padding-top: 5rem;
     padding-left: 3rem;
     font-family: "cjw-g";
-
-    /* display: none; */
 
 }
 section .col-md-4 .notiBox h3{
@@ -642,7 +655,14 @@ footer .sns .icon span {
     }
 
     /* slide 2개씩 보여지게 */
+    #slide{
+        width: 100%;
+    }
+    #slide .itembox {
+        width: 100%;
+    margin: 0 30px;
 
+    }
 
 }
 
@@ -718,17 +738,24 @@ footer .sns .icon span {
     #textLine span{
         font-size: 6vw;
     }
+    #textLine span:nth-child(1),  #textLine span:nth-child(3){
+        display: none;
+    }
+    #textLine span:nth-child(2){
+        display: inline;
+    }
 
-    /* slide 한개씩 */
+
 
     /* section 사진, 텍스트 세로로 정렬 */
     section .container .row .colbox {
         font-size: 1rem;
         height: 200px;
         /* height: fit-content; */
-        line-height: 100%;
+        line-height: 120%;
         padding-left: 2rem;
-    
+        padding-top: 1rem;
+
     }
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.1rem;
@@ -739,6 +766,10 @@ footer .sns .icon span {
     }
     section .col-md-4 .notiBox p {
         font-size: 1.1rem;
+    }
+    #slide .itembox {
+    margin: 0 15px;
+
     }
     
 }
@@ -819,6 +850,7 @@ footer .sns .icon span {
     #textLine span{
         font-size: 8vw;
     }
+ 
     section h2 {
         font-size: 2rem;
     }
@@ -826,18 +858,20 @@ footer .sns .icon span {
         font-size: 1.2rem;
         /* height: 200px; */
         height: fit-content;
-        line-height: 120%;
+        line-height: 170%;
     margin-top: -28px;
-
+    padding-top: 01rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
 
     }
+    
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.2rem;
     
     }
     section .container .row .col-md-6 .imgBox {
         margin-top: 150px;
-        /* background-color: beige; */
     }
     section .col-md-4 .notiBox{
         width: 100%;
@@ -864,22 +898,18 @@ footer .sns .icon span {
         height: 55px;
 
     }
-   
 } 
-/* section .col-md-4 .notiBox {
-    width: 97.78%;
+/* #slide {
+    width: 90%;
     margin: auto;
-    
-    height: 336px;
-    background-color: rgba(202, 189, 172, .8);
-    border-radius: 0 152px 0 0;
-   
-    text-align: left;
-    padding-top: 5rem;
-    padding-left: 3rem;
-    font-family: "cjw-g";
-    display: none;
+    overflow: hidden;
+    display: flex;
+}
 
+#slide .itembox {
+    width: 24.26%;
+    overflow: hidden;
+    margin: 0 70px;
 } */
 
 @media screen and (max-width:575px) {
@@ -969,7 +999,22 @@ footer .sns .icon span {
     #textLine>span {
         margin:10px auto;
     }
-    /* 슬라이드깨고, 세로로 줄세우기 */
+    #textLine span:nth-child(1),  #textLine span:nth-child(2){
+        display: none;
+    }
+    #textLine span:nth-child(3){
+        display: inline;
+    }
+    section .container .row .colbox {
+        /* font-size: 1.2rem;
+        height: fit-content; */
+        /* line-height: 170%; */
+    margin-top: -40px;
+    /* padding-top: 01rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem; */
+
+    }
 
 
     #signup h2{
@@ -988,49 +1033,33 @@ footer .sns .icon span {
         height: 50px;
 
     }
-
-}
-/* #signup {
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    margin: 110px auto;
-}
-
-#signup h2 {
-    color: #7B296B;
-    font-family: "roboto";
-    font-weight: 600;
-    font-size: 2.5rem;
-}
-
-.emailbox {
-    width: 700px;
-    display: flex;
+    #slide {
     flex-direction: column;
-    margin: 30px auto;
-    font-family: "roboto";
 
+
+    }
+    #slide .itembox{
+    width: 80%;
+    margin: 200px auto;
+    }
 }
 
-.emailbox input[type="email"] {
-    width: 700px;
-    height: 60px;
-    margin: 20px 0;
-    border: 2px solid rgb(202, 189, 172);
-    text-align: center;
-    font-size: 1.2rem
+/* section .container .row .col-md-6 .imgBox {
+    margin-top: 150px;
 }
-
-.emailbox button {
-    width: 700px;
-
-    display: block;
-    height: 60px;
-    border: none;
-    background-color: rgb(202, 189, 172);
-    font-size: 1.2rem
+section .col-md-4 .notiBox{
+    width: 100%;
+    height:250px;
+    padding-top: 2.5rem;
+    margin-bottom: 30px;
+}
+section .col-md-4 .notiBox h3{
+    font-size: 1.6rem;
+}
+section .col-md-4 .notiBox p {
+    font-size: 1.3rem;
 } */
+
 
 @media screen and (max-width:450px) {
     .ham {
@@ -1082,6 +1111,17 @@ footer .sns .icon span {
     section h2 {
         font-size: 1.8rem;
     }
+    section .container .row .colbox {
+        /* font-size: 1.2rem;
+        height: fit-content; */
+        /* line-height: 170%; */
+    margin-top: -100px;
+    /* padding-top: 01rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem; */
+
+    }
+
 
     .emailbox {
         width: 340px;
