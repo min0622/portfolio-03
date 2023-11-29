@@ -871,6 +871,12 @@ footer .sns .icon span {
         background-color: salmon;
        
     }
+    .top {
+        right: 30px;
+        bottom: 30px;
+    }
+
+
     main{
     /* background-image: url(../img/moba_main1.png); */
     padding: 60% ;
