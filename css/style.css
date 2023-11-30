@@ -444,7 +444,7 @@ main .srch1 p {
     /* height: 160px; */
     background-color: rgba(224, 209, 189, 0.8);
     margin-right: 67px;
-    font-family: "cjw-m";
+    font-family: "cjw-g";
     padding: 1.2vw 0;
     padding-left: 1.8vw;
 }
@@ -452,13 +452,11 @@ main .srch1 p {
 #slide .itembox .text h3 {
     font-size: 1.6rem;
     line-height: 150%;
-    /* background-color: cornflowerblue; */
 }
 
 #slide .itembox .text p {
     font-size: 1.2rem;
     line-height: 100%;
-    /* background-color: #7B296B; */
 }
 
 .line {
@@ -500,12 +498,13 @@ section .container .row .col-md-6 .imgBox {
 
 section .container .row .colbox {
     width: 100%;
-    height: 321px;
+    height: fit-content;
+    /* height: 321px; */
     line-height: 180%;
     margin-top: 10px;
     text-align: left;
-    padding-top: 1.5rem;
-    padding-bottom: 0;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
     padding-left: 3rem;
     font-family: "cjw-g";
     font-size: 1.4rem;
@@ -675,9 +674,19 @@ footer .sns .icon span {
 
     }
     #slide .itembox .text{
-        padding: 1.2vw 0;
-        padding-left: 2vw;
+        padding: 1.3vw 0;
+        padding-left: 2.5vw;
     }
+    #slide .itembox .text h3 {
+        font-size: 1.5rem;
+        line-height: 140%;
+    }
+    
+    #slide .itembox .text p {
+        font-size: 1.1rem;
+        line-height: 90%;
+    }
+    
     
     section .container .row .colbox {
         font-size: 1.3rem;
@@ -687,29 +696,28 @@ footer .sns .icon span {
         padding-top: 1.3rem;
         padding-bottom: 1.3rem;
     }
-    #slide .itembox .text h3{
-        font-size: 1.4rem;
-    }
 
-    #slide .itembox .text p{
-      font-size: 1rem;
-    }
-    section .container .row .colbox {
-        font-size: 1.4rem;
-        line-height: 150%;
-        padding-top: 0.7rem;
-        padding-bottom: 0.7rem;
-        /* height: fit-content;
-    margin-top: -28px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2.5rem; */
-
-    }
-    
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.4rem;
     
+    }
+    section .col-md-4 .notiBox {
+        height: 300px;
+        border-radius: 0 140px 0 0;
+        padding-top: 4rem;
+        padding-bottom: 0;
+        padding-left: 3rem;
+    
+    }
+    section .col-md-4 .notiBox h3{
+        font-size: 1.5rem;
+        line-height: 220%;
+        font-weight: 600;
+    
+    }
+    section .col-md-4 .notiBox p {
+        font-size: 1.1rem;
+        line-height: 150%;
     }
 }
 
