@@ -4,22 +4,23 @@ $(function(){
 
       let all = $("#top, #mid, #btm, nav, header h1")
 
-      all.toggleClass("bar")
+      all.toggleClass("open")
 
-      if(all.hasClass("bar")){
+      if(all.hasClass("open")){
       $("#top").css({transform:'translateY(8px) rotate(45deg)', backgroundColor:'#000'}),
       $("#mid").css({opacity:"0"});
       $("#btm").css({transform:'translateY(-8px) rotate(-45deg)',backgroundColor:'#000'})
 
       $("nav").stop(true).delay(200).slideDown();
-      $("header h1").css({display:'none'});
+      // h1이게 맞을까?
+      $("header h1").stop(true).fadeOut();
     } else{
       $("#top").css({transform:'translateY(0)', backgroundColor:'#fff'}),
       $("#mid").css({opacity:"1"});
       $("#btm").css({transform:'translateY(0)',backgroundColor:'#fff'})
 
       $("nav").stop(true).delay(200).slideUp();
-      $("header h1").css({display:'block'});
+      $("header h1").stop(true).fadeIn(1500);
     }
 
     });
@@ -34,10 +35,10 @@ $(function(){
       let spot = $(window).scrollTop();
       console.log(spot)
 
-      if(spot>=500){
-        $("header").css({display:'none'});
+      if(spot>=800){
+        $("header").stop(true).fadeOut();
       } else{
-        $("header").css({display:'block'});
+        $("header").stop(true).fadeIn();
         
       }
 
