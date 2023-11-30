@@ -631,9 +631,10 @@ footer h1 {
 }
 
 footer .sns {
-    width: 25vw;
+    /* width: 25vw; */
+    width: 480px;
     margin-bottom: 100px;
-    /* background-color: beige; */
+    background-color: beige;
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;
@@ -641,8 +642,9 @@ footer .sns {
 }
 
 footer .sns .icon {
-    width: 15vw;
-    /* background-color: sandybrown; */
+    /* width: 15vw; */
+    width: 250px;
+    background-color: sandybrown;
     display: flex;
     justify-content: space-evenly;
 
@@ -981,6 +983,7 @@ footer .sns .icon span {
     section .container .row .col-md-6 .imgBox {
         margin-top: 150px;
     }
+
     section .col-md-4 .notiBox{
         width: 100%;
     border-radius: 0 120px 0 0;
@@ -1229,43 +1232,49 @@ section h2,
         padding-left: 5vw;
     }
     #slide .itembox .text h3{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     line-height: 150%;
 
     }
 
     #slide .itembox .text p{
-      font-size: 1.4rem;
+      font-size: 1rem;
      line-height: 100%;
     }
 
    
     section .container .row .colbox {
     margin-top: -100px; 
+    line-height: 160%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 2rem;
     }
     section .container .row .colbox p{
         font-size: 1.2rem; 
     }
     section .container .row .colbox a {
-        /* padding-left: 6.5rem;   */
+        padding-left: 6rem;  
         font-size: 1.0rem;
     }
-    
-    section .col-md-4 .notiBox{
-        height:200px;
-        /* padding-top: 2rem;
-        padding-top: 2rem;
-        padding-left: 2.5rem;
-        margin-bottom: 80px; */
+
+     section .col-md-4 .notiBox{
+        
+    border-radius: 0 100px 0 0;
+        padding-top:2rem;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        margin-bottom: 7rem;
     }
+
 
 
     section .col-md-4 .notiBox h3{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         
     }
     section .col-md-4 .notiBox p {
-        font-size: 1.4rem;
+        font-size: 1rem;
 
     }
 
@@ -1285,22 +1294,3 @@ section h2,
     }
     
 }
-/* section .col-md-4 .notiBox{
-    height: 250px;
-    border-radius: 0 100px 0 0;
-    padding-top: 2.5rem;
-    padding-bottom:2.5rem ;
-    padding-left: 1.5rem;
-
-
-    }
-    section .col-md-4 .notiBox h3{
-        font-size: 1.3rem;
-    line-height: 180%;
-
-    }
-    section .col-md-4 .notiBox p {
-        font-size: 1.1rem;
-    line-height: 130%;
-
-    } */
