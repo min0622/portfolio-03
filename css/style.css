@@ -735,11 +735,21 @@ footer .sns .icon span {
     .ham {
         background-color: gold;
     }
+    header{
+      height: 100px;
+
+    }
     header h1 {
         font-size: 1.8rem;
+        line-height: 100px;
+    }
+    .ham{
+        margin-top: 30px;
+        /* (100-40)/2 */
     }
     nav ul li {
         font-size: 2.5rem;
+
     }
 
     main h2 {
@@ -874,8 +884,21 @@ footer .sns .icon {
 
 
 @media screen and (max-width:767px) {
+    header{
+        height: 80px;
+  
+      }
+      header h1 {
+          font-size: 1.8rem;
+          line-height: 80px;
+      }
     .ham {
+        width: 35px;
+        height: 35px;
+     padding: 4px 5px;
         background-color: violet;
+        margin-top: 22.5px;
+        /*( 80-35)/2 */
     }
     nav ul li {
         font-size: 2rem;
