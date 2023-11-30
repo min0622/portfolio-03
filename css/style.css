@@ -503,8 +503,8 @@ section .container .row .colbox {
     line-height: 180%;
     margin-top: 10px;
     text-align: left;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
     padding-left: 3rem;
     font-family: "cjw-g";
     font-size: 1.4rem;
@@ -514,11 +514,12 @@ section .container .row .colbox {
 section .container .row .colbox p{
     margin: auto;
 }
+
 section .container .row .colbox a {
     display: inline-block;
-    padding-left: 5rem;
+    padding-left: 7rem;  
+    font-size: 1.2rem;
     
-    margin-bottom: 10px;
 }
 section .container .row .colbox p:nth-of-type(3)>span{
     line-height: 150%;
@@ -543,13 +544,14 @@ section .container:nth-of-type(2) {
 section .col-md-4 .notiBox {
     width: 97.78%;
     /* (751-390=361)  353/361*100 = 97.78 */
-    height: 336px;
+    /* height: 336px; */
+    height: fit-content;
     margin: auto;
     background-color: rgba(202, 189, 172, .8);
     border-radius: 0 152px 0 0;
     text-align: left;
     padding-top: 4rem;
-    padding-bottom: 0;
+    padding-bottom: 4rem;
     padding-left: 3rem;
     font-family: "cjw-g";
 
@@ -692,20 +694,22 @@ footer .sns .icon span {
         font-size: 1.3rem;
         height: fit-content;
         line-height: 150%;
-        padding-left: 2rem;
-        padding-top: 1.3rem;
-        padding-bottom: 1.3rem;
+        padding-left: 2.8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    section .container .row .colbox a { 
+        font-size: 1.1rem;
     }
 
     section .container .row .colbox p:nth-of-type(4)>span {
-        font-size: 1.4rem;
-    
+        font-size: 1.3rem;
     }
     section .col-md-4 .notiBox {
-        height: 300px;
+        height: 280px;
         border-radius: 0 140px 0 0;
-        padding-top: 4rem;
-        padding-bottom: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         padding-left: 3rem;
     
     }
@@ -805,28 +809,33 @@ footer .sns .icon span {
 
     }
     #slide .itembox .text{
-        padding: 1.3vw 0;
-        padding-left: 2vw;
+        padding: 1.5vw 0;
+        padding-left: 3vw;
     }
     #slide .itembox .text h3{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        line-height: 160%;
+
     }
 
     #slide .itembox .text p{
-      font-size: 0.9rem;
+      /* font-size: 0.9rem; */
+      font-size: 1rem;
     line-height: 80%;
 
     }
 
     section .container .row .colbox {
         font-size: 1.1rem;
-        /* height: 200px; */
-        height: fit-content;
-        /* line-height: 140%; */
+        line-height: 130%;
         padding-left: 2rem;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
-
+    }
+    section .container .row .colbox a {
+        padding-left: 5.5rem;  
+        font-size: 0.9rem;
+        
     }
 
     section .container .row .colbox p:nth-of-type(4)>span {
@@ -834,22 +843,20 @@ footer .sns .icon span {
     
     }
     section .col-md-4 .notiBox{
-    height: 250px;
-    border-radius: 0 100px 0 0;
-    padding-top: 2.5rem;
-    padding-bottom:2.5rem ;
+        height: fit-content;
+    border-radius: 0 90px 0 0;
+    padding-top: 2.8rem;
+    padding-bottom:2.8rem;
     padding-left: 1.5rem;
-
-
     }
     section .col-md-4 .notiBox h3{
-        font-size: 1.2rem;
-    line-height: 180%;
+        font-size: 1.4rem;
+    line-height: 160%;
 
     }
     section .col-md-4 .notiBox p {
-        font-size: 0.9rem;
-    line-height: 130%;
+        font-size: 1rem;
+    line-height: 110%;
 
     }
     
@@ -933,30 +940,38 @@ footer .sns .icon span {
     }
 
     #slide .itembox .text{
-        padding: 2vw 0;
-        padding-left: 3vw;
+        padding: 2.5vw 0;
+        padding-left: 3.5vw;
     }
     #slide .itembox .text h3{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+    line-height: 150%;
+        
     }
 
     #slide .itembox .text p{
-      font-size: 1rem;
+      font-size: 1.2rem;
+    line-height: 100%;
+
     }
  
-    section h2 {
-        font-size: 2rem;
+    section h2,
+    #signup {
+        font-size: 2.6rem;
     }
     section .container .row .colbox {
-        font-size: 1.2rem;
-        /* height: 200px; */
-        height: fit-content;
+        font-size: 1.4rem;
         line-height: 170%;
     margin-top: -28px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2.5rem;
 
+    }
+    section .container .row .colbox a {
+        padding-left: 7rem;  
+        font-size: 1.2rem;
+        
     }
     
     section .container .row .colbox p:nth-of-type(4)>span {
@@ -968,19 +983,23 @@ footer .sns .icon span {
     }
     section .col-md-4 .notiBox{
         width: 100%;
-        height:250px;
-        padding-top: 2rem;
-        padding-top: 2rem;
-        padding-left: 2.5rem;
-        margin-bottom: 80px;
+    border-radius: 0 120px 0 0;
+        padding-top:2rem;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        margin-bottom: 7rem;
     }
 
 
     section .col-md-4 .notiBox h3{
         font-size: 1.6rem;
+    line-height: 200%;
+
     }
     section .col-md-4 .notiBox p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    line-height: 120%;
+
     }
     .emailbox {
         width: 500px;
@@ -1094,14 +1113,21 @@ footer .sns .icon span {
     #textLine span:nth-child(3){
         display: inline;
     }
+    #slide {
+        flex-direction: column;
+     }
+     #slide .itembox{
+        width: 80%;
+        margin: 200px auto;
+    }
 
     #slide .itembox .text{
         padding: 4vw 0;
-        padding-left: 4vw;
+        padding-left: 5.5vw;
     }
     #slide .itembox .text h3{
         font-size: 1.7rem;
-    line-height: 150%;
+    line-height: 160%;
 
     }
 
@@ -1112,12 +1138,28 @@ footer .sns .icon span {
 
     section .container .row .colbox {
     margin-top: -40px;
-    }
+}
+section .container .row .colbox p{
+    font-size: 1.3rem; 
+}
+section .container .row .colbox a {
+    padding-left: 6.5rem;  
+    font-size: 1.1rem;
+    
+}
 
+section .col-md-4 .notiBox h3{
+    font-size: 1.7rem;
 
-    #signup h2{
-        font-size: 1.8rem;
-    }
+}
+section .col-md-4 .notiBox p {
+    font-size: 1.3rem;
+}
+
+section h2,
+#signup {
+    font-size: 2rem;
+}
     .emailbox {
         width: 400px;
     }
@@ -1131,15 +1173,7 @@ footer .sns .icon span {
         height: 50px;
 
     }
-    #slide {
-    flex-direction: column;
 
-
-    }
-    #slide .itembox{
-    width: 80%;
-    margin: 200px auto;
-    }
 }
 
 
@@ -1195,23 +1229,28 @@ footer .sns .icon span {
         padding-left: 5vw;
     }
     #slide .itembox .text h3{
-        font-size: 1.1rem;
-    line-height: 120%;
+        font-size: 1.6rem;
+    line-height: 150%;
 
     }
 
     #slide .itembox .text p{
-      font-size: 0.9rem;
-     line-height: 40%;
+      font-size: 1.4rem;
+     line-height: 100%;
     }
 
-    section h2 {
-        font-size: 1.8rem;
-    }
+   
     section .container .row .colbox {
     margin-top: -100px; 
     }
-
+    section .container .row .colbox p{
+        font-size: 1.2rem; 
+    }
+    section .container .row .colbox a {
+        /* padding-left: 6.5rem;   */
+        font-size: 1.0rem;
+    }
+    
     section .col-md-4 .notiBox{
         height:200px;
         /* padding-top: 2rem;
@@ -1222,13 +1261,11 @@ footer .sns .icon span {
 
 
     section .col-md-4 .notiBox h3{
-        font-size: 1.3rem;
-    line-height: 150%;
+        font-size: 1.6rem;
         
     }
     section .col-md-4 .notiBox p {
-        font-size: 1rem;
-    line-height: 110%;
+        font-size: 1.4rem;
 
     }
 
