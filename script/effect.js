@@ -1,15 +1,31 @@
 $(function(){
     // 삼선 클릭시 메뉴바 나타나게-슬라이드다운 / 삼선 -> x로 바뀌게
     $("header .ham").click(function(){
-      $("#top").css({transform:'translateY(14px)', transform:" rotate(45deg)",    backgroundColor:'#000'}),
-  
+
+      let all = $("#top, #mid, #btm, nav, header h1")
+
+      all.toggleClass("bar")
+
+      if(all.hasClass("bar")){
+      $("#top").css({transform:'translateY(8px) rotate(45deg)', backgroundColor:'#000'}),
       $("#mid").css({opacity:"0"});
-      $("#btm").css({transform:'translateY(-14px)', transform:" rotate(-45deg)"})
-      $("nav").stop(true).delay(500).slideDown();
+      $("#btm").css({transform:'translateY(-8px) rotate(-45deg)',backgroundColor:'#000'})
+
+      $("nav").stop(true).delay(200).slideDown();
+      $("header h1").css({display:'none'});
+    } else{
+      $("#top").css({transform:'translateY(0)', backgroundColor:'#fff'}),
+      $("#mid").css({opacity:"1"});
+      $("#btm").css({transform:'translateY(0)',backgroundColor:'#fff'})
+
+      $("nav").stop(true).delay(200).slideUp();
+      $("header h1").css({display:'block'});
+    }
+
     });
-    $(".close").click(function(){
-      $("nav").stop(true).slideUp();
-    });
+    // $(".close").click(function(){
+    //   $("nav").stop(true).slideUp();
+    // });
 
 
     // 스크롤 내리면 header 사라짐. 스크롤 위로하면 나타나게..??
