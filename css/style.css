@@ -58,7 +58,7 @@ header {
     font-family: "cjw-g";
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index:9999;
     color: #fff;
 }
 
@@ -70,15 +70,6 @@ header h1 {
     z-index: 2;
 }
 
-/* header .ham{
-    float: right;
-    line-height: 110px;
-    display: flex;
-    flex-direction: row-reverse;
-    font-size: 2rem;
-    display: block;
-    cursor: pointer;
-} */
 .ham {
     width: 40px;
     height: 40px;
@@ -89,7 +80,7 @@ header h1 {
     margin-top: 40px;
     /* (120-40)/2= */
     position: relative;
-    z-index:998;
+    z-index:99;
 }
 
 .ham>.line {
@@ -109,20 +100,13 @@ nav {
     background-color: #E4DDD4;
     overflow: hidden;
     position: fixed;
-    z-index: 995;
+    z-index:10;
     top: 0;
     left: 0;
     font-family: "cjw-g";
     display: none;
 }
 
-/* nav .close{
-    display: block;
-    font-size: 2rem;
-    line-height: 110px;
-    padding: 0 5vw;
-    cursor:pointer;
-} */
 nav ul {
     display: flex;
     flex-direction: column;
@@ -226,6 +210,7 @@ main .srch1 p {
     padding-right: 4rem;
 
 }
+
 
 #mapbox {
     width: 100%;
@@ -385,6 +370,15 @@ main .srch1 p {
 
 .all {
     cursor: pointer;
+}
+
+#mapbox .map .bg .bg2::after{
+    content: "북구";
+    display: block;
+    width: 100%;
+color: #fff;
+    position: fixed;
+    z-index: 9999;
 }
 
 #textLine{
