@@ -11,22 +11,19 @@ $(function(){
       $("#mid").css({opacity:"0"});
       $("#btm").css({transform:'translateY(-8px) rotate(-45deg)',backgroundColor:'#000'})
 
-      $("nav").stop(true).delay(200).slideDown();
-      // h1이게 맞을까?
-      $("header h1").stop(true).fadeOut();
+      $("nav").stop(true).slideDown();
+
     } else{
       $("#top").css({transform:'translateY(0)', backgroundColor:'#fff'}),
       $("#mid").css({opacity:"1"});
       $("#btm").css({transform:'translateY(0)',backgroundColor:'#fff'})
 
-      $("nav").stop(true).delay(200).slideUp();
-      $("header h1").stop(true).fadeIn(1500);
+      $("nav").stop(true).slideUp();
+    
     }
 
     });
-    // $(".close").click(function(){
-    //   $("nav").stop(true).slideUp();
-    // });
+  
 
 
     // 스크롤 내리면 header 사라짐. 스크롤 위로하면 나타나게..??
@@ -125,9 +122,16 @@ $("#slide").slick({
 
   if($(".bg").hasClass("add")){
     $(".t5").stop(true).fadeIn();
-    // $(".t5").stop(true).animate({display:"block"},1000,"linear");
+
+    $(".bg2, .bg3").css({fill:'#3a2711', transform:'translate(-140%,0) scale(2)', transitionDuration:"2s"})
+    $(".bg3").css({stroke:"#7a634a"});
+  
+
   }else{
     $(".t5").stop(true).fadeOut();
+    
+    $(".bg2, .bg3").css({fill:' #7E6648', transform:'translate(0) scale(1)', transitionDuration:"2s"})
+    $(".bg3").css({stroke:" #F0DFC8"});
   }
 });
 
