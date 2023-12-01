@@ -864,13 +864,16 @@ footer .sns .icon span {
     line-height: 110%;
 
     }
+    footer h1 {
+        font-size: 1.8rem;   
+    }
     footer .sns{
         width: 550px;
     }
-footer .sns .icon {
+    footer .sns .icon {
     width: 250px;
-
-}
+    font-size: 1.3rem;
+    }
 }
 
 
@@ -1042,6 +1045,19 @@ footer .sns .icon {
         height: 55px;
 
     }
+    footer h1 {
+        font-size: 1.8rem;
+        /* line-height: 80px; */
+    }
+    footer .sns{
+        width: 450px;
+    font-size: 1rem;
+
+    }
+    footer .sns .icon {
+    width: 250px;
+
+    }
 } 
 
 
@@ -1199,6 +1215,15 @@ section h2,
     .emailbox button {
         width: 400px;
         height: 50px;
+
+    }
+    footer .sns{
+        width: 300px;
+    font-size: 1rem;
+
+    }
+    footer .sns .icon {
+    width: 200px;
 
     }
 
