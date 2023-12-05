@@ -259,6 +259,12 @@ main .srch1 p {
     font-size: 1.1rem;
 }
 
+
+#mapbox .map .area p:nth-child(1){
+    position: absolute;
+    top: 5%;
+    right: 15%;
+}
 #mapbox .mapText{
     width: 80%;
     height: fit-content;
@@ -266,7 +272,6 @@ main .srch1 p {
     position: absolute;
     left: 10%;
     top: 25%;
-    /* background-color: slateblue; */
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -368,18 +373,89 @@ main .srch1 p {
     /* right: 350px; */
 }
 
-.all {
+#mapbox .map .all {
     cursor: pointer;
 }
 
-#mapbox .map .bg .bg2::after{
-    content: "북구";
-    display: block;
-    width: 100%;
-color: #fff;
-    position: fixed;
-    z-index: 9999;
+#mapbox .map .area{
+    /* width: 35%; */
+    /* width: 600px;
+    height: 500px; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+font-size: 1.6rem;
+
+font-weight: 500;
+
 }
+#mapbox .map .area .a1::before{
+    content:'동구';
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: -200px;
+    right: -180px;
+}
+
+#mapbox .map .area .a2::before{
+    content:'중구';
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: -110px;
+    right: -65px; 
+}
+#mapbox .map .area .a3::before{
+    content:'수성구';
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: -55px;
+    right: -150px; 
+}
+#mapbox .map .area .a4::before{
+    content:'남구';
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: -50px;
+    right: -40px; 
+}
+#mapbox .map .area .a5::before{
+    content:'북구';
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: -190px;
+    right: -40px; 
+}
+#mapbox .map .area .a6::before{
+    content:'서구';
+    display: block;
+    width: 38px;
+    position: absolute;
+    top: -120px;
+    right:10px; 
+}
+#mapbox .map .area .a7::before{
+    content:'달서구';
+    display: block;
+    width: 58px;
+    position: absolute;
+    top: -60px;
+    right:30px; 
+}
+#mapbox .map .area .a8::before{
+    content:'달서군';
+    display: block;
+    width: 58px;
+    position: absolute;
+    top: 50px;
+    right:40px; 
+}
+
 
 #textLine{
     /* width: 100%;    */
