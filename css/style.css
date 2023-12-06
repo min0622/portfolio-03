@@ -58,13 +58,13 @@ header {
     font-family: "cjw-g";
     position: fixed;
     top: 0;
-    z-index:9999;
+    z-index: 9999;
     color: #fff;
 }
 
 header h1 {
     font-size: 2.4rem;
-    float:left;
+    float: left;
     line-height: 120px;
     position: relative;
     z-index: 2;
@@ -75,12 +75,12 @@ header h1 {
     height: 40px;
     /* background-color: seagreen; */
     float: right;
-    padding:7px 5px;
+    padding: 7px 5px;
     cursor: pointer;
     margin-top: 40px;
     /* (120-40)/2= */
     position: relative;
-    z-index:99;
+    z-index: 99;
 }
 
 .ham>.line {
@@ -100,7 +100,7 @@ nav {
     background-color: #E4DDD4;
     overflow: hidden;
     position: fixed;
-    z-index:10;
+    z-index: 10;
     top: 0;
     left: 0;
     font-family: "cjw-g";
@@ -116,6 +116,7 @@ nav ul {
     height: 100%;
     /* background-color: beige; */
 }
+
 nav ul li {
     margin-right: 2vw;
     float: left;
@@ -252,6 +253,7 @@ main .srch1 p {
     margin: auto 10px;
     cursor: pointer;
 }
+
 #mapbox .srch2 p {
     align-self: flex-end;
     padding-right: 3rem;
@@ -260,12 +262,13 @@ main .srch1 p {
 }
 
 
-#mapbox .map .area p:nth-child(1){
+#mapbox .map .area p:nth-child(1) {
     position: absolute;
     top: 5%;
     right: 15%;
 }
-#mapbox .mapText{
+
+#mapbox .mapText {
     width: 80%;
     height: fit-content;
     /* overflow: hidden; */
@@ -291,6 +294,7 @@ main .srch1 p {
 #mapbox .mapText .gray {
     margin-bottom: 40px;
 }
+
 #mapbox .mapText .right {
     width: 50%;
     float: right;
@@ -377,20 +381,21 @@ main .srch1 p {
     cursor: pointer;
 }
 
-#mapbox .map .area{
+#mapbox .map .area {
     /* width: 35%; */
     /* width: 600px;
     height: 500px; */
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%,-50%);
-font-size: 1.6rem;
-font-weight: 500;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    font-weight: 500;
 
 }
-#mapbox .map .area .a1::before{
-    content:'동구';
+
+#mapbox .map .area .a1::before {
+    content: '동구';
     display: block;
     width: fit-content;
     position: absolute;
@@ -398,65 +403,71 @@ font-weight: 500;
     right: -180px;
 }
 
-#mapbox .map .area .a2::before{
-    content:'중구';
+#mapbox .map .area .a2::before {
+    content: '중구';
     display: block;
     width: fit-content;
     position: absolute;
     top: -110px;
-    right: -65px; 
+    right: -65px;
 }
-#mapbox .map .area .a3::before{
-    content:'수성구';
+
+#mapbox .map .area .a3::before {
+    content: '수성구';
     display: block;
     width: fit-content;
     position: absolute;
     top: -55px;
-    right: -150px; 
+    right: -150px;
 }
-#mapbox .map .area .a4::before{
-    content:'남구';
+
+#mapbox .map .area .a4::before {
+    content: '남구';
     display: block;
-    width: fit-content;
+    width: 48px;
     position: absolute;
     top: -50px;
-    right: -40px; 
+    right: -53px;
 }
-#mapbox .map .area .a5::before{
-    content:'북구';
+
+#mapbox .map .area .a5::before {
+    content: '북구';
     display: block;
     width: fit-content;
     position: absolute;
     top: -190px;
-    right: -40px; 
+    right: -40px;
 }
-#mapbox .map .area .a6::before{
-    content:'서구';
+
+#mapbox .map .area .a6::before {
+    content: '서구';
     display: block;
     width: 38px;
     position: absolute;
     top: -120px;
-    right:10px; 
+    right: 10px;
 }
-#mapbox .map .area .a7::before{
-    content:'달서구';
+
+#mapbox .map .area .a7::before {
+    content: '달서구';
     display: block;
     width: 58px;
     position: absolute;
     top: -60px;
-    right:30px; 
+    right: 30px;
 }
-#mapbox .map .area .a8::before{
-    content:'달서군';
+
+#mapbox .map .area .a8::before {
+    content: '달서군';
     display: block;
     width: 58px;
     position: absolute;
     top: 50px;
-    right:40px; 
+    right: 40px;
 }
 
 
-#textLine{
+#textLine {
     /* width: 100%;    */
     animation-name: move;
     animation-duration: 15s;
@@ -466,17 +477,21 @@ font-weight: 500;
     display: flex;
 
 }
-#textLine span:nth-child(1){
+
+#textLine span:nth-child(1) {
     display: inline;
 }
-#textLine span:nth-child(3),#textLine span:nth-child(2){
+
+#textLine span:nth-child(3),
+#textLine span:nth-child(2) {
     display: none;
 }
-#textLine span{
+
+#textLine span {
     font-size: 4vw;
     margin: 180px auto;
     color: #E4DDD4;
-    
+
     /* animation-name: move;
     animation-duration: 5s;
     animation-delay: 0;
@@ -484,11 +499,13 @@ font-weight: 500;
     animation-timing-function: linear; */
 
 }
-@keyframes move{
-   0%{
-       transform:translateX(0) ;
-   }
-    100%{
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
         transform: translateX(-100%);
     }
 }
@@ -552,13 +569,16 @@ section h2 {
     margin-bottom: 35px;
     /* background-color: aquamarine; */
 }
-section .container .row .col-md-6{
+
+section .container .row .col-md-6 {
     margin-bottom: 0;
 }
-section .container .row .col-md-6:nth-child(1){
+
+section .container .row .col-md-6:nth-child(1) {
     margin-bottom: 15px;
 }
-section .container .row .col-md-6:nth-child(2){
+
+section .container .row .col-md-6:nth-child(2) {
     margin-bottom: 15px;
 }
 
@@ -583,19 +603,22 @@ section .container .row .colbox {
     background-color: rgba(224, 194, 152, 0.6);
     font-weight: 500;
 }
-section .container .row .colbox p{
+
+section .container .row .colbox p {
     margin: auto;
 }
 
 section .container .row .colbox a {
     display: inline-block;
-    padding-left: 7rem;  
+    padding-left: 7rem;
     font-size: 1.2rem;
-    
+
 }
-section .container .row .colbox p:nth-of-type(3)>span{
+
+section .container .row .colbox p:nth-of-type(3)>span {
     line-height: 150%;
 }
+
 section .container .row .colbox p:nth-of-type(3) span:not(:nth-of-type(1)) {
     display: block;
     /* color: cadetblue; */
@@ -628,12 +651,14 @@ section .col-md-4 .notiBox {
     font-family: "cjw-g";
 
 }
-section .col-md-4 .notiBox h3{
+
+section .col-md-4 .notiBox h3 {
     font-size: 1.6rem;
     line-height: 200%;
     font-weight: 600;
 
 }
+
 section .col-md-4 .notiBox p {
     font-size: 1.2rem;
     line-height: 160%;
@@ -655,7 +680,7 @@ section .col-md-4 .notiBox p {
     color: #7B296B;
     font-family: "roboto";
     font-weight: 600;
-    font-size:3rem;
+    font-size: 3rem;
 }
 
 .emailbox {
@@ -683,7 +708,7 @@ section .col-md-4 .notiBox p {
     border: none;
     background-color: rgb(202, 189, 172);
     font-size: 1.2rem;
-    color:#000;
+    color: #000;
 }
 
 .l3 {
@@ -741,29 +766,32 @@ footer .sns .icon span {
     }
 
     /* slide 2개씩 보여지게 */
-    #slide{
+    #slide {
         width: 100%;
     }
+
     #slide .itembox {
         width: 100%;
         margin: 0 30px;
 
     }
-    #slide .itembox .text{
+
+    #slide .itembox .text {
         padding: 1.3vw 0;
         padding-left: 2.5vw;
     }
+
     #slide .itembox .text h3 {
         font-size: 1.5rem;
         line-height: 140%;
     }
-    
+
     #slide .itembox .text p {
         font-size: 1.1rem;
         line-height: 90%;
     }
-    
-    
+
+
     section .container .row .colbox {
         font-size: 1.3rem;
         height: fit-content;
@@ -772,27 +800,31 @@ footer .sns .icon span {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
-    section .container .row .colbox a { 
+
+    section .container .row .colbox a {
         font-size: 1.1rem;
     }
 
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.3rem;
     }
+
     section .col-md-4 .notiBox {
         height: 280px;
         border-radius: 0 140px 0 0;
         padding-top: 3rem;
         padding-bottom: 3rem;
         padding-left: 3rem;
-    
+
     }
-    section .col-md-4 .notiBox h3{
+
+    section .col-md-4 .notiBox h3 {
         font-size: 1.5rem;
         line-height: 220%;
         font-weight: 600;
-    
+
     }
+
     section .col-md-4 .notiBox p {
         font-size: 1.1rem;
         line-height: 150%;
@@ -804,18 +836,22 @@ footer .sns .icon span {
     .ham {
         background-color: gold;
     }
-    header{
-      height: 100px;
+
+    header {
+        height: 100px;
 
     }
+
     header h1 {
         font-size: 1.8rem;
         line-height: 100px;
     }
-    .ham{
+
+    .ham {
         margin-top: 30px;
         /* (100-40)/2 */
     }
+
     nav ul li {
         font-size: 2.5rem;
 
@@ -826,13 +862,15 @@ footer .sns .icon span {
     }
 
     /* 지도 글씨 위치 조정 */
-    #mapbox .mapText .gray p{
-    font-size: 1.7rem;
+    #mapbox .mapText .gray p {
+        font-size: 1.7rem;
     }
-#mapbox .mapText .gray>p:first-child {
-    color: #333;
-    font-size: 1rem;
-} 
+
+    #mapbox .mapText .gray>p:first-child {
+        color: #333;
+        font-size: 1rem;
+    }
+
     #mapbox .mapText .right .t1 {
         top: -1vw;
         right: 0;
@@ -874,34 +912,44 @@ footer .sns .icon span {
         top: 28vw;
         right: 27vw;
     }
-    #textLine span{
+    #mapbox .map .area {
+        font-size: 1.6rem;
+
+    }
+
+    #textLine span {
         font-size: 6vw;
     }
-    #textLine span:nth-child(1),  #textLine span:nth-child(3){
+
+    #textLine span:nth-child(1),
+    #textLine span:nth-child(3) {
         display: none;
     }
-    #textLine span:nth-child(2){
+
+    #textLine span:nth-child(2) {
         display: inline;
     }
 
     #slide .itembox {
-    margin: 0 15px;
+        margin: 0 15px;
 
     }
-    #slide .itembox .text{
+
+    #slide .itembox .text {
         padding: 1.5vw 0;
         padding-left: 3vw;
     }
-    #slide .itembox .text h3{
+
+    #slide .itembox .text h3 {
         font-size: 1.4rem;
         line-height: 160%;
 
     }
 
-    #slide .itembox .text p{
-      /* font-size: 0.9rem; */
-      font-size: 1rem;
-    line-height: 80%;
+    #slide .itembox .text p {
+        /* font-size: 0.9rem; */
+        font-size: 1rem;
+        line-height: 80%;
 
     }
 
@@ -912,42 +960,49 @@ footer .sns .icon span {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
     }
+
     section .container .row .colbox a {
-        padding-left: 5.5rem;  
+        padding-left: 5.5rem;
         font-size: 0.9rem;
-        
+
     }
 
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.1rem;
-    
-    }
-    section .col-md-4 .notiBox{
-        height: fit-content;
-    border-radius: 0 90px 0 0;
-    padding-top: 2.8rem;
-    padding-bottom:2.8rem;
-    padding-left: 1.5rem;
-    }
-    section .col-md-4 .notiBox h3{
-        font-size: 1.4rem;
-    line-height: 160%;
 
     }
+
+    section .col-md-4 .notiBox {
+        height: fit-content;
+        border-radius: 0 90px 0 0;
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        padding-left: 1.5rem;
+    }
+
+    section .col-md-4 .notiBox h3 {
+        font-size: 1.4rem;
+        line-height: 160%;
+
+    }
+
     section .col-md-4 .notiBox p {
         font-size: 1rem;
-    line-height: 110%;
+        line-height: 110%;
 
     }
+
     footer h1 {
-        font-size: 1.8rem;   
+        font-size: 1.8rem;
     }
-    footer .sns{
+
+    footer .sns {
         width: 550px;
     }
+
     footer .sns .icon {
-    width: 250px;
-    font-size: 1.3rem;
+        width: 250px;
+        font-size: 1.3rem;
     }
 }
 
@@ -956,28 +1011,33 @@ footer .sns .icon span {
 
 
 @media screen and (max-width:767px) {
-    header{
+    header {
         height: 80px;
-  
-      }
-      header h1 {
-          font-size: 1.8rem;
-          line-height: 80px;
-      }
+
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        line-height: 80px;
+    }
+
     .ham {
         width: 35px;
         height: 35px;
-     padding: 4px 5px;
+        padding: 4px 5px;
         background-color: violet;
         margin-top: 22.5px;
         /*( 80-35)/2 */
     }
+
     nav ul li {
         font-size: 2rem;
     }
-    #mapbox{
+
+    #mapbox {
         margin-top: 80vw;
     }
+
     main h2 {
         font-size: 3rem;
         transform: translate(-50%, -50%);
@@ -987,6 +1047,7 @@ footer .sns .icon span {
     main .srch1 {
         display: none;
     }
+
     #textLine>span {
         font-size: 5vw;
     }
@@ -994,17 +1055,20 @@ footer .sns .icon span {
     #mapbox .srch2 .sbox2 {
         width: 150px;
     }
+
     #mapbox input[type="text"] {
         width: 100px;
         height: 30px;
         font-size: 1rem;
 
     }
+
     #mapbox span {
         font-size: 1.3rem;
         margin: auto 8px;
 
     }
+
     #mapbox .srch2 p {
         font-size: 0.8rem;
     }
@@ -1022,6 +1086,7 @@ footer .sns .icon span {
         top: -3vw;
         right: -2vw;
     }
+
     #mapbox .mapText .right .t2 {
         top: 8vw;
         right: -3vw;
@@ -1029,177 +1094,232 @@ footer .sns .icon span {
 
     #mapbox .mapText .right .t3 {
         top: 23vw;
-        left:25vw;
+        left: 25vw;
     }
+
     #mapbox .mapText .right .t4 {
         top: 40vw;
-        left:18vw;
+        left: 18vw;
     }
+
     #mapbox .mapText .left .t6 {
         top: 4vw;
         right: 23vw;
 
     }
-    #textLine span{
+
+    #mapbox .map .area {
+        font-size: 1.4rem;
+
+    }
+
+    #mapbox .map .area .a1::before {
+        top: -180px;
+        right: -150px;
+    }
+#mapbox .map .area .a2::before{
+    top: -100px;
+    right: -55px;
+}
+#mapbox .map .area .a3::before {
+    top: -65px;
+    right: -130px;
+}
+#mapbox .map .area .a4::before {
+    top: -50px;
+    right: -50px;
+}
+#mapbox .map .area .a5::before {
+    top: -165px;
+    right: -40px;
+}
+#mapbox .map .area .a6::before {
+    top: -113px;
+    right: 1px;
+}
+#mapbox .map .area .a7::before {
+    top: -60px;
+    right: 20px; 
+}
+
+    #textLine span {
         font-size: 10vw;
     }
 
-    #slide .itembox .text{
+    #slide .itembox .text {
         padding: 2.5vw 0;
         padding-left: 3.5vw;
     }
-    #slide .itembox .text h3{
+
+    #slide .itembox .text h3 {
         font-size: 1.6rem;
-    line-height: 150%;
-        
-    }
-
-    #slide .itembox .text p{
-      font-size: 1.2rem;
-    line-height: 100%;
+        line-height: 150%;
 
     }
- 
+
+    #slide .itembox .text p {
+        font-size: 1.2rem;
+        line-height: 100%;
+
+    }
+
     section h2,
-    #signup h2{
+    #signup h2 {
         font-size: 2.6rem;
     }
+
     section .container .row .colbox {
         font-size: 1.4rem;
         line-height: 170%;
-    margin-top: -28px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2.5rem;
+        margin-top: -28px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.5rem;
 
     }
+
     section .container .row .colbox a {
-        padding-left: 7rem;  
+        padding-left: 7rem;
         font-size: 1.2rem;
-        
+
     }
-    
+
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.2rem;
-    
+
     }
+
     section .container .row .col-md-6 .imgBox {
         margin-top: 150px;
     }
 
-    section .col-md-4 .notiBox{
+    section .col-md-4 .notiBox {
         width: 100%;
-    border-radius: 0 120px 0 0;
-        padding-top:2rem;
+        border-radius: 0 120px 0 0;
+        padding-top: 2rem;
         padding-bottom: 2rem;
         padding-left: 3rem;
         margin-bottom: 7rem;
     }
 
 
-    section .col-md-4 .notiBox h3{
+    section .col-md-4 .notiBox h3 {
         font-size: 1.6rem;
-    line-height: 200%;
+        line-height: 200%;
 
     }
+
     section .col-md-4 .notiBox p {
         font-size: 1.2rem;
-    line-height: 120%;
+        line-height: 120%;
 
     }
+
     .emailbox {
         width: 500px;
     }
+
     .emailbox input[type="email"] {
         width: 500px;
         height: 55px;
 
     }
+
     .emailbox button {
         width: 500px;
         height: 55px;
 
     }
+
     footer h1 {
         font-size: 1.8rem;
         /* line-height: 80px; */
     }
-    footer .sns{
+
+    footer .sns {
         width: 450px;
-    font-size: 1rem;
+        font-size: 1rem;
 
     }
+
     footer .sns .icon {
-    width: 250px;
+        width: 250px;
 
     }
-} 
+}
 
 
 
 @media screen and (max-width:575px) {
     .ham {
         background-color: salmon;
-       
+
     }
+
     .top {
         right: 30px;
         bottom: 30px;
     }
 
 
-    main{
-    /* background-image: url(../img/moba_main1.png); */
-    padding: 60% 0 ;
-    background-size: cover;
+    main {
+        /* background-image: url(../img/moba_main1.png); */
+        padding: 60% 0;
+        background-size: cover;
     }
+
     main h2 {
         font-size: 2.8rem;
         transform: translate(-50%, -50%);
-    font-weight: 600;
+        font-weight: 600;
 
     }
-   
+
     #textLine>span {
         font-size: 12vw;
     }
-    
 
-    
-    #mapbox{
+
+
+    #mapbox {
         /* margin-top: 80vw; */
         margin-top: 130vw;
     }
-    
+
     #mapbox .mapText .gray p {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
     #mapbox .mapText .gray>p:first-child {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
 
     }
-   
-    #mapbox .mapText .right{
-        top:20px;
+
+    #mapbox .mapText .right {
+        top: 20px;
     }
+
     #mapbox .mapText .left {
-        top:50px;
+        top: 50px;
 
     }
+
     #mapbox .mapText .right .t3 {
         top: 28vw;
-        left:26vw;
+        left: 26vw;
     }
+
     #mapbox .mapText .right .t4 {
         top: 50vw;
-        left:16vw;
+        left: 16vw;
     }
+
     #mapbox .mapText .left .t8 {
         top: 30vw;
         right: 25vw;
-        
+
     }
+
     #mapbox .mapText .left .t5 {
         top: -5vw;
         right: 15vw;
@@ -1222,83 +1342,132 @@ footer .sns .icon span {
         right: 24vw;
         /* left: 10vh; */
     }
+#mapbox .map .area {
+    font-size: 1.2rem;
 
+}
+#mapbox .map .area .a1::before {
+    top: -140px;
+    right: -120px;
+}
+#mapbox .map .area .a2::before{
+top: -80px;
+right: -40px;
+}
+#mapbox .map .area .a3::before {
+top: -55px;
+right: -100px;
+}
+#mapbox .map .area .a4::before {
+top: -50px;
+right: -41px;
+}
+#mapbox .map .area .a5::before {
+top: -125px;
+right: -40px;
+}
+#mapbox .map .area .a6::before {
+top: -90px;
+right: -5px;
+}
+#mapbox .map .area .a7::before {
+top: -50px;
+right: 5px; 
+}
+#mapbox .map .area .a8::before {
+    top: 20px;
+    right: 20px;
+}
     #textLine>span {
-        margin:10px auto;
+        margin: 10px auto;
     }
-    #textLine span:nth-child(1),  #textLine span:nth-child(2){
+
+    #textLine span:nth-child(1),
+    #textLine span:nth-child(2) {
         display: none;
     }
-    #textLine span:nth-child(3){
+
+    #textLine span:nth-child(3) {
         display: inline;
     }
+
     #slide {
         flex-direction: column;
-     }
-     #slide .itembox{
+    }
+
+    #slide .itembox {
         width: 80%;
         margin: 200px auto;
     }
 
-    #slide .itembox .text{
+    #slide .itembox .text {
         padding: 4vw 0;
         padding-left: 5.5vw;
     }
-    #slide .itembox .text h3{
+
+    #slide .itembox .text h3 {
         font-size: 1.7rem;
-    line-height: 160%;
+        line-height: 160%;
 
     }
 
-    #slide .itembox .text p{
-      font-size: 1.3rem;
-     line-height: 110%;
+    #slide .itembox .text p {
+        font-size: 1.3rem;
+        line-height: 110%;
     }
 
     section .container .row .colbox {
-    margin-top: -40px;
-}
-section .container .row .colbox p{
-    font-size: 1.3rem; 
-}
-section .container .row .colbox a {
-    padding-left: 6.5rem;  
-    font-size: 1.1rem;
-    
-}
+        margin-top: -40px;
+    }
 
-section .col-md-4 .notiBox h3{
-    font-size: 1.7rem;
+    section .container .row .colbox p {
+        font-size: 1.3rem;
+    }
 
-}
-section .col-md-4 .notiBox p {
-    font-size: 1.3rem;
-}
+    section .container .row .colbox a {
+        padding-left: 6.5rem;
+        font-size: 1.1rem;
 
-section h2,
-#signup h2{
-    font-size: 2rem;
-}
+    }
+
+    section .col-md-4 .notiBox h3 {
+        font-size: 1.7rem;
+
+    }
+
+    section .col-md-4 .notiBox p {
+        font-size: 1.3rem;
+    }
+
+    section h2,
+    #signup h2 {
+        font-size: 2rem;
+    }
+
     .emailbox {
         width: 400px;
     }
+
     .emailbox input[type="email"] {
         width: 400px;
         height: 50px;
 
     }
+
     .emailbox button {
         width: 400px;
         height: 50px;
 
     }
-    footer .sns{
+
+    footer .sns {
         width: 300px;
-    font-size: 1rem;
+        font-size: 1rem;
 
     }
+
     footer .sns .icon {
-    width: 200px;
+        width: 200px;
 
     }
 
@@ -1308,8 +1477,9 @@ section h2,
 @media screen and (max-width:450px) {
     .ham {
         background-color: slateblue;
-       
+
     }
+
     header h1 {
         font-size: 1rem;
     }
@@ -1317,7 +1487,8 @@ section h2,
     header nav {
         font-size: 0.8rem;
     }
-    nav ul li{
+
+    nav ul li {
         font-size: 1.8rem;
     }
 
@@ -1328,65 +1499,71 @@ section h2,
         transform: translate(-50%, -50%);
 
     }
-     
-    #mapbox{
+
+    #mapbox {
         margin-top: 150vw;
     }
 
     #mapbox .srch2 .sbox2 {
         width: 150px;
     }
+
     #mapbox input[type="text"] {
         width: 100px;
         height: 30px;
-      font-size: 1rem;
+        font-size: 1rem;
 
     }
+
     #mapbox span {
         font-size: 1.3rem;
         margin: auto 8px;
 
     }
+
     #mapbox .srch2 p {
         font-size: 0.8rem;
     }
 
-    
-    #slide .itembox .text{
+
+    #slide .itembox .text {
         padding: 3.5vw 0;
         padding-left: 5vw;
     }
-    #slide .itembox .text h3{
+
+    #slide .itembox .text h3 {
         font-size: 1.4rem;
-    line-height: 150%;
+        line-height: 150%;
 
     }
 
-    #slide .itembox .text p{
-      font-size: 1rem;
-     line-height: 100%;
+    #slide .itembox .text p {
+        font-size: 1rem;
+        line-height: 100%;
     }
 
-   
+
     section .container .row .colbox {
-    margin-top: -100px; 
-    line-height: 160%;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    padding-left: 2rem;
+        margin-top: -100px;
+        line-height: 160%;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 2rem;
     }
-    section .container .row .colbox p{
-        font-size: 1.2rem; 
+
+    section .container .row .colbox p {
+        font-size: 1.2rem;
     }
+
     section .container .row .colbox a {
-        padding-left: 6rem;  
+        padding-left: 6rem;
         font-size: 1.0rem;
     }
 
-     section .col-md-4 .notiBox{
-        
-    border-radius: 0 100px 0 0;
-        padding-top:2rem;
+    section .col-md-4 .notiBox {
+
+        border-radius: 0 100px 0 0;
+        padding-top: 2rem;
         padding-bottom: 2rem;
         padding-left: 3rem;
         margin-bottom: 7rem;
@@ -1394,10 +1571,11 @@ section h2,
 
 
 
-    section .col-md-4 .notiBox h3{
+    section .col-md-4 .notiBox h3 {
         font-size: 1.4rem;
-        
+
     }
+
     section .col-md-4 .notiBox p {
         font-size: 1rem;
 
@@ -1407,15 +1585,17 @@ section h2,
     .emailbox {
         width: 340px;
     }
+
     .emailbox input[type="email"] {
         width: 340px;
         height: 45px;
 
     }
+
     .emailbox button {
         width: 340px;
         height: 45px;
 
     }
-    
+
 }
