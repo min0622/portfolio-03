@@ -306,75 +306,87 @@ main .srch1 p {
     width: 50%;
     float: left;
     position: relative;
+    
     /* background-color: slategray; */
 }
-
+/* 글자에 가로값 주기!! 창 줄일때 글자가 세로로 깨지지 않게 가능!! */
 #mapbox .mapText .right .t1 {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 0;
     /* right: 15vh; */
     right: 10vw;
+    width: fit-content;
 }
 
 #mapbox .mapText .right .t2 {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 8vw;
     right: 8vw;
+    width: fit-content;
+
 }
 
 #mapbox .mapText .right .t3 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top: 15rem;
     left: 20rem; */
     top: 15vw;
     left: 23vw;
+    width: fit-content;
 }
 
 #mapbox .mapText .right .t4 {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 23vw;
     left: 15vw;
+    width: fit-content; 
 }
 
 #mapbox .mapText .left .t5 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top:-20px; */
     top: -6vw;
     right: 15vw;
     /* right: 180px ; */
+    width: fit-content;
 }
 
 #mapbox .mapText .left .t6 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top:60px; */
     top: 0;
     right: 18vw;
     /* right: 350px ; */
+    width: fit-content;
+
 }
 
 #mapbox .mapText .left .t7 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top:180px; */
     top: 9vw;
     right: 20vw;
     /* right: 400px; */
+    width: fit-content;
 
 }
 
 #mapbox .mapText .left .t8 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top: 300px; */
     top: 18vw;
     right: 23vw;
     /* right: 350px; */
+    width: fit-content;
+
 }
 
 #mapbox .map .all {
@@ -1102,6 +1114,8 @@ footer .sns .icon span {
     #mapbox .mapText .right .t4 {
         top: 40vw;
         left: 18vw;
+        width: 130px;
+
     }
 
     #mapbox .mapText .left .t6 {
@@ -1294,7 +1308,6 @@ footer .sns .icon span {
 
     #mapbox .mapText .gray>p:first-child {
         font-size: 0.9rem;
-
     }
 
     #mapbox .mapText .right {
@@ -1325,11 +1338,13 @@ footer .sns .icon span {
     #mapbox .mapText .left .t5 {
         top: -5vw;
         right: 15vw;
+        width: 70px;
     }
 
     #mapbox .mapText .left .t6 {
         top: 4vw;
         right: 23vw;
+        width: 90px;
 
     }
 
@@ -1346,7 +1361,6 @@ footer .sns .icon span {
     }
 #mapbox .map .area {
     font-size: 1.2rem;
-
 }
 #mapbox .map .area .a1::before {
     top: -140px;
@@ -1526,8 +1540,105 @@ right: 5px;
     #mapbox .srch2 p {
         font-size: 0.8rem;
     }
+    #mapbox .mapText .gray p {
+        font-size: 1.1rem;
+    }
+
+    #mapbox .mapText .gray>p:first-child {
+        font-size: 0.8rem;
+    }
+
+    #mapbox .mapText .right .t1 {
+        top: -3vw;
+        right: -2vw;
+    }
+
+    #mapbox .mapText .right .t2 {
+        top: 15vw;
+        right: -5vw;
+    }
+    #mapbox .mapText .right .t3 {
+        top: 35vw;
+        left: 27vw;
+        width: 100px;
+    }
+
+    #mapbox .mapText .right .t4 {
+        top: 50vw;
+        left: 16vw;
+        width: 100px;
+
+    }
+
+    #mapbox .mapText .left .t8 {
+        top: 30vw;
+        right: 25vw;
+
+    }
+
+    #mapbox .mapText .left .t5 {
+        top: -5vw;
+        right: 15vw;
+        width: 60px;
+    }
+
+    #mapbox .mapText .left .t6 {
+        top: 4vw;
+        right: 23vw;
+        width: 80px;
+
+    }
+
+    #mapbox .mapText .left .t7 {
+        top: 20vw;
+        right: 26vw;
+        width: 60px;
+    }
+
+    #mapbox .mapText .left .t8 {
+        top: 33vw;
+        right: 24vw;
+        width: 60px;
+        /* left: 10vh; */
+    }
 
 
+
+    #mapbox .map .area {
+        font-size: 1rem;
+    }
+    #mapbox .map .area .a1::before {
+        top: -110px;
+        right: -100px;
+    }
+    #mapbox .map .area .a2::before{
+    top: -75px;
+    right: -50px;
+    }
+    #mapbox .map .area .a3::before {
+    top: -55px;
+    right: -100px;
+    }
+    #mapbox .map .area .a4::before {
+    top: -50px;
+    right: -41px;
+    }
+    #mapbox .map .area .a5::before {
+    top: -120px;
+    right: -40px;
+    }
+    #mapbox .map .area .a6::before {
+    top: -80px;
+    right: -5px;
+    }
+    #mapbox .map .area .a7::before {
+    top: -48px;
+    right: -5px; 
+    }
+    #mapbox .map .area .a8::before {
+        top: 5px;
+        right: 18px;
+    }
     #slide .itembox .text {
         padding: 3.5vw 0;
         padding-left: 5vw;
