@@ -120,25 +120,26 @@ $("#slide").slick({
  $(".bg").click(function(){
   $(".bg").toggleClass("add")
 
-  if($(".bg").hasClass("add")){
+  if($(this).hasClass("add")){  // this = .bg
     $(".t5").stop(true).fadeIn();
 
-    $(".bg2, .bg3").css({fill:'#3a2711', transform:'translate(-140%,0) scale(2)', transitionDuration:"2s"})
-    $(".bg3").css({stroke:"#7a634a"});
+    // $(".bg2, .bg3").css({fill:'#3a2711', transform:'translate(-140%,0) scale(2)', transitionDuration:"2s"})
+    // $(".bg3").css({stroke:"#7a634a"});
   
 
   }else{
     $(".t5").stop(true).fadeOut();
-    
-    $(".bg2, .bg3").css({fill:' #7E6648', transform:'translate(0) scale(1)', transitionDuration:"2s"})
-    $(".bg3").css({stroke:" #F0DFC8"});
+
+    // $(".bg2, .bg3").css({fill:' #7E6648', transform:'translate(0) scale(1)', transitionDuration:"2s"})
+    // $(".bg3").css({stroke:" #F0DFC8"});
   }
 });
+
 
 $(".dsg").click(function(){
   $(".dsg").toggleClass("add")
   
-  if( $(".dsg").hasClass("add")){
+  if( $(this).hasClass("add")){ //this = .dsg
     $(".t7").stop(true).fadeIn();
   }else{
     $(".t7").stop(true).fadeOut();
