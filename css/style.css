@@ -391,13 +391,14 @@ main .srch1 p {
     transform: translate(-50%, -50%);
     font-size: 1.6rem;
     font-weight: 500;
+    color: #f0dfc8;
 
 }
 
 #mapbox .map .area .a1::before {
     content: '동구';
     display: block;
-    width: fit-content;
+    width:  48px;
     position: absolute;
     top: -200px;
     right: -180px;
@@ -406,7 +407,7 @@ main .srch1 p {
 #mapbox .map .area .a2::before {
     content: '중구';
     display: block;
-    width: fit-content;
+    width:48px;
     position: absolute;
     top: -110px;
     right: -65px;
@@ -415,7 +416,7 @@ main .srch1 p {
 #mapbox .map .area .a3::before {
     content: '수성구';
     display: block;
-    width: fit-content;
+    width: 58px;
     position: absolute;
     top: -55px;
     right: -150px;
@@ -433,7 +434,7 @@ main .srch1 p {
 #mapbox .map .area .a5::before {
     content: '북구';
     display: block;
-    width: fit-content;
+    width:  48px;
     position: absolute;
     top: -190px;
     right: -40px;
@@ -446,6 +447,7 @@ main .srch1 p {
     position: absolute;
     top: -120px;
     right: 10px;
+ 
 }
 
 #mapbox .map .area .a7::before {
