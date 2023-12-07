@@ -1049,10 +1049,17 @@ footer .sns .icon span {
         padding: 4px 5px;
         margin-top: 22.5px;
         /*( 80-35)/2 */
+        background-color: saddlebrown;
     }
-
+    nav ul{
+        height: 80%;
+       align-items: flex-start;
+        padding-left: 30px;
+    
+        }
     nav ul li {
         font-size: 2rem;
+            margin: 35px;
     }
 
     #mapbox {
@@ -1291,6 +1298,18 @@ footer .sns .icon span {
 
 
 @media screen and (max-width:575px) {
+    .ham{
+        background-color: aquamarine;
+    }
+    nav ul{
+        height: 75%;
+       align-items: flex-start;
+        padding-left: 25px;
+    
+        }
+    nav ul li {
+            margin: 25px;
+    }
 
     .top {
         right: 30px;
@@ -1535,7 +1554,6 @@ right: 5px;
         margin-right: 0.5vw;
         font-size: 1.8rem;
         margin: 20px;
-
     }
 
     /* main깨지는디 */
