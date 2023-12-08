@@ -1091,7 +1091,7 @@ section h2 {
     }
 
     #mapbox {
-        margin-top: 80vw;
+        margin-top: 70vw;
     }
 
     main h2 {
@@ -1606,7 +1606,9 @@ right: 5px;
     #mapbox {
         margin-top: 140vw;
     }
-
+    #mapbox .srch2 {
+        margin-bottom: 3px;
+    }
     /* #mapbox .srch2 .sbox2 {
         width: 150px;
     }
