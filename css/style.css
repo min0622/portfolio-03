@@ -230,12 +230,12 @@ main .srch1 p {
 }
 
 #mapbox .srch2 .sbox2 {
-    width: 250px;
+    width: 450px;
     align-self: flex-end;
 }
 
 #mapbox input[type="text"] {
-    width: 200px;
+    width:350px;
     height: 45px;
     border: #000 solid 3px;
     border-radius: 10px;
@@ -545,7 +545,9 @@ main .srch1 p {
     width: 460px;
     height: fit-content;
     /* height: 160px; */
-    background-color: rgba(224, 209, 189, 0.8);
+    /* background-color: #e0d1bdcc;  진함 -> 연한 색으로 변경하기 */
+    background-color: #f0eae3;
+ 
     margin-right: 67px;
     font-family: "cjw-g";
     padding: 1.2vw 0;
@@ -614,7 +616,10 @@ section .container .row .colbox {
     padding-left: 3rem;
     font-family: "cjw-g";
     font-size: 1.4rem;
-    background-color: rgba(224, 194, 152, 0.6);
+    /* background-color: #e0c29899;  진하대 => 색상변경*/
+    /* background-color: #ecdac099; */
+    background-color:#f6eae1;
+
     font-weight: 500;
 }
 
@@ -1080,25 +1085,9 @@ footer .sns .icon span {
         font-size: 5vw;
     }
 
-    #mapbox .srch2 .sbox2 {
-        width: 150px;
-    }
-
-    #mapbox input[type="text"] {
-        width: 100px;
-        height: 30px;
-        font-size: 1rem;
-
-    }
-
-    #mapbox span {
-        font-size: 1.3rem;
-        margin: auto 8px;
-
-    }
 
     #mapbox .srch2 p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     #mapbox .mapText .gray p {
@@ -1334,12 +1323,22 @@ footer .sns .icon span {
         font-size: 12vw;
     }
 
-
-
     #mapbox {
         /* margin-top: 80vw; */
         margin-top: 130vw;
     }
+    #mapbox .srch2 .sbox2 {
+        width: 100%;
+    }
+
+    #mapbox input[type="text"] {
+        width: 80%;
+    }
+#mapbox .srch2 p {
+    font-size: 1.1rem;
+
+}
+
 
     #mapbox .mapText .gray p {
         font-size: 1.3rem;
@@ -1536,6 +1535,9 @@ right: 5px;
 
 
 @media screen and (max-width:450px) {
+    .ham{
+        background-color: salmon;
+    }
 
     header h1 {
         font-size: 1rem;
