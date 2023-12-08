@@ -213,19 +213,20 @@ main .srch1 p {
 
 #mapbox {
     width: 100%;
+    overflow: hidden;
     position: relative;
     margin-top: 60vw;
     text-align: center;
     padding: 0 5vw;
     font-family: "cjw-g";
-    /* background-color: sandybrown; */
-
 }
 
 #mapbox .srch2 {
     width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 
 }
 
@@ -254,17 +255,17 @@ main .srch1 p {
 
 #mapbox .srch2 p {
     align-self: flex-end;
-    padding-right: 3rem;
+    padding-right: 4.8rem;
     margin-top: 0.5vw;
     font-size: 1.1rem;
 }
 
 
-#mapbox .map .area p:nth-child(1) {
+/* #mapbox .map .area p:nth-child(1) {
     position: absolute;
     top: 5%;
     right: 15%;
-}
+} */
 
 #mapbox .mapText {
     width: 80%;
@@ -390,6 +391,11 @@ main .srch1 p {
     cursor: pointer;
 }
 
+#mapbox .brown{
+    width:90vw;
+    height:800px ;
+}
+
 #mapbox .map .area {
     /* width: 35%; */
     /* width: 600px;
@@ -479,7 +485,6 @@ main .srch1 p {
     top: 50px;
     right: 40px;
 }
-
 
 #textLine {
     /* width: 100%;    */
@@ -582,8 +587,8 @@ section h2 {
     font-family: "roboto";
     font-weight: 600;
     font-size: 3rem;
+    width: 100%;
     margin-bottom: 35px;
-    /* background-color: aquamarine; */
 }
 
 section .container .row .col-md-6 {
@@ -596,6 +601,7 @@ section .container .row .col-md-6:nth-child(1) {
 
 section .container .row .col-md-6:nth-child(2) {
     margin-bottom: 15px;
+   
 }
 
 section .container .row .col-md-6 .imgBox {
@@ -619,7 +625,7 @@ section .container .row .colbox {
     /* background-color: #e0c29899;  진하대 => 색상변경*/
     /* background-color: #ecdac099; */
     background-color:#f6eae1;
-
+    
     font-weight: 500;
 }
 
@@ -820,7 +826,9 @@ footer .sns .icon span {
         font-size: 1.1rem;
         line-height: 90%;
     }
-
+    section h2{
+        margin-bottom: 100px;
+    }
 
     section .container .row .colbox {
         font-size: 1.3rem;
@@ -829,7 +837,14 @@ footer .sns .icon span {
         padding-left: 2.8rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+     margin-top: -50px;
     }
+
+section .container .row .col-md-6 .imgBox {
+    margin-top: -50px;
+
+}
+   
 
     section .container .row .colbox a {
         font-size: 1.1rem;
@@ -974,10 +989,16 @@ footer .sns .icon span {
     }
 
     #slide .itembox .text p {
-        /* font-size: 0.9rem; */
         font-size: 1rem;
         line-height: 80%;
+    }
+section h2 {
+    margin-bottom: 1px;
 
+}
+    section .container .row .col-md-6 .imgBox {
+        height: 197px;
+        margin-top: 20px;
     }
 
     section .container .row .colbox {
@@ -986,7 +1007,9 @@ footer .sns .icon span {
         padding-left: 2rem;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
+        margin-top: 20px; 
     }
+
 
     section .container .row .colbox a {
         padding-left: 5.5rem;
@@ -1084,7 +1107,9 @@ footer .sns .icon span {
     #textLine>span {
         font-size: 5vw;
     }
-
+    #mapbox .srch2{
+        margin-bottom: 0;
+    }
 
     #mapbox .srch2 p {
         font-size: 1rem;
@@ -1142,6 +1167,9 @@ footer .sns .icon span {
       top: 35vw;
       right: 30vw;
 
+    }
+    #mapbox .brown{
+        height:600px ;
     }
 
     #mapbox .map .area {
@@ -1203,7 +1231,7 @@ footer .sns .icon span {
     #signup h2 {
         font-size: 2.6rem;
     }
-
+    
     section .container .row .colbox {
         font-size: 1.4rem;
         line-height: 170%;
@@ -1211,8 +1239,13 @@ footer .sns .icon span {
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 2.5rem;
-
+        margin-top: 3px;
     }
+    section .container .row .col-md-6 .imgBox {
+    height: 304px;
+    margin-top: 60px;
+}
+   
 
     section .container .row .colbox a {
         padding-left: 7rem;
@@ -1225,9 +1258,9 @@ footer .sns .icon span {
 
     }
 
-    section .container .row .col-md-6 .imgBox {
-        margin-top: 150px;
-    }
+   
+
+
 
     section .col-md-4 .notiBox {
         width: 100%;
@@ -1334,9 +1367,9 @@ footer .sns .icon span {
     #mapbox input[type="text"] {
         width: 80%;
     }
-#mapbox .srch2 p {
-    font-size: 1.1rem;
 
+    #mapbox .srch2 p {
+    font-size: 1.1rem;
 }
 
 
@@ -1403,6 +1436,10 @@ footer .sns .icon span {
         right: 27vw;
         /* left: 10vh; */
     }
+    #mapbox .brown{
+        height:450px ;
+    }
+
 #mapbox .map .area {
     font-size: 1.2rem;
 }
@@ -1567,10 +1604,10 @@ right: 5px;
     }
 
     #mapbox {
-        margin-top: 150vw;
+        margin-top: 140vw;
     }
 
-    #mapbox .srch2 .sbox2 {
+    /* #mapbox .srch2 .sbox2 {
         width: 150px;
     }
 
@@ -1579,16 +1616,17 @@ right: 5px;
         height: 30px;
         font-size: 1rem;
 
-    }
+    } */
 
-    #mapbox span {
-        font-size: 1.3rem;
-        margin: auto 8px;
-
-    }
+    /* #mapbox span {
+       font-size: 1.3rem; 
+        margin: auto 8px; 
+    } */
 
     #mapbox .srch2 p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+    padding-right: 3.5rem;
+
     }
     #mapbox .mapText .gray p {
         font-size: 1.1rem;
@@ -1653,7 +1691,9 @@ right: 5px;
         /* left: 10vh; */
     }
 
-
+    #mapbox .brown{
+        height:300px ;
+    }
 
     #mapbox .map .area {
         font-size: 1rem;
@@ -1761,5 +1801,6 @@ right: 5px;
         height: 45px;
 
     }
+    
 
 }
