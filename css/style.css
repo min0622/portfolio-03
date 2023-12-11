@@ -667,7 +667,9 @@ section .col-md-4 .notiBox {
     /* height: 336px; */
     height: fit-content;
     margin: auto;
-    background-color: rgba(202, 189, 172, .8);
+    /* background-color: rgba(202, 189, 172, .8); */
+    background-color: #f0eae3;
+
     border-radius: 0 152px 0 0;
     text-align: left;
     padding-top: 4rem;
@@ -1494,7 +1496,7 @@ right: 5px;
 
     #slide .itembox {
         width: 80%;
-        margin: 200px auto;
+        margin: 100px auto;
     }
 
     #slide .itembox .text {
@@ -1514,8 +1516,9 @@ right: 5px;
     }
 
     section .container .row .colbox {
-        margin-top: -40px;
+        margin-top: -11px;
     }
+
 
     section .container .row .colbox p {
         font-size: 1.3rem;
