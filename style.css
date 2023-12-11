@@ -52,86 +52,72 @@ img {
 
 header {
     width: 100%;
-    height: 110px;
+    height: 120px;
     padding: 0 5vw;
     /* background-color: pink; */
-    color: #fff;
     font-family: "cjw-g";
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 9999;
+    color: #fff;
 }
 
 header h1 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     float: left;
-    line-height: 110px;
+    line-height: 120px;
+    position: relative;
+    z-index: 2;
 }
 
-/* header .ham{
-    float: right;
-    line-height: 110px;
-    display: flex;
-    flex-direction: row-reverse;
-    font-size: 2rem;
-    display: block;
-    cursor: pointer;
-} */
 .ham {
-    width: 70px;
-    height: 70px;
-    background-color: seagreen;
+    width: 40px;
+    height: 40px;
     float: right;
-    line-height: 110px;
-    padding: 10px;
+    padding: 7px 5px;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 40px;
+    /* (120-40)/2= */
+    position: relative;
+    z-index: 99;
 }
 
 .ham>.line {
     width: 100%;
-    height: 5px;
+    height: 3px;
     background-color: #fff;
-    margin: 9px 0;
+    margin: 5px 0;
     border-radius: 5px;
     transition: 0.5s;
+    /* position: absolute; */
 
 }
 
 nav {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: #E4DDD4;
     overflow: hidden;
     position: fixed;
-    z-index: 990;
+    z-index: 10;
     top: 0;
     left: 0;
     font-family: "cjw-g";
     display: none;
 }
 
-/* nav .close{
-    display: block;
-    font-size: 2rem;
-    line-height: 110px;
-    padding: 0 5vw;
-    cursor:pointer;
-} */
 nav ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    margin: auto;
-    padding-top:25vh ;
-    /* background-color: beige; */
-
+    padding-left: 0;
 }
+
 nav ul li {
-    margin-right: 2vw;
-    float: left;
+    /* float: left; */
     margin: 50px;
     font-size: 3rem;
     font-weight: 700;
@@ -169,8 +155,11 @@ main {
 }
 
 main h2 {
+    display: inline-block;
+    width: 100%;
     font-family: "share";
     font-size: 6rem;
+    font-weight: 500;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -221,31 +210,33 @@ main .srch1 p {
 
 }
 
+
 #mapbox {
     width: 100%;
+    overflow: hidden;
     position: relative;
     margin-top: 60vw;
     text-align: center;
     padding: 0 5vw;
     font-family: "cjw-g";
-    /* background-color: sandybrown; */
-
 }
 
 #mapbox .srch2 {
     width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 
 }
 
 #mapbox .srch2 .sbox2 {
-    width: 250px;
+    width: 450px;
     align-self: flex-end;
 }
 
 #mapbox input[type="text"] {
-    width: 200px;
+    width:350px;
     height: 45px;
     border: #000 solid 3px;
     border-radius: 10px;
@@ -261,21 +252,28 @@ main .srch1 p {
     margin: auto 10px;
     cursor: pointer;
 }
+
 #mapbox .srch2 p {
     align-self: flex-end;
-    padding-right: 3rem;
+    padding-right: 4.8rem;
     margin-top: 0.5vw;
     font-size: 1.1rem;
 }
 
-#mapbox .mapText{
+
+/* #mapbox .map .area p:nth-child(1) {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+} */
+
+#mapbox .mapText {
     width: 80%;
     height: fit-content;
     /* overflow: hidden; */
     position: absolute;
     left: 10%;
     top: 25%;
-    /* background-color: slateblue; */
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -295,6 +293,7 @@ main .srch1 p {
 #mapbox .mapText .gray {
     margin-bottom: 40px;
 }
+
 #mapbox .mapText .right {
     width: 50%;
     float: right;
@@ -306,15 +305,17 @@ main .srch1 p {
     width: 50%;
     float: left;
     position: relative;
+    
     /* background-color: slategray; */
 }
-
+/* 글자에 가로값 주기!! 창 줄일때 글자가 세로로 깨지지 않게 가능!! */
 #mapbox .mapText .right .t1 {
     display: none;
     position: absolute;
-    top: 0;
+    top: -2vw;
     /* right: 15vh; */
-    right: 10vw;
+    right: 8vw;
+    width: fit-content;
 }
 
 #mapbox .mapText .right .t2 {
@@ -322,6 +323,7 @@ main .srch1 p {
     position: absolute;
     top: 8vw;
     right: 8vw;
+    width: fit-content;
 }
 
 #mapbox .mapText .right .t3 {
@@ -329,15 +331,17 @@ main .srch1 p {
     position: absolute;
     /* top: 15rem;
     left: 20rem; */
-    top: 15vw;
-    left: 23vw;
+    top: 17vw;
+    left: 20vw;
+    width: fit-content;
 }
 
 #mapbox .mapText .right .t4 {
     display: none;
     position: absolute;
-    top: 23vw;
+    top: 26vw;
     left: 15vw;
+    width: fit-content; 
 }
 
 #mapbox .mapText .left .t5 {
@@ -347,6 +351,7 @@ main .srch1 p {
     top: -6vw;
     right: 15vw;
     /* right: 180px ; */
+    width: fit-content;
 }
 
 #mapbox .mapText .left .t6 {
@@ -356,6 +361,8 @@ main .srch1 p {
     top: 0;
     right: 18vw;
     /* right: 350px ; */
+    width: fit-content;
+
 }
 
 #mapbox .mapText .left .t7 {
@@ -365,6 +372,7 @@ main .srch1 p {
     top: 9vw;
     right: 20vw;
     /* right: 400px; */
+    width: fit-content;
 
 }
 
@@ -375,13 +383,110 @@ main .srch1 p {
     top: 18vw;
     right: 23vw;
     /* right: 350px; */
+    width: fit-content;
+
 }
 
-.all {
+#mapbox .map .all {
     cursor: pointer;
 }
 
-#textLine{
+#mapbox .brown{
+    width:90vw;
+    height:800px ;
+}
+
+#mapbox .map .area {
+    /* width: 35%; */
+    /* width: 600px;
+    height: 500px; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #f0dfc8;
+
+}
+
+#mapbox .map .area .a1::before {
+    content: '동구';
+    display: block;
+    width:  48px;
+    position: absolute;
+    top: -200px;
+    right: -180px;
+}
+
+#mapbox .map .area .a2::before {
+    content: '중구';
+    display: block;
+    width:45px;
+    height: 1px;
+    position: absolute;
+    top: -110px;
+    right: -65px;
+}
+
+#mapbox .map .area .a3::before {
+    content: '수성구';
+    display: block;
+    width: 58px;
+    position: absolute;
+    top: -55px;
+    right: -150px;
+}
+
+#mapbox .map .area .a4::before {
+    content: '남구';
+    display: block;
+    width: 48px;
+    height: 1px;
+    position: absolute;
+    top: -50px;
+    right: -53px;
+}
+
+#mapbox .map .area .a5::before {
+    content: '북구';
+    display: block;
+    width:  48px;
+    position: absolute;
+    top: -190px;
+    right: -40px;
+}
+
+#mapbox .map .area .a6::before {
+    content: '서구';
+    display: block;
+    width: 38px;
+    height: 1px;
+    position: absolute;
+    top: -120px;
+    right: 10px;
+ 
+}
+
+#mapbox .map .area .a7::before {
+    content: '달서구';
+    display: block;
+    width: 58px;
+    position: absolute;
+    top: -60px;
+    right: 30px;
+}
+
+#mapbox .map .area .a8::before {
+    content: '달서군';
+    display: block;
+    width: 58px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+}
+
+#textLine {
     /* width: 100%;    */
     animation-name: move;
     animation-duration: 15s;
@@ -391,17 +496,21 @@ main .srch1 p {
     display: flex;
 
 }
-#textLine span:nth-child(1){
+
+#textLine span:nth-child(1) {
     display: inline;
 }
-#textLine span:nth-child(3),#textLine span:nth-child(2){
+
+#textLine span:nth-child(3),
+#textLine span:nth-child(2) {
     display: none;
 }
-#textLine span{
+
+#textLine span {
     font-size: 4vw;
     margin: 180px auto;
     color: #E4DDD4;
-    
+
     /* animation-name: move;
     animation-duration: 5s;
     animation-delay: 0;
@@ -409,11 +518,13 @@ main .srch1 p {
     animation-timing-function: linear; */
 
 }
-@keyframes move{
-   0%{
-       transform:translateX(0) ;
-   }
-    100%{
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
         transform: translateX(-100%);
     }
 }
@@ -430,7 +541,8 @@ main .srch1 p {
 #slide .itembox {
     width: 24.26%;
     overflow: hidden;
-    margin: 0 70px;
+    margin: 0 2.5vw;
+    /* margin: 0 50px; */
 }
 
 #slide .itembox .text {
@@ -438,9 +550,11 @@ main .srch1 p {
     width: 460px;
     height: fit-content;
     /* height: 160px; */
-    background-color: rgba(224, 209, 189, 0.8);
+    /* background-color: #e0d1bdcc;  진함 -> 연한 색으로 변경하기 */
+    background-color: #f0eae3;
+ 
     margin-right: 67px;
-    font-family: "cjw-m";
+    font-family: "cjw-g";
     padding: 1.2vw 0;
     padding-left: 1.8vw;
 }
@@ -448,13 +562,11 @@ main .srch1 p {
 #slide .itembox .text h3 {
     font-size: 1.6rem;
     line-height: 150%;
-    /* background-color: cornflowerblue; */
 }
 
 #slide .itembox .text p {
     font-size: 1.2rem;
     line-height: 100%;
-    /* background-color: #7B296B; */
 }
 
 .line {
@@ -470,60 +582,72 @@ section {
     overflow: hidden;
 }
 
-section h2 {
+section h2{
     color: #7B296B;
     font-family: "roboto";
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    width: 100%;
     margin-bottom: 35px;
-    /* background-color: aquamarine; */
 }
-section .container .row .col-md-6{
+
+section .container .row .col-md-6 {
     margin-bottom: 0;
-    /* background-color: brown; */
 }
-section .container .row .col-md-6:nth-child(1){
-    margin-bottom: 15px;
-}
-section .container .row .col-md-6:nth-child(2){
+
+section .container .row .col-md-6:nth-child(1) {
     margin-bottom: 15px;
 }
 
-section .container .row .col-md-6 .imgBox {
+section .container .row .col-md-6:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+section .container .row .col-md-6 .imgBox
+{
     width: 100%;
     height: 332px;
     margin-top: 10px;
 }
+section .container .row .col-md-6 .first{
+    margin-top: 10px;
+} 
 
 section .container .row .colbox {
     width: 100%;
-    height: 321px;
-    line-height: 150%;
+    height: fit-content;
+    /* height: 321px; */
+    line-height: 180%;
     margin-top: 10px;
     text-align: left;
-    padding-top: 2rem;
-    padding-bottom: 0;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
     padding-left: 3rem;
     font-family: "cjw-g";
     font-size: 1.4rem;
-    background-color: rgba(224, 194, 152, 0.6);
+    /* background-color: #e0c29899;  진하대 => 색상변경*/
+    background-color:#f6eae1;
+    
     font-weight: 500;
 }
-section .container .row .colbox p{
+
+section .container .row .colbox p {
     margin: auto;
 }
+
 section .container .row .colbox a {
     display: inline-block;
-    padding-left: 5rem;
-    
-    margin-bottom: 10px;
+    padding-left: 7rem;
+    font-size: 1.2rem;
+
 }
-section .container .row .colbox p:nth-of-type(3)>span{
+
+section .container .row .colbox p:nth-of-type(3)>span {
     line-height: 150%;
 }
+
 section .container .row .colbox p:nth-of-type(3) span:not(:nth-of-type(1)) {
     display: block;
-    /* color: cadetblue; */
     padding-left: 3.5rem;
 }
 
@@ -541,22 +665,31 @@ section .container:nth-of-type(2) {
 section .col-md-4 .notiBox {
     width: 97.78%;
     /* (751-390=361)  353/361*100 = 97.78 */
-    height: 336px;
+    /* height: 336px; */
+    height: fit-content;
     margin: auto;
-    background-color: rgba(202, 189, 172, .8);
+    margin-top: 3px;
+    background-color: #f0eae3;
     border-radius: 0 152px 0 0;
     text-align: left;
-    padding-top: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     padding-left: 3rem;
     font-family: "cjw-g";
 
 }
-section .col-md-4 .notiBox h3{
+
+section .col-md-4 .notiBox h3 {
     font-size: 1.6rem;
+    line-height: 200%;
+    font-weight: 600;
+
 }
+
 section .col-md-4 .notiBox p {
     font-size: 1.2rem;
-    margin-top: 1rem;
+    line-height: 160%;
+    /* margin-top: 1rem; */
 }
 
 .l2 {
@@ -574,7 +707,7 @@ section .col-md-4 .notiBox p {
     color: #7B296B;
     font-family: "roboto";
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .emailbox {
@@ -602,7 +735,7 @@ section .col-md-4 .notiBox p {
     border: none;
     background-color: rgb(202, 189, 172);
     font-size: 1.2rem;
-    color:#000;
+    color: #000;
 }
 
 .l3 {
@@ -617,12 +750,13 @@ footer {
 }
 
 footer h1 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     margin-bottom: 50px;
 }
 
 footer .sns {
-    width: 25vw;
+    /* width: 25vw; */
+    width: 600px;
     margin-bottom: 100px;
     /* background-color: beige; */
     display: flex;
@@ -632,7 +766,8 @@ footer .sns {
 }
 
 footer .sns .icon {
-    width: 15vw;
+    /* width: 15vw; */
+    width: 300px;
     /* background-color: sandybrown; */
     display: flex;
     justify-content: space-evenly;
@@ -641,7 +776,7 @@ footer .sns .icon {
 
 footer .sns .icon span {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 
@@ -652,55 +787,118 @@ footer .sns .icon span {
     main h2 {
         font-size: 4.2rem;
     }
+/* #mapbox .mapText .right {
+    width: 60%;
+} */
+    #mapbox .mapText .gray p {
+        font-size: 1.9rem;
+    }
+
+    #mapbox .mapText .gray>p:first-child {
+        font-size: 1.1rem;
+
+    }
 
     #textLine>span {
         font-size: 5vw;
     }
 
     /* slide 2개씩 보여지게 */
-    #slide{
+    #slide {
         width: 100%;
     }
+
     #slide .itembox {
         width: 100%;
         margin: 0 30px;
 
     }
-    #slide .itembox .text{
-        padding: 1.2vw 0;
-        padding-left: 2vw;
-    }
-    
-    section .container .row .colbox {
-        height: fit-content;
-        line-height: 120%;
-        padding-left: 1.5rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-    #slide .itembox .text h3{
-        font-size: 1.4rem;
+
+    #slide .itembox .text {
+        padding: 1.3vw 0;
+        padding-left: 2.5vw;
     }
 
-    #slide .itembox .text p{
-      font-size: 1rem;
+    #slide .itembox .text h3 {
+        font-size: 1.5rem;
+        line-height: 140%;
+    }
+
+    #slide .itembox .text p {
+        font-size: 1.1rem;
+        line-height: 90%;
+    }
+    section h2{
+        margin-bottom: 100px;
+    }
+
+    section .container .row .colbox {
+        font-size: 1.3rem;
+        height: fit-content;
+        line-height: 150%;
+        padding-left: 2.8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+     margin-top: -50px;
+    }
+
+section .container .row .col-md-6 .imgBox {
+    margin-top: -50px;
+
+}
+
+
+    section .container .row .colbox a {
+        font-size: 1.1rem;
+    }
+
+    section .container .row .colbox p:nth-of-type(4)>span {
+        font-size: 1.3rem;
+    }
+
+    section .col-md-4 .notiBox {
+        height: 280px;
+        border-radius: 0 140px 0 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+        margin-top: -52px;
+
+    }
+
+    section .col-md-4 .notiBox h3 {
+        font-size: 1.5rem;
+        line-height: 220%;
+        font-weight: 600;
+
+    }
+
+    section .col-md-4 .notiBox p {
+        font-size: 1.1rem;
+        line-height: 150%;
     }
 }
 
 
 @media screen and (max-width:991px) {
-    .ham {
-        background-color: gold;
-    }
-    header h1 {
-        font-size: 1.8rem;
+    header {
+        height: 100px;
+
     }
 
-    header nav {
-        font-size: 1rem;
+    header h1 {
+        font-size: 1.8rem;
+        line-height: 100px;
     }
-    nav ul li{
+
+    .ham {
+        margin-top: 30px;
+        /* (100-40)/2 */
+    }
+
+    nav ul li {
         font-size: 2.5rem;
+
     }
 
     main h2 {
@@ -708,13 +906,15 @@ footer .sns .icon span {
     }
 
     /* 지도 글씨 위치 조정 */
-    #mapbox .mapText .gray p{
-    font-size: 1.7rem;
+    #mapbox .mapText .gray p {
+        font-size: 1.7rem;
     }
-#mapbox .mapText .gray>p:first-child {
-    color: #333;
-    font-size: 1rem;
-} 
+
+    #mapbox .mapText .gray>p:first-child {
+        color: #333;
+        font-size: 1rem;
+    }
+
     #mapbox .mapText .right .t1 {
         top: -1vw;
         right: 0;
@@ -733,6 +933,7 @@ footer .sns .icon span {
     #mapbox .mapText .right .t4 {
         top: 35vw;
         left: 20vw;
+        width: 150px;
     }
 
     #mapbox .mapText .left .t5 {
@@ -756,51 +957,105 @@ footer .sns .icon span {
         top: 28vw;
         right: 27vw;
     }
-    #textLine span{
+    #mapbox .map .area {
+        font-size: 1.6rem;
+
+    }
+
+    #textLine span {
         font-size: 6vw;
     }
-    #textLine span:nth-child(1),  #textLine span:nth-child(3){
+
+    #textLine span:nth-child(1),
+    #textLine span:nth-child(3) {
         display: none;
     }
-    #textLine span:nth-child(2){
+
+    #textLine span:nth-child(2) {
         display: inline;
     }
 
-    section .container .row .colbox {
-        font-size: 1rem;
-        /* height: 200px; */
-        height: fit-content;
-        line-height: 120%;
-        padding-left: 2rem;
-        padding-top: 1rem;
+    #slide .itembox {
+        margin: 0 15px;
 
     }
+
+    #slide .itembox .text {
+        padding: 1.5vw 0;
+        padding-left: 3vw;
+    }
+
+    #slide .itembox .text h3 {
+        font-size: 1.4rem;
+        line-height: 160%;
+
+    }
+
+    #slide .itembox .text p {
+        font-size: 1rem;
+        line-height: 80%;
+    }
+section h2 {
+    margin-bottom: 1px;
+}
+    section .container .row .col-md-6 .imgBox {
+        height: 197px;
+        margin-top: 20px;
+    }
+
+    section .container .row .colbox {
+        font-size: 1.1rem;
+        line-height: 130%;
+        padding-left: 2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        margin-top: 20px; 
+    }
+
+
+    section .container .row .colbox a {
+        padding-left: 5.5rem;
+        font-size: 0.9rem;
+
+    }
+
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.1rem;
-    
+
     }
-    section .col-md-4 .notiBox h3{
+
+    section .col-md-4 .notiBox {
+        height: fit-content;
+        border-radius: 0 90px 0 0;
+        margin-top: 20px;
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        padding-left: 1.5rem;
+    }
+
+    section .col-md-4 .notiBox h3 {
         font-size: 1.4rem;
+        line-height: 160%;
+
     }
+
     section .col-md-4 .notiBox p {
-        font-size: 1.1rem;
-    }
-    #slide .itembox {
-    margin: 0 15px;
+        font-size: 1rem;
+        line-height: 110%;
 
     }
-    #slide .itembox .text{
-        padding: 1.3vw 0;
-        padding-left: 2vw;
-    }
-    #slide .itembox .text h3{
-        font-size: 1.2rem;
+
+    footer h1 {
+        font-size: 1.8rem;
     }
 
-    #slide .itembox .text p{
-      font-size: 0.9rem;
-    line-height: 80%;
+    footer .sns {
+        width: 550px;
+    }
 
+    footer .sns .icon {
+        width: 250px;
+        font-size: 1.3rem;
     }
     
 }
@@ -810,12 +1065,39 @@ footer .sns .icon span {
 
 
 @media screen and (max-width:767px) {
+    header {
+        height: 80px;
+
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        line-height: 80px;
+    }
+
     .ham {
-        background-color: violet;
+        width: 35px;
+        height: 35px;
+        padding: 4px 5px;
+        margin-top: 22.5px;
+        /*( 80-35)/2 */
+        background-color: saddlebrown;
     }
-    #mapbox{
-        margin-top: 80vw;
+    nav ul{
+        height: 80%;
+       align-items: flex-start;
+        padding-left: 30px;
+    
+        }
+    nav ul li {
+        font-size: 2rem;
+            margin: 35px;
     }
+
+    #mapbox {
+        margin-top: 70vw;
+    }
+
     main h2 {
         font-size: 3rem;
         transform: translate(-50%, -50%);
@@ -825,26 +1107,16 @@ footer .sns .icon span {
     main .srch1 {
         display: none;
     }
+
     #textLine>span {
         font-size: 5vw;
     }
-
-    #mapbox .srch2 .sbox2 {
-        width: 150px;
+    #mapbox .srch2{
+        margin-bottom: 30px;
     }
-    #mapbox input[type="text"] {
-        width: 100px;
-        height: 30px;
-        font-size: 1rem;
 
-    }
-    #mapbox span {
-        font-size: 1.3rem;
-        margin: auto 8px;
-
-    }
     #mapbox .srch2 p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     #mapbox .mapText .gray p {
@@ -858,247 +1130,460 @@ footer .sns .icon span {
 
     #mapbox .mapText .right .t1 {
         top: -3vw;
-        right: -2vw;
+        right: -5vw;
     }
+
     #mapbox .mapText .right .t2 {
-        top: 8vw;
-        right: -3vw;
+        top: 10vw;
+        right: -6vw;
     }
 
     #mapbox .mapText .right .t3 {
         top: 23vw;
-        left:25vw;
+        left: 28vw;
+        width: 95px;
     }
+
     #mapbox .mapText .right .t4 {
         top: 40vw;
-        left:18vw;
+        left: 23vw;
+        width: 130px;
+
+    }
+    
+    #mapbox .mapText .left .t5 {
+        top: -10vw;
+        right: 10vw;
     }
     #mapbox .mapText .left .t6 {
-        top: 4vw;
-        right: 23vw;
+        top: 2vw;
+        right: 28vw;  
+        width: 95px;
+    }
+    #mapbox .mapText .left .t7 {
+        top: 20vw;
+        right: 30vw;
+        width: 75px;
 
     }
-    #textLine span{
-        font-size: 8vw;
+    #mapbox .mapText .left .t8 {
+      width: 75px;
+      top: 35vw;
+      right: 30vw;
+
+    }
+    #mapbox .brown{
+        height:600px ;
     }
 
-    #slide .itembox .text{
-        padding: 2vw 0;
-        padding-left: 3vw;
-    }
-    #slide .itembox .text h3{
+    #mapbox .map .area {
         font-size: 1.4rem;
+
     }
 
-    #slide .itembox .text p{
-      font-size: 1rem;
+    #mapbox .map .area .a1::before {
+        top: -190px;
+        right: -170px;
     }
- 
-    section h2 {
-        font-size: 2rem;
+#mapbox .map .area .a2::before{
+    top: -110px;
+    right: -60px;
+}
+#mapbox .map .area .a3::before {
+    top: -65px;
+    right: -140px;
+}
+#mapbox .map .area .a4::before {
+    top: -55px;
+    right: -50px;
+}
+#mapbox .map .area .a5::before {
+    top: -185px;
+    right: -40px;
+}
+#mapbox .map .area .a6::before {
+    top: -123px;
+    right: 1px;
+}
+#mapbox .map .area .a7::before {
+    top: -60px;
+    right: 20px; 
+}
+
+    #textLine span {
+        font-size: 10vw;
     }
-    section .container .row .colbox {
+
+    #slide .itembox .text {
+        padding: 2.5vw 0;
+        padding-left: 3.5vw;
+    }
+
+    #slide .itembox .text h3 {
+        font-size: 1.6rem;
+        line-height: 150%;
+
+    }
+
+    #slide .itembox .text p {
         font-size: 1.2rem;
-        /* height: 200px; */
-        height: fit-content;
-        line-height: 170%;
-    margin-top: -28px;
-    padding-top: 01rem;
-    padding-bottom: 1rem;
-    padding-left: 2.5rem;
+        line-height: 100%;
 
+    }
+
+    section h2,
+    #signup h2 {
+        font-size: 2.6rem;
     }
     
+    section .container .row .colbox {
+        font-size: 1.4rem;
+        line-height: 170%;
+        margin-top: -28px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.5rem;
+        margin-top: 3px;
+    }
+
+    section .container .row .col-md-6 .imgBox {
+    height: 304px;
+    margin-top: 60px;
+}
+section .container .row .col-md-6 .first{
+    margin-top:20px;
+}   
+
+    section .container .row .colbox a {
+        padding-left: 7rem;
+        font-size: 1.2rem;
+
+    }
+
     section .container .row .colbox p:nth-of-type(4)>span {
         font-size: 1.2rem;
-    
+
     }
-    section .container .row .col-md-6 .imgBox {
-        margin-top: 150px;
-    }
-    section .col-md-4 .notiBox{
+
+   
+
+
+
+    section .col-md-4 .notiBox {
         width: 100%;
-        height:250px;
-        padding-top: 2.5rem;
-        margin-bottom: 30px;
+        border-radius: 0 120px 0 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        margin-bottom: 10px;
+        /* margin-top: 30px; */
     }
-    section .col-md-4 .notiBox h3{
+
+
+    section .col-md-4 .notiBox h3 {
         font-size: 1.6rem;
+        line-height: 200%;
+
     }
+
     section .col-md-4 .notiBox p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 120%;
+
     }
+
     .emailbox {
         width: 500px;
     }
+
     .emailbox input[type="email"] {
         width: 500px;
         height: 55px;
 
     }
+
     .emailbox button {
         width: 500px;
         height: 55px;
 
     }
-} 
+
+    footer h1 {
+        font-size: 1.8rem;
+        /* line-height: 80px; */
+    }
+
+    footer .sns {
+        width: 450px;
+        font-size: 1rem;
+
+    }
+
+    footer .sns .icon {
+        width: 250px;
+
+    }
+}
+
 
 
 @media screen and (max-width:575px) {
-    .ham {
-        background-color: salmon;
-       
+    .ham{
+        background-color: aquamarine;
     }
+    nav ul{
+        height: 75%;
+       align-items: flex-start;
+        padding-left: 25px;
+    
+        }
+    nav ul li {
+            margin: 25px;
+    }
+
     .top {
         right: 30px;
         bottom: 30px;
     }
 
 
-    main{
-    /* background-image: url(../img/moba_main1.png); */
-    padding: 60% 0 ;
-    background-size: cover;
+    main {
+        /* background-image: url(../img/moba_main1.png); */
+        padding: 60% 0;
+        background-size: cover;
     }
-    main h2 {
-        font-size: 3.5rem;
-        transform: translate(-50%, -50%);
-    }
-   
-    #textLine>span {
-        font-size: 9vw;
-    }
-    
 
-    
-    #mapbox{
+    main h2 {
+        font-size: 2.8rem;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+
+    }
+
+    #textLine>span {
+        font-size: 12vw;
+    }
+
+    #mapbox {
         /* margin-top: 80vw; */
         margin-top: 130vw;
     }
-    
+    #mapbox .srch2 .sbox2 {
+        width: 100%;
+    }
+
+    #mapbox input[type="text"] {
+        width: 80%;
+    }
+
+    #mapbox .srch2 p {
+    font-size: 1.1rem;
+}
+
+
     #mapbox .mapText .gray p {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
     #mapbox .mapText .gray>p:first-child {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
+    }
 
+    #mapbox .mapText .right {
+        top: 20px;
     }
-   
-    #mapbox .mapText .right{
-        top:20px;
-    }
+
     #mapbox .mapText .left {
-        top:50px;
+        top: 50px;
 
     }
+#mapbox .mapText .right .t1 {
+    top: -3vw;
+    right: -8vw;
+
+}
+    #mapbox .mapText .right .t2 {
+        top: 15vw;
+        right: -9vw;
+    }
+
     #mapbox .mapText .right .t3 {
-        top: 28vw;
-        left:26vw;
+        top: 31vw;
+        left: 29vw;
+        width: 80px;
     }
+
     #mapbox .mapText .right .t4 {
-        top: 50vw;
-        left:16vw;
+        top: 51vw;
+        left: 16vw;
+        width: 120px;
+
     }
-    #mapbox .mapText .left .t8 {
-        top: 30vw;
-        right: 25vw;
-        
-    }
+
     #mapbox .mapText .left .t5 {
-        top: -5vw;
-        right: 15vw;
+        top: -15vw;
+        right: 10vw;
+        width: 70px;
     }
 
     #mapbox .mapText .left .t6 {
-        top: 4vw;
-        right: 23vw;
+        top: 0vw;
+        right: 26vw;
+        width: 80px;
 
     }
 
     #mapbox .mapText .left .t7 {
-        top: 20vw;
+        top: 18vw;
         right: 26vw;
 
     }
 
     #mapbox .mapText .left .t8 {
-        top: 33vw;
-        right: 24vw;
+        top: 35vw;
+        right: 27vw;
         /* left: 10vh; */
     }
-
-    #textLine>span {
-        margin:10px auto;
+    #mapbox .brown{
+        height:450px ;
     }
-    #textLine span:nth-child(1),  #textLine span:nth-child(2){
+
+#mapbox .map .area {
+    font-size: 1.2rem;
+}
+#mapbox .map .area .a1::before {
+    top: -155px;
+    right: -135px;
+}
+#mapbox .map .area .a2::before{
+top: -95px;
+right: -55px;
+}
+#mapbox .map .area .a3::before {
+top: -55px;
+right: -125px;
+}
+#mapbox .map .area .a4::before {
+top: -53px;
+right: -45px;
+}
+#mapbox .map .area .a5::before {
+top: -145px;
+right: -40px;
+}
+#mapbox .map .area .a6::before {
+top: -100px;
+right: -5px;
+}
+#mapbox .map .area .a7::before {
+top: -53px;
+right: 5px; 
+}
+#mapbox .map .area .a8::before {
+    top: 20px;
+    right: 20px;
+}
+    #textLine>span {
+        margin: 10px auto;
+    }
+
+    #textLine span:nth-child(1),
+    #textLine span:nth-child(2) {
         display: none;
     }
-    #textLine span:nth-child(3){
+
+    #textLine span:nth-child(3) {
         display: inline;
     }
 
-    #slide .itembox .text{
-        padding: 3vw 0;
-        padding-left: 4vw;
+    #slide {
+        flex-direction: column;
     }
-    #slide .itembox .text h3{
-        font-size: 1.5rem;
-    line-height: 150%;
+
+    #slide .itembox {
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    #slide .itembox .text {
+        padding: 4vw 0;
+        padding-left: 5.5vw;
+    }
+
+    #slide .itembox .text h3 {
+        font-size: 1.7rem;
+        line-height: 160%;
 
     }
 
-    #slide .itembox .text p{
-      font-size: 1.1rem;
-     line-height: 100%;
+    #slide .itembox .text p {
+        font-size: 1.3rem;
+        line-height: 110%;
     }
-
 
     section .container .row .colbox {
-        /* font-size: 1.2rem;
-        height: fit-content; */
-        /* line-height: 170%; */
-    margin-top: -40px;
-    /* padding-top: 01rem;
-    padding-bottom: 1rem;
-    padding-left: 2.5rem; */
-
+        margin-top: -11px;
     }
 
 
-    #signup h2{
-        font-size: 1.8rem;
+    section .container .row .colbox p {
+        font-size: 1.3rem;
     }
+
+    section .container .row .colbox a {
+        padding-left: 6.5rem;
+        font-size: 1.1rem;
+    }
+
+    section .col-md-4 .notiBox h3 {
+        font-size: 1.7rem;
+
+    }
+
+    section .col-md-4 .notiBox p {
+        font-size: 1.3rem;
+    }
+
+    section h2,
+    #signup h2 {
+        font-size: 2rem;
+    }
+
     .emailbox {
         width: 400px;
     }
+
     .emailbox input[type="email"] {
         width: 400px;
         height: 50px;
 
     }
+
     .emailbox button {
         width: 400px;
         height: 50px;
 
     }
-    #slide {
-    flex-direction: column;
 
+    footer .sns {
+        width: 300px;
+        font-size: 1rem;
 
     }
-    #slide .itembox{
-    width: 80%;
-    margin: 200px auto;
+
+    footer .sns .icon {
+        width: 200px;
+
     }
+
 }
 
 
 @media screen and (max-width:450px) {
-    .ham {
-        background-color: slateblue;
-       
+    .ham{
+        background-color: salmon;
     }
+
     header h1 {
         font-size: 1rem;
     }
@@ -1106,67 +1591,193 @@ footer .sns .icon span {
     header nav {
         font-size: 0.8rem;
     }
-    nav ul li{
+    nav ul{
+    height: 75%;
+        align-items: flex-start;
+    padding-left: 15px;
+
+    }
+    nav ul li {
+        margin-right: 0.5vw;
         font-size: 1.8rem;
+        margin: 20px;
     }
 
     /* main깨지는디 */
 
     main h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         transform: translate(-50%, -50%);
 
     }
-     
-    #mapbox{
-        margin-top: 150vw;
-    }
 
-    #mapbox .srch2 .sbox2 {
-        width: 150px;
+    #mapbox {
+        margin-top: 140vw;
     }
-    #mapbox input[type="text"] {
-        width: 100px;
-        height: 30px;
-      font-size: 1rem;
-
+    #mapbox .srch2 {
+        margin-bottom: 15px;
     }
-    #mapbox span {
-        font-size: 1.3rem;
-        margin: auto 8px;
-
-    }
+ 
     #mapbox .srch2 p {
+        font-size: 0.9rem;
+    padding-right: 3.5rem;
+
+    }
+    #mapbox .mapText .gray p {
+        font-size: 1.1rem;
+    }
+
+    #mapbox .mapText .gray>p:first-child {
         font-size: 0.8rem;
     }
 
-    
-    /* #slide .itembox .text{
-        padding: 3vw 0;
-        padding-left: 4vw;
-    }
-    #slide .itembox .text h3{
-        font-size: 1.5rem;
-    line-height: 150%;
-
-    } */
-
-    #slide .itembox .text p{
-      font-size: 1.1rem;
-     line-height: 100%;
+    #mapbox .mapText .right .t1 {
+        top: 0vw;
+        right: -2vw;
     }
 
-    section h2 {
-        font-size: 1.8rem;
+    #mapbox .mapText .right .t2 {
+        top: 20vw;
+        right: -10vw;
+        width: 54px;
     }
+    #mapbox .mapText .right .t3 {
+        top: 40vw;
+        left: 29vw;
+        width: 70px;
+    }
+
+    #mapbox .mapText .right .t4 {
+        top: 60vw;
+        left: 16vw;
+        width: 100px;
+
+    }
+
+    #mapbox .mapText .left .t8 {
+        top: 30vw;
+        right: 25vw;
+
+    }
+
+    #mapbox .mapText .left .t5 {
+        top: -5vw;
+        right: 5vw;
+        width: 60px;
+    }
+
+    #mapbox .mapText .left .t6 {
+        top: 5vw;
+        right: 25vw;
+        width: 80px;
+
+    }
+
+    #mapbox .mapText .left .t7 {
+        top: 25vw;
+        right: 28vw;
+        width: 60px;
+    }
+
+    #mapbox .mapText .left .t8 {
+        top:41vw;
+        right: 30vw;
+        width: 60px;
+        /* left: 10vh; */
+    }
+
+    #mapbox .brown{
+        height:300px ;
+    }
+
+    #mapbox .map .area {
+        font-size: 1rem;
+    }
+    #mapbox .map .area .a1::before {
+        top: -110px;
+        right: -100px;
+    }
+    #mapbox .map .area .a2::before{
+    top: -75px;
+    right: -50px;
+    }
+    #mapbox .map .area .a3::before {
+    top: -55px;
+    right: -100px;
+    }
+    #mapbox .map .area .a4::before {
+    top: -50px;
+    right: -41px;
+    }
+    #mapbox .map .area .a5::before {
+    top: -120px;
+    right: -40px;
+    }
+    #mapbox .map .area .a6::before {
+    top: -80px;
+    right: -5px;
+    }
+    #mapbox .map .area .a7::before {
+    top: -48px;
+    right: -5px; 
+    }
+    #mapbox .map .area .a8::before {
+        top: 5px;
+        right: 18px;
+    }
+    #slide .itembox .text {
+        padding: 3.5vw 0;
+        padding-left: 5vw;
+    }
+
+    #slide .itembox .text h3 {
+        font-size: 1.4rem;
+        line-height: 150%;
+
+    }
+
+    #slide .itembox .text p {
+        font-size: 1rem;
+        line-height: 100%;
+    }
+
+
     section .container .row .colbox {
-        /* font-size: 1.2rem;
-        height: fit-content; */
-        /* line-height: 170%; */
-    margin-top: -100px;
-    /* padding-top: 01rem;
-    padding-bottom: 1rem;
-    padding-left: 2.5rem; */
+        margin-top: -100px;
+        line-height: 160%;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 2rem;
+        margin-top: -75px;
+    }
+
+    section .container .row .colbox p {
+        font-size: 1.2rem;
+    }
+
+    section .container .row .colbox a {
+        padding-left: 6rem;
+        font-size: 1.0rem;
+    }
+
+    section .col-md-4 .notiBox {
+
+        border-radius: 0 100px 0 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        margin-bottom: 5px;
+    }
+
+
+
+    section .col-md-4 .notiBox h3 {
+        font-size: 1.4rem;
+
+    }
+
+    section .col-md-4 .notiBox p {
+        font-size: 1rem;
 
     }
 
@@ -1174,52 +1785,18 @@ footer .sns .icon span {
     .emailbox {
         width: 340px;
     }
+
     .emailbox input[type="email"] {
         width: 340px;
         height: 45px;
 
     }
+
     .emailbox button {
         width: 340px;
         height: 45px;
 
     }
     
-}
-
-/* #mapbox .srch2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 
 }
-
-#mapbox .srch2 .sbox2 {
-    width: 250px;
-    align-self: flex-end;
-}
-
-#mapbox input[type="text"] {
-    width: 200px;
-    height: 45px;
-    border: #000 solid 3px;
-    border-radius: 10px;
-    background: transparent;
-    outline: none;
-    font-family: "cjw-g";
-    font-size: 1.5rem;
-}
-
-#mapbox span {
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin: auto 10px;
-    cursor: pointer;
-}
-
-#mapbox .srch2 p {
-    align-self: flex-end;
-    padding-right: 3rem;
-    margin-top: 0.5vw;
-    font-size: 1.1rem;
-} */
