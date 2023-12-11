@@ -1612,22 +1612,7 @@ right: 5px;
     #mapbox .srch2 {
         margin-bottom: 3px;
     }
-    /* #mapbox .srch2 .sbox2 {
-        width: 150px;
-    }
-
-    #mapbox input[type="text"] {
-        width: 100px;
-        height: 30px;
-        font-size: 1rem;
-
-    } */
-
-    /* #mapbox span {
-       font-size: 1.3rem; 
-        margin: auto 8px; 
-    } */
-
+ 
     #mapbox .srch2 p {
         font-size: 0.9rem;
     padding-right: 3.5rem;
@@ -1758,6 +1743,7 @@ right: 5px;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-left: 2rem;
+        margin-top: -9px;
     }
 
     section .container .row .colbox p {
