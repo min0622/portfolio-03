@@ -226,7 +226,7 @@ main .srch1 p {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 
 }
 
@@ -298,93 +298,87 @@ main .srch1 p {
     width: 50%;
     float: right;
     position: relative;
-    /* background-color: pink; */
 }
 
 #mapbox .mapText .left {
     width: 50%;
     float: left;
     position: relative;
-    
-    /* background-color: slategray; */
 }
 /* 글자에 가로값 주기!! 창 줄일때 글자가 세로로 깨지지 않게 가능!! */
 #mapbox .mapText .right .t1 {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: -2vw;
     /* right: 15vh; */
-    right: 8vw;
-    width: fit-content;
+    right: -2vw;
+    width: 100px;
 }
 
 #mapbox .mapText .right .t2 {
-    display: none;
+    /* display: none; */
     position: absolute;
-    top: 8vw;
-    right: 8vw;
-    width: fit-content;
+    top: 9vw;
+    right: -5vw;
+    width: 100px;
 }
 
 #mapbox .mapText .right .t3 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top: 15rem;
     left: 20rem; */
-    top: 17vw;
-    left: 20vw;
-    width: fit-content;
+    top: 20vw;
+    left: 32vw;
+    width: 100px;
 }
 
 #mapbox .mapText .right .t4 {
-    display: none;
+    /* display: none; */
     position: absolute;
-    top: 26vw;
-    left: 15vw;
-    width: fit-content; 
+    top: 30vw;
+    left: 28vw;
+    width: 175px; 
 }
 
 #mapbox .mapText .left .t5 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top:-20px; */
     top: -6vw;
-    right: 15vw;
+    right: 12vw;
     /* right: 180px ; */
-    width: fit-content;
+    width: 100px;
 }
 
 #mapbox .mapText .left .t6 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top:60px; */
-    top: 0;
-    right: 18vw;
+    top: 3vw;
+    right: 26vw;
     /* right: 350px ; */
-    width: fit-content;
-
+    width: 122px;
 }
 
 #mapbox .mapText .left .t7 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top:180px; */
-    top: 9vw;
-    right: 20vw;
+    top: 19vw;
+    right: 28vw;
     /* right: 400px; */
-    width: fit-content;
-
+    width: 100px;
 }
 
 #mapbox .mapText .left .t8 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* top: 300px; */
-    top: 18vw;
-    right: 23vw;
+    top: 33vw;
+    right: 32vw;
     /* right: 350px; */
-    width: fit-content;
-
+    width: 100px;
 }
 
 #mapbox .map .all {
@@ -415,8 +409,8 @@ main .srch1 p {
     display: block;
     width:  48px;
     position: absolute;
-    top: -200px;
-    right: -180px;
+    top: -300px;
+    right: -250px;
 }
 
 #mapbox .map .area .a2::before {
@@ -425,8 +419,8 @@ main .srch1 p {
     width:45px;
     height: 1px;
     position: absolute;
-    top: -110px;
-    right: -65px;
+    top: -150px;
+    right: -90px;
 }
 
 #mapbox .map .area .a3::before {
@@ -434,8 +428,8 @@ main .srch1 p {
     display: block;
     width: 58px;
     position: absolute;
-    top: -55px;
-    right: -150px;
+    top: -85px;
+    right: -220px;
 }
 
 #mapbox .map .area .a4::before {
@@ -444,8 +438,8 @@ main .srch1 p {
     width: 48px;
     height: 1px;
     position: absolute;
-    top: -50px;
-    right: -53px;
+    top: -70px;
+    right: -85px;
 }
 
 #mapbox .map .area .a5::before {
@@ -453,8 +447,8 @@ main .srch1 p {
     display: block;
     width:  48px;
     position: absolute;
-    top: -190px;
-    right: -40px;
+    top: -280px;
+    right: -70px;
 }
 
 #mapbox .map .area .a6::before {
@@ -463,7 +457,7 @@ main .srch1 p {
     width: 38px;
     height: 1px;
     position: absolute;
-    top: -120px;
+    top: -170px;
     right: 10px;
  
 }
@@ -473,7 +467,7 @@ main .srch1 p {
     display: block;
     width: 58px;
     position: absolute;
-    top: -60px;
+    top: -70px;
     right: 30px;
 }
 
@@ -482,8 +476,8 @@ main .srch1 p {
     display: block;
     width: 58px;
     position: absolute;
-    top: 50px;
-    right: 40px;
+    top: 100px;
+    right: 80px;
 }
 
 #textLine {
@@ -509,6 +503,7 @@ main .srch1 p {
 #textLine span {
     font-size: 4vw;
     margin: 180px auto;
+    margin-top: 180px;
     color: #E4DDD4;
 
     /* animation-name: move;
@@ -916,46 +911,46 @@ section .container .row .col-md-6 .imgBox {
     }
 
     #mapbox .mapText .right .t1 {
-        top: -1vw;
-        right: 0;
+        top: -8vw;
+        right: -10vw;
     }
 
     #mapbox .mapText .right .t2 {
-        top: 10vw;
-        right: -3vw;
+        top: 5vw;
+        right: -10vw;
     }
 
     #mapbox .mapText .right .t3 {
-        top: 20vw;
-        left: 27vw;
+        top: 28vw;
+        left: 37vw;
     }
 
     #mapbox .mapText .right .t4 {
-        top: 35vw;
-        left: 20vw;
+        top: 45vw;
+        left: 30vw;
         width: 150px;
     }
 
     #mapbox .mapText .left .t5 {
-        top: -4vw;
-        right: 20vw;
+        top: -8vw;
+        right: 15vw;
     }
 
     #mapbox .mapText .left .t6 {
-        top: 4vw;
-        right: 25vw;
+        top: 8vw;
+        right: 32vw;
 
     }
 
     #mapbox .mapText .left .t7 {
-        top: 15vw;
-        right: 26vw;
+        top: 25vw;
+        right: 34vw;
 
     }
 
     #mapbox .mapText .left .t8 {
-        top: 28vw;
-        right: 27vw;
+        top: 40vw;
+        right: 35vw;
     }
     #mapbox .map .area {
         font-size: 1.6rem;
@@ -1112,7 +1107,7 @@ section h2 {
         font-size: 5vw;
     }
     #mapbox .srch2{
-        margin-bottom: 0;
+        margin-bottom: 30px;
     }
 
     #mapbox .srch2 p {
@@ -1130,46 +1125,46 @@ section h2 {
 
     #mapbox .mapText .right .t1 {
         top: -3vw;
-        right: -5vw;
+        right: -10vw;
     }
 
     #mapbox .mapText .right .t2 {
         top: 10vw;
-        right: -6vw;
+        right: -12vw;
     }
 
     #mapbox .mapText .right .t3 {
-        top: 23vw;
-        left: 28vw;
+        top: 28vw;
+        left: 35vw;
         width: 95px;
     }
 
     #mapbox .mapText .right .t4 {
-        top: 40vw;
-        left: 23vw;
+        top: 43vw;
+        left: 30vw;
         width: 130px;
 
     }
     
     #mapbox .mapText .left .t5 {
-        top: -10vw;
-        right: 10vw;
+        top: -8vw;
+        right: 6vw;
     }
     #mapbox .mapText .left .t6 {
-        top: 2vw;
-        right: 28vw;  
+        top: 4vw;
+        right: 32vw;  
         width: 95px;
     }
     #mapbox .mapText .left .t7 {
-        top: 20vw;
-        right: 30vw;
+        top: 25vw;
+        right: 35vw;
         width: 75px;
 
     }
     #mapbox .mapText .left .t8 {
       width: 75px;
-      top: 35vw;
-      right: 30vw;
+      top: 42vw;
+      right: 35vw;
 
     }
     #mapbox .brown{
@@ -1182,36 +1177,43 @@ section h2 {
     }
 
     #mapbox .map .area .a1::before {
-        top: -190px;
-        right: -170px;
+        top: -220px;
+        right: -190px;
     }
 #mapbox .map .area .a2::before{
     top: -110px;
-    right: -60px;
+    right: -75px;
 }
 #mapbox .map .area .a3::before {
     top: -65px;
-    right: -140px;
+    right: -180px;
 }
 #mapbox .map .area .a4::before {
-    top: -55px;
-    right: -50px;
+    top: -50px;
+    right: -65px;
 }
 #mapbox .map .area .a5::before {
-    top: -185px;
-    right: -40px;
+    top: -210px;
+    right: -60px;
 }
 #mapbox .map .area .a6::before {
-    top: -123px;
+    top: -126px;
     right: 1px;
 }
 #mapbox .map .area .a7::before {
     top: -60px;
     right: 20px; 
 }
+#textLine span:nth-child(2) {
+    display: none;
+}
 
-    #textLine span {
-        font-size: 10vw;
+#textLine span:nth-child(3) {
+    display: inline;
+}
+
+    #textLine span{
+        font-size: 8vw;
     }
 
     #slide .itembox .text {
@@ -1398,50 +1400,50 @@ section .container .row .col-md-6 .first{
 
     }
 #mapbox .mapText .right .t1 {
-    top: -3vw;
-    right: -8vw;
+    top: -8vw;
+    right: -14vw;
 
 }
     #mapbox .mapText .right .t2 {
-        top: 15vw;
-        right: -9vw;
+        top: 10vw;
+        right: -15vw;
     }
 
     #mapbox .mapText .right .t3 {
-        top: 31vw;
-        left: 29vw;
+        top: 28vw;
+        left: 34vw;
         width: 80px;
     }
 
     #mapbox .mapText .right .t4 {
-        top: 51vw;
-        left: 16vw;
+        top: 53vw;
+        left: 25vw;
         width: 120px;
 
     }
 
     #mapbox .mapText .left .t5 {
-        top: -15vw;
+        top: -11vw;
         right: 10vw;
         width: 70px;
     }
 
     #mapbox .mapText .left .t6 {
-        top: 0vw;
-        right: 26vw;
+        top: 2vw;
+        right: 30vw;
         width: 80px;
 
     }
 
     #mapbox .mapText .left .t7 {
         top: 18vw;
-        right: 26vw;
+        right: 29vw;
 
     }
 
     #mapbox .mapText .left .t8 {
         top: 35vw;
-        right: 27vw;
+        right: 33vw;
         /* left: 10vh; */
     }
     #mapbox .brown{
@@ -1453,47 +1455,39 @@ section .container .row .col-md-6 .first{
 }
 #mapbox .map .area .a1::before {
     top: -155px;
-    right: -135px;
+    right: -160px;
 }
 #mapbox .map .area .a2::before{
-top: -95px;
-right: -55px;
+top: -75px;
+right: -65px;
 }
 #mapbox .map .area .a3::before {
-top: -55px;
-right: -125px;
+top: -40px;
+right: -145px;
 }
 #mapbox .map .area .a4::before {
-top: -53px;
-right: -45px;
+top: -30px;
+right: -60px;
 }
 #mapbox .map .area .a5::before {
 top: -145px;
-right: -40px;
+right: -55px;
 }
 #mapbox .map .area .a6::before {
-top: -100px;
+top: -85px;
 right: -5px;
 }
 #mapbox .map .area .a7::before {
-top: -53px;
+top: -30px;
 right: 5px; 
 }
 #mapbox .map .area .a8::before {
-    top: 20px;
-    right: 20px;
+    top: 55px;
+    right: 30px;
 }
-    #textLine>span {
+    #textLine span {
         margin: 10px auto;
-    }
-
-    #textLine span:nth-child(1),
-    #textLine span:nth-child(2) {
-        display: none;
-    }
-
-    #textLine span:nth-child(3) {
-        display: inline;
+        margin-top: 90px;
     }
 
     #slide {
@@ -1615,7 +1609,7 @@ right: 5px;
         margin-top: 140vw;
     }
     #mapbox .srch2 {
-        margin-bottom: 3px;
+        margin-bottom: 15px;
     }
  
     #mapbox .srch2 p {
@@ -1632,24 +1626,24 @@ right: 5px;
     }
 
     #mapbox .mapText .right .t1 {
-        top: 0vw;
-        right: -2vw;
+        top: -5vw;
+        right: -17vw;
     }
 
     #mapbox .mapText .right .t2 {
-        top: 20vw;
-        right: -10vw;
+        top: 12vw;
+        right: -9vw;
         width: 54px;
     }
     #mapbox .mapText .right .t3 {
-        top: 40vw;
-        left: 29vw;
-        width: 70px;
+        top: 27vw;
+        left: 31vw;
+        width: 55px;
     }
 
     #mapbox .mapText .right .t4 {
-        top: 60vw;
-        left: 16vw;
+        top: 48vw;
+        left: 19vw;
         width: 100px;
 
     }
@@ -1661,27 +1655,27 @@ right: 5px;
     }
 
     #mapbox .mapText .left .t5 {
-        top: -5vw;
+        top: -15vw;
         right: 5vw;
         width: 60px;
     }
 
     #mapbox .mapText .left .t6 {
-        top: 5vw;
+        top: -3vw;
         right: 25vw;
         width: 80px;
 
     }
 
     #mapbox .mapText .left .t7 {
-        top: 25vw;
-        right: 28vw;
+        top: 15vw;
+        right: 29vw;
         width: 60px;
     }
 
     #mapbox .mapText .left .t8 {
-        top:41vw;
-        right: 30vw;
+        top:32vw;
+        right: 32vw;
         width: 60px;
         /* left: 10vh; */
     }
@@ -1694,35 +1688,35 @@ right: 5px;
         font-size: 1rem;
     }
     #mapbox .map .area .a1::before {
-        top: -110px;
-        right: -100px;
+        top: -100px;
+        right: -120px;
     }
     #mapbox .map .area .a2::before{
-    top: -75px;
-    right: -50px;
+    top: -45px;
+    right: -55px;
     }
     #mapbox .map .area .a3::before {
-    top: -55px;
-    right: -100px;
+    top: -20px;
+    right: -110px;
     }
     #mapbox .map .area .a4::before {
-    top: -50px;
-    right: -41px;
+    top: -12px;
+    right: -48px;
     }
     #mapbox .map .area .a5::before {
-    top: -120px;
-    right: -40px;
+    top: -95px;
+    right: -50px;
     }
     #mapbox .map .area .a6::before {
-    top: -80px;
-    right: -5px;
+    top: -50px;
+    right: -10px;
     }
     #mapbox .map .area .a7::before {
-    top: -48px;
+    top: -15px;
     right: -5px; 
     }
     #mapbox .map .area .a8::before {
-        top: 5px;
+        top: 50px;
         right: 18px;
     }
     #slide .itembox .text {
@@ -1748,7 +1742,7 @@ right: 5px;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-left: 2rem;
-        margin-top: -9px;
+        margin-top: -75px;
     }
 
     section .container .row .colbox p {
