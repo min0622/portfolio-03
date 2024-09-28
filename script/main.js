@@ -1,5 +1,36 @@
 $(function(){
 
+  // header_scrollfix
+  let win = $(window);
+  let header = $('header');
+  let section1 = $('#section1')
+  let spot = section1.offset().top;
+
+ win.scroll(function(){
+    
+  if(win.scrollTop()>spot){
+    header.addClass('fix')
+  } else{
+    header.removeClass('fix')
+
+  }
+
+  });
+
+
+// mo_side_menu
+$('.menu').click(function(){
+  $('.inner_side').slideToggle();
+  // $('.inner_side').toggleClass('down');
+
+  $('.top').toggleClass('open');
+  $('.mid').toggleClass('open');
+  $('.btm').toggleClass('open');
+  // $(".mid").css({opacity:'0'});
+  // $('.top').css({transform:'translateY(11px) rotate(45deg)'})
+  // $('.btm').css({transform:'translateY(-11px) rotate(-45deg)'})
+
+});
 
 
 
