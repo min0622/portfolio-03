@@ -43,7 +43,13 @@
 
 body {
   font-family: 'pre';
+
 }
+/* toggleClass */
+.hidden{
+  overflow:hidden;
+}
+
 
 #wrap {
   width: 100%;
@@ -108,6 +114,8 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  display: none;
 }
 .menu span{
   display: block;
@@ -303,39 +311,35 @@ h2 {
 
 #section2 .list .text {
   margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #section2 .list span,
 #section2 .list p {
   font-size: 1.1rem;
   font-weight: 400;
-  height: 21px;
+  height: 24px;
+  line-height: 140%;
+  align-content: center;
+  display: block;
 }
 
 #section2 .list h4 {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 10px 0;
-  height: 24px;
-  line-height: 120%;
+  height: 40px;
+  line-height: 130%;
+  align-content: center;
+
 }
 
-#section2 .list_box:nth-child(2) span,
-#section2 .list:nth-child(2) p {
+#section2 .list_box .opacity,
+#section2 .list .opacity {
   opacity: 0;
 }
-
-/* swiper */
-/* .swiper-slide{
-    width: 400px;
-} */
-
-/* .swiper{
-    padding-left:3vw ;
-} */
-
-
-
 
 /* section3 */
 #section3 {
@@ -345,9 +349,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-image: url(../img/section3_bg.png);
-    background-position: center;
-    background-size: 100%; */
   position: relative;
 }
 
@@ -568,12 +569,19 @@ footer .text span {
   .icon a:not(:last-child){
     display: none;
   }
-
+  .menu{
+    display: flex;
+  }
 /* side_menu */
 #side_menu{
   display: block;
 }
   
+/* section2 */
+
+  #section2 .list h4{
+    height: 56px;
+  }
 /* section3 */
   #section3::before {
     width: 30%;
@@ -638,6 +646,17 @@ footer .text span {
 
   #section1 p {
     font-size: 1rem;
+  }
+
+  /* section2 */
+  #section2 .list span,
+#section2 .list p {
+  height: 40px;
+  line-height: 140%;
+}
+  #section2 .list h4{
+   font-size: 1.2rem;
+   height: 46px;
   }
 
   /* section3 */
@@ -757,7 +776,24 @@ footer .text span {
   #section2 {
     margin-top: 10rem;
   }
+  #section2 .list span{
 
+    font-size: 1rem;
+  }
+  
+  #section2 .list span, #section2 .list p {
+    font-size: 0.9rem;
+    /* height: 36px; */
+    height: 24px;
+  }
+  #section2 .list span{
+ font-size: 1rem;
+  }
+  #section2 .list h4{
+    font-size: 1.1rem;
+    height: 36px;
+    /* height: 40px; */
+  }
   /* section3 */
   #section3 {
     height: fit-content;
@@ -844,6 +880,15 @@ footer .text span {
     margin-bottom: 8rem;
   }
 
+  /* section2 */
+  #section2 .list span, #section2 .list p {
+    height: 36px;
+  }
+
+  }
+  #section2 .list h4{
+    height: 40px;
+  }
   /* section3 */
   #section3 .left {
     margin-top: 60px;

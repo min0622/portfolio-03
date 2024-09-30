@@ -21,14 +21,13 @@ $(function(){
 // mo_side_menu
 $('.menu').click(function(){
   $('.inner_side').slideToggle();
-  // $('.inner_side').toggleClass('down');
 
   $('.top').toggleClass('open');
   $('.mid').toggleClass('open');
   $('.btm').toggleClass('open');
-  // $(".mid").css({opacity:'0'});
-  // $('.top').css({transform:'translateY(11px) rotate(45deg)'})
-  // $('.btm').css({transform:'translateY(-11px) rotate(-45deg)'})
+
+
+  $('body').toggleClass('hidden')
 
 });
 
@@ -66,7 +65,7 @@ setInterval(function(){
         slidesPerView: 2,
         loop: true,
       spaceBetween: 10,
-    //   centeredSlides: true,
+      centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
