@@ -34,14 +34,37 @@ $('.menu').click(function(){
 
 
 
+//main
+let currentIndex = 0;
+$('.slide_wrap').append($('.slide').first().clone(true));
+
+setInterval(function(){
+  currentIndex++;
+  
+  //슬라이드가 하나씩 이동
+  $('.slide_wrap').stop(true).animate({marginLeft:-currentIndex*100+"%"},600)
+
+  //슬라이드 처음으로 보내기
+  if(currentIndex==3){
+    setTimeout(function(){
+      $('.slide_wrap').stop(true).animate({marginLeft:'0'},0)
+
+      
+  currentIndex=0;
+    },700);
+  } 
+
+
+},3000);
+
 
 
 
   // section2
     var swiper = new Swiper(".mySwiper", {
        
-        slidesPerView: 1,
-        // loop: true,
+        slidesPerView: 2,
+        loop: true,
       spaceBetween: 10,
     //   centeredSlides: true,
       pagination: {
@@ -51,12 +74,12 @@ $('.menu').click(function(){
         breakpoints: {
             576: {
                 slidesPerView: 2,
-                spaceBetween: 50
+                spaceBetween: 16
               },
-           1024: {
-              slidesPerView: 3,  
-              spaceBetween: 40,
-            },
+            860: {
+                slidesPerView: 3,
+                spaceBetween: 24
+              },
             1400: {
               slidesPerView:4, 
               spaceBetween: 24,
