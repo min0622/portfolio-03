@@ -355,7 +355,7 @@ h2 {
 #section3 .container-md {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
   /* gap: 10%; */
 }
