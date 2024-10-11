@@ -38,16 +38,16 @@
 
 :root {
   --Mcolor--: #14120F;
-  --scolor--: #FDC613;
 }
 
 body {
   font-family: 'pre';
 
 }
+
 /* toggleClass */
-.hidden{
-  overflow:hidden;
+.hidden {
+  overflow: hidden;
 }
 
 
@@ -64,24 +64,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-background-color: #fff;
+  background-color: #fff;
   position: relative;
   top: 0;
   left: 0;
   z-index: 999;
 }
-header.fix{
+
+header.fix {
   position: fixed;
   animation: drop .5s;
 }
-@keyframes drop{
-  0%{
+
+@keyframes drop {
+  0% {
     top: -2rem;
   }
-  100%{
+
+  100% {
     top: 0;
   }
 }
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -108,7 +112,7 @@ nav ul {
 }
 
 /* menu icon */
-.menu{
+.menu {
   width: 26px;
   height: 24px;
   display: flex;
@@ -117,38 +121,42 @@ nav ul {
 
   display: none;
 }
-.menu span{
+
+.menu span {
   display: block;
   width: 100%;
   height: 2px;
   border-radius: 100px;
   background-color: var(--Mcolor--);
-  transition:.25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
-.menu .top.open{
+.menu .top.open {
   transform: translateY(11px) rotate(45deg);
 }
-.menu .mid.open{
+
+.menu .mid.open {
   width: 0%;
   opacity: 0;
 }
-.menu .btm.open{
+
+.menu .btm.open {
   transform: translateY(-11px) rotate(-45deg);
 }
 
 
 /* side_menu */
-#side_menu{
-width: 100%;
-position: relative;
+#side_menu {
+  width: 100%;
+  position: relative;
 }
-.inner_side{
-  width: 100%; 
+
+.inner_side {
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   background-color: var(--Mcolor--);
-  color:#fff;
+  color: #fff;
   /* overflow-y: auto; */
   position: fixed;
   top: 0;
@@ -157,13 +165,13 @@ position: relative;
 
   /* slideToggle */
   display: none;
-  
+
 }
 
 
 
-#side_menu ul{
-  width:87%;
+#side_menu ul {
+  width: 87%;
   height: 100%;
   margin: auto;
   display: flex;
@@ -175,14 +183,14 @@ position: relative;
   font-weight: 600;
 }
 
-.mo_icon{
+.mo_icon {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: flex-end;
   position: absolute;
-  bottom:50px;
+  bottom: 50px;
   right: 50px;
 }
 
@@ -196,9 +204,7 @@ main {
 }
 
 .slide_wrap {
-  /* width: 100%; */
   width: 400%;
-  /* position: relative; */
   display: flex;
 }
 
@@ -213,7 +219,6 @@ article {
   width: 100%;
   position: relative;
   top: 0;
-  /* padding: 70px 0; */
   background-color: var(--Mcolor--);
   color: #fff;
 }
@@ -233,7 +238,7 @@ article li {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 150%;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 
@@ -355,9 +360,7 @@ h2 {
 #section3 .container-md {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   position: relative;
-  /* gap: 10%; */
 }
 
 #section3::before {
@@ -389,9 +392,7 @@ h2 {
 }
 
 #section3 .left .l_title h2 {
-  /* font-size: 2.3rem;
-font-weight: 600; */
-  color: var(--scolor--);
+  color: #fff;
 }
 
 #section3 .left a {
@@ -403,12 +404,6 @@ font-weight: 600; */
   font-size: 1.1rem;
   font-weight: 500;
 }
-
-/* #section3 .left .l_title > figure{
-position: absolute;
-top: -20px;
-right: -90px;
-} */
 #section3 .right {
   display: flex;
   justify-content: center;
@@ -562,27 +557,32 @@ footer .text span {
 
 /* media */
 @media screen and (max-width:1200px) {
+
   /* header */
   nav {
     display: none;
   }
-  .icon a:not(:last-child){
+
+  .icon a:not(:last-child) {
     display: none;
   }
-  .menu{
+
+  .menu {
     display: flex;
   }
-/* side_menu */
-#side_menu{
-  display: block;
-}
-  
-/* section2 */
 
-  #section2 .list h4{
+  /* side_menu */
+  #side_menu {
+    display: block;
+  }
+
+  /* section2 */
+
+  #section2 .list h4 {
     height: 56px;
   }
-/* section3 */
+
+  /* section3 */
   #section3::before {
     width: 30%;
   }
@@ -606,9 +606,9 @@ footer .text span {
   }
 
   /* side_menu */
-#side_menu{
-  top: 60px;
-}
+  #side_menu {
+    top: 60px;
+  }
 
 
 
@@ -617,12 +617,12 @@ footer .text span {
     font-size: 1.3rem;
     margin-bottom: 20px;
   }
-  
+
   article li {
     font-size: 1rem;
     line-height: 150%;
   }
-  
+
   /* 공통 title */
 
   h2 {
@@ -650,13 +650,14 @@ footer .text span {
 
   /* section2 */
   #section2 .list span,
-#section2 .list p {
-  height: 40px;
-  line-height: 140%;
-}
-  #section2 .list h4{
-   font-size: 1.2rem;
-   height: 46px;
+  #section2 .list p {
+    height: 40px;
+    line-height: 140%;
+  }
+
+  #section2 .list h4 {
+    font-size: 1.2rem;
+    height: 46px;
   }
 
   /* section3 */
@@ -726,32 +727,36 @@ footer .text span {
   h1 {
     font-size: 1.8rem;
   }
-/* menu icon */
-.menu{
-  width: 24px;
-  height: 22px;
-}
-.menu .top.open{
-  transform: translateY(10px) rotate(45deg);
-}
 
-.menu .btm.open{
-  transform: translateY(-10px) rotate(-45deg);
-}
-/* side_menu */
-#side_menu ul{
-  gap: 10%;
-  font-size: 1.6rem;
-}
+  /* menu icon */
+  .menu {
+    width: 24px;
+    height: 22px;
+  }
+
+  .menu .top.open {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .menu .btm.open {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  /* side_menu */
+  #side_menu ul {
+    gap: 10%;
+    font-size: 1.6rem;
+  }
 
   /* article */
   article h3 {
     font-size: 1.3rem;
   }
-  
+
   article a p {
     font-size: 1rem;
   }
+
   /* section1 */
   #section1 span {
     font-size: 1.1rem;
@@ -765,7 +770,6 @@ footer .text span {
 
   #section1 p {
     font-size: 1.1rem;
-    /* line-height: 150%; */
   }
 
   #section1 .col-md-4 {
@@ -776,24 +780,27 @@ footer .text span {
   #section2 {
     margin-top: 10rem;
   }
-  #section2 .list span{
+
+  #section2 .list span {
 
     font-size: 1rem;
   }
-  
-  #section2 .list span, #section2 .list p {
+
+  #section2 .list span,
+  #section2 .list p {
     font-size: 0.9rem;
-    /* height: 36px; */
     height: 24px;
   }
-  #section2 .list span{
- font-size: 1rem;
+
+  #section2 .list span {
+    font-size: 1rem;
   }
-  #section2 .list h4{
+
+  #section2 .list h4 {
     font-size: 1.1rem;
     height: 36px;
-    /* height: 40px; */
   }
+
   /* section3 */
   #section3 {
     height: fit-content;
@@ -806,7 +813,6 @@ footer .text span {
 
   #section3::before {
     width: 100%;
-    /* height:160px; */
     height: 148px;
   }
 
@@ -817,7 +823,6 @@ footer .text span {
 
   #section3 .left {
     width: 100%;
-    /* margin-top: 64px; */
     margin-top: 58px;
     margin-bottom: 6.5rem;
   }
@@ -850,15 +855,17 @@ footer .text span {
 }
 
 @media screen and (max-width:575px) {
-/* xs */
+  /* xs */
 
   /* article */
-  article{
+  article {
     padding: 50px 0;
   }
+
   article a {
-    padding:0;
+    padding: 0;
   }
+
   article .col-12:nth-child(2) a {
     padding: 60px 0;
   }
@@ -881,58 +888,61 @@ footer .text span {
   }
 
   /* section2 */
-  #section2 .list span, #section2 .list p {
+  #section2 .list span,
+  #section2 .list p {
     height: 36px;
-  }
-
-  }
-  #section2 .list h4{
-    height: 40px;
-  }
-  /* section3 */
-  #section3 .left {
-    margin-top: 60px;
-  }
-
-  #section3 .left a {
-    font-size: 1rem;
-  }
-
-  /* section4 */
-  #section4 .col-sm-6 {
-    margin-bottom: 8rem;
-  }
-
-  /* footer */
-  footer li {
-    margin-bottom: 12px;
-
-  }
-
-  footer .f_title {
-    margin-bottom: 18px;
-
-  }
-
-  footer .col-6 {
-    margin-bottom: 3rem;
-  }
-
-  footer .text {
-    margin-top: 50px;
-
-  }
-
-  footer .text p {
-    font-size: 1.6rem;
-    margin-bottom: 6px;
-
-  }
-
-  footer .text span {
-    font-size: 0.8rem;
   }
 
 }
 
-@media screen and (max-width:450px) {}
+#section2 .list h4 {
+  height: 40px;
+}
+
+/* section3 */
+#section3 .left {
+  margin-top: 60px;
+}
+
+#section3 .left a {
+  font-size: 1rem;
+}
+
+/* section4 */
+#section4 .col-sm-6 {
+  margin-bottom: 8rem;
+}
+
+/* footer */
+footer li {
+  margin-bottom: 12px;
+
+}
+
+footer .f_title {
+  margin-bottom: 18px;
+
+}
+
+footer .col-6 {
+  margin-bottom: 3rem;
+}
+
+footer .text {
+  margin-top: 50px;
+
+}
+
+footer .text p {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+
+}
+
+footer .text span {
+  font-size: 0.8rem;
+}
+
+
+
+/* @media screen and (max-width:450px) {} */
