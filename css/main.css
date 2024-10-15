@@ -110,16 +110,28 @@ nav ul {
   align-items: center;
   gap: 30px;
 }
+.icon select{
+border:none;
+padding: 8px;
+font-size: 1.4rem;
+cursor: pointer;
 
+}
+.icon figure{
+  cursor: pointer;
+}
 /* menu icon */
 .menu {
   width: 26px;
   height: 24px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   display: none;
+  border: none;
+  background-color: transparent;
 }
 
 .menu span {
@@ -193,7 +205,21 @@ nav ul {
   bottom: 50px;
   right: 50px;
 }
-
+.mo_icon select{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 8px;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.mo_icon select option{
+  color: #121212
+}
+.mo_icon figure{
+  cursor: pointer;
+}
 
 /* main */
 main {
@@ -210,7 +236,6 @@ main {
 
 .slide {
   width: 100%;
-  background-color: saddlebrown;
   position: relative;
 }
 
@@ -563,7 +588,7 @@ footer .text span {
     display: none;
   }
 
-  .icon a:not(:last-child) {
+  .icon select, .icon figure{
     display: none;
   }
 
@@ -746,6 +771,10 @@ footer .text span {
   #side_menu ul {
     gap: 10%;
     font-size: 1.6rem;
+  }
+  .mo_icon select{
+    padding: 5px;
+    font-size: 1.2rem;
   }
 
   /* article */
