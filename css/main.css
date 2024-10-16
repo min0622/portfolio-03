@@ -117,8 +117,17 @@ font-size: 1.4rem;
 cursor: pointer;
 
 }
-.icon figure{
+button{
+  border: none;
+  background-color: transparent;
   cursor: pointer;
+  padding: 0;
+}
+.icon .sch{
+width: 24px;
+  height: 24px;
+  background-image: url('../img/search.png');
+  background-size: 100%;
 }
 /* menu icon */
 .menu {
@@ -130,8 +139,7 @@ cursor: pointer;
   justify-content: space-between;
 
   display: none;
-  border: none;
-  background-color: transparent;
+
 }
 
 .menu span {
@@ -161,49 +169,55 @@ cursor: pointer;
 #side_menu {
   width: 100%;
   position: relative;
-}
 
-.inner_side {
+    
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background-color: var(--Mcolor--);
   color: #fff;
-  /* overflow-y: auto; */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 998;
-
-  /* slideToggle */
+  
+/* slideToggle */
   display: none;
-
 }
 
+.inner_side {
+  max-width: 960px;
+  padding: 0 15px;
+  margin: auto;
+height: 100%;
+  display: flex;
+flex-direction: column;
 
+}
 
 #side_menu ul {
-  width: 87%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 12%;
+  height: calc(100% - 70px);
   font-size: 2rem;
   font-weight: 600;
+  padding-top:7rem;
+  padding-bottom: 10vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.inner_side ul::-webkit-scrollbar{
+  display: none;
 }
 
+#side_menu ul li{
+  padding: 2.5rem 0;
+}
 .mo_icon {
   width: 100%;
+  height: 70px;
   display: flex;
-  align-items: center;
-  gap: 20px;
+ align-items: center;
+  gap: 30px;
   justify-content: flex-end;
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
 }
 .mo_icon select{
   cursor: pointer;
@@ -217,8 +231,11 @@ cursor: pointer;
 .mo_icon select option{
   color: #121212
 }
-.mo_icon figure{
-  cursor: pointer;
+.mo_icon .h_sch{
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/search_w.png');
+  background-size: 100%;
 }
 
 /* main */
@@ -588,17 +605,12 @@ footer .text span {
     display: none;
   }
 
-  .icon select, .icon figure{
+  .icon select, .icon .sch{
     display: none;
   }
 
   .menu {
     display: flex;
-  }
-
-  /* side_menu */
-  #side_menu {
-    display: block;
   }
 
   /* section2 */
@@ -631,11 +643,9 @@ footer .text span {
   }
 
   /* side_menu */
-  #side_menu {
-    top: 60px;
+  .inner_side {
+    max-width: 720px;
   }
-
-
 
   /* article */
   article .a_title {
@@ -771,6 +781,9 @@ footer .text span {
   #side_menu ul {
     gap: 10%;
     font-size: 1.6rem;
+  }
+  .inner_side {
+    max-width: 540px;
   }
   .mo_icon select{
     padding: 5px;
