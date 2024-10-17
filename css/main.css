@@ -110,25 +110,29 @@ nav ul {
   align-items: center;
   gap: 30px;
 }
-.icon select{
-border:none;
-padding: 8px;
-font-size: 1.4rem;
-cursor: pointer;
+
+.icon select {
+  border: none;
+  padding: 8px;
+  font-size: 1.4rem;
+  cursor: pointer;
 
 }
-button{
+
+button {
   border: none;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
 }
-.icon .sch{
-width: 24px;
+
+.icon .sch {
+  width: 24px;
   height: 24px;
   background-image: url('../img/search.png');
   background-size: 100%;
 }
+
 /* menu icon */
 .menu {
   width: 26px;
@@ -170,7 +174,7 @@ width: 24px;
   width: 100%;
   position: relative;
 
-    
+
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -180,8 +184,8 @@ width: 24px;
   top: 0;
   left: 0;
   z-index: 998;
-  
-/* slideToggle */
+
+  /* slideToggle */
   display: none;
 }
 
@@ -189,9 +193,9 @@ width: 24px;
   max-width: 960px;
   padding: 0 15px;
   margin: auto;
-height: 100%;
+  height: 100%;
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 
 }
 
@@ -199,27 +203,30 @@ flex-direction: column;
   height: calc(100% - 70px);
   font-size: 2rem;
   font-weight: 600;
-  padding-top:7rem;
+  padding-top: 7rem;
   padding-bottom: 10vh;
   overflow: hidden;
   overflow-y: auto;
 }
-.inner_side ul::-webkit-scrollbar{
+
+.inner_side ul::-webkit-scrollbar {
   display: none;
 }
 
-#side_menu ul li{
+#side_menu ul li {
   padding: 2.5rem 0;
 }
+
 .mo_icon {
   width: 100%;
   height: 70px;
   display: flex;
- align-items: center;
+  align-items: center;
   gap: 30px;
   justify-content: flex-end;
 }
-.mo_icon select{
+
+.mo_icon select {
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -228,10 +235,12 @@ flex-direction: column;
   font-size: 1.4rem;
   font-weight: 300;
 }
-.mo_icon select option{
+
+.mo_icon select option {
   color: #121212
 }
-.mo_icon .h_sch{
+
+.mo_icon .h_sch {
   width: 24px;
   height: 24px;
   background-image: url('../img/search_w.png');
@@ -369,8 +378,10 @@ h2 {
   font-weight: 400;
   height: 24px;
   line-height: 140%;
-  align-content: center;
   display: block;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 #section2 .list h4 {
@@ -379,8 +390,9 @@ h2 {
   margin: 10px 0;
   height: 40px;
   line-height: 130%;
-  align-content: center;
-
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 #section2 .list_box .opacity,
@@ -446,6 +458,7 @@ h2 {
   font-size: 1.1rem;
   font-weight: 500;
 }
+
 #section3 .right {
   display: flex;
   justify-content: center;
@@ -605,7 +618,8 @@ footer .text span {
     display: none;
   }
 
-  .icon select, .icon .sch{
+  .icon select,
+  .icon .sch {
     display: none;
   }
 
@@ -693,6 +707,8 @@ footer .text span {
   #section2 .list h4 {
     font-size: 1.2rem;
     height: 46px;
+
+    background-color: slateblue;
   }
 
   /* section3 */
@@ -782,10 +798,12 @@ footer .text span {
     gap: 10%;
     font-size: 1.6rem;
   }
+
   .inner_side {
     max-width: 540px;
   }
-  .mo_icon select{
+
+  .mo_icon select {
     padding: 5px;
     font-size: 1.2rem;
   }
@@ -935,56 +953,57 @@ footer .text span {
     height: 36px;
   }
 
+  #section2 .list h4 {
+    height: 40px;
+  }
+
+
+
+
+
+  /* section3 */
+  #section3 .left {
+    margin-top: 60px;
+  }
+
+  #section3 .left a {
+    font-size: 1rem;
+  }
+
+  /* section4 */
+  #section4 .col-sm-6 {
+    margin-bottom: 8rem;
+  }
+
+  /* footer */
+  footer li {
+    margin-bottom: 12px;
+
+  }
+
+  footer .f_title {
+    margin-bottom: 18px;
+
+  }
+
+  footer .col-6 {
+    margin-bottom: 3rem;
+  }
+
+  footer .text {
+    margin-top: 50px;
+
+  }
+
+  footer .text p {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+
+  }
+
+  footer .text span {
+    font-size: 0.8rem;
+  }
+
+
 }
-
-#section2 .list h4 {
-  height: 40px;
-}
-
-/* section3 */
-#section3 .left {
-  margin-top: 60px;
-}
-
-#section3 .left a {
-  font-size: 1rem;
-}
-
-/* section4 */
-#section4 .col-sm-6 {
-  margin-bottom: 8rem;
-}
-
-/* footer */
-footer li {
-  margin-bottom: 12px;
-
-}
-
-footer .f_title {
-  margin-bottom: 18px;
-
-}
-
-footer .col-6 {
-  margin-bottom: 3rem;
-}
-
-footer .text {
-  margin-top: 50px;
-
-}
-
-footer .text p {
-  font-size: 1.6rem;
-  margin-bottom: 6px;
-
-}
-
-footer .text span {
-  font-size: 0.8rem;
-}
-
-
-
-/* @media screen and (max-width:450px) {} */
