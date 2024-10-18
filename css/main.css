@@ -86,7 +86,7 @@ header.fix {
   }
 }
 
-header .container {
+header .container-md {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -203,7 +203,7 @@ button {
   height: calc(100% - 70px);
   font-size: 2rem;
   font-weight: 600;
-  padding-top: 7rem;
+  padding-top: 12rem;
   padding-bottom: 10vh;
   overflow: hidden;
   overflow-y: auto;
@@ -318,7 +318,7 @@ h2 {
 /* section1 */
 #section1 {
   width: 100%;
-  margin-top: 12.5rem;
+  margin-top: 11rem;
 }
 
 #section1 .text {
@@ -345,7 +345,7 @@ h2 {
 
 #section1 .col-md-4 {
 
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 #section1 .col_inner a {
@@ -357,15 +357,27 @@ h2 {
 #section2 {
   overflow: hidden;
   position: relative;
-  margin-top: 14.5rem;
+  margin-top: 9rem;
 }
 
 #section2 .list {
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  gap: 24px;
+  padding: 0 5rem;
+}
+
+#section2 .list .list_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+
 }
 
 #section2 .list .text {
+  width: 100%;
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -376,23 +388,21 @@ h2 {
 #section2 .list p {
   font-size: 1.1rem;
   font-weight: 400;
-  height: 24px;
   line-height: 140%;
   display: block;
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
 }
 
 #section2 .list h4 {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 10px 0;
-  height: 40px;
   line-height: 130%;
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
 }
 
 #section2 .list_box .opacity,
@@ -404,7 +414,7 @@ h2 {
 #section3 {
   width: 100%;
   height: 326px;
-  margin-top: 16rem;
+  margin-top: 12rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -441,12 +451,19 @@ h2 {
   z-index: -2;
 }
 
+#section3 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #section3 .left .l_title {
   position: relative;
 }
 
 #section3 .left .l_title h2 {
   color: #fff;
+  font-weight: 600;
 }
 
 #section3 .left a {
@@ -500,7 +517,7 @@ h2 {
 /* section4 */
 #section4 {
   width: 100%;
-  margin-top: 16rem;
+  margin-top: 12rem;
 }
 
 #section4 .text {
@@ -522,7 +539,7 @@ h2 {
 /* section5 */
 #section5 {
   width: 100%;
-  margin-top: 16rem;
+  margin-top: 12rem;
 }
 
 #section5 .col_inner_1 {
@@ -570,7 +587,7 @@ h2 {
 
 footer {
   width: 100%;
-  margin-top: 16rem;
+  margin-top: 14rem;
   color: #fff;
   background-color: var(--Mcolor--);
   padding-top: 56px;
@@ -627,11 +644,6 @@ footer .text span {
     display: flex;
   }
 
-  /* section2 */
-
-  #section2 .list h4 {
-    height: 56px;
-  }
 
   /* section3 */
   #section3::before {
@@ -683,6 +695,10 @@ footer .text span {
   }
 
   /* section1 */
+  #section1 {
+    margin-top: 8rem;
+  }
+
   #section1 span {
     font-size: 1rem;
   }
@@ -698,18 +714,30 @@ footer .text span {
   }
 
   /* section2 */
+  #section2 {
+    margin-top: 7rem;
+  }
+
+  #section2 .list {
+    padding: 0 2rem;
+  }
+
   #section2 .list span,
   #section2 .list p {
-    height: 40px;
     line-height: 140%;
   }
 
   #section2 .list h4 {
     font-size: 1.2rem;
-    height: 46px;
   }
 
-  /* section3 */
+  /* margin*/
+  #section3,
+  #section4,
+  #section5 {
+    margin-top: 8rem;
+  }
+
   #section3 .right ul li {
     font-size: 1.1rem;
 
@@ -751,6 +779,10 @@ footer .text span {
   }
 
   /* footer */
+  footer {
+    margin-top: 10rem;
+  }
+
   footer li {
     font-size: 1rem;
   }
@@ -816,6 +848,10 @@ footer .text span {
   }
 
   /* section1 */
+  #section1 {
+    margin-top: 6rem;
+  }
+
   #section1 span {
     font-size: 1.1rem;
   }
@@ -831,12 +867,16 @@ footer .text span {
   }
 
   #section1 .col-md-4 {
-    margin-bottom: 6.5rem;
+    margin-bottom: 3rem;
   }
 
   /* section2 */
   #section2 {
-    margin-top: 10rem;
+    margin-top: 2rem;
+  }
+
+  #section2 .list {
+    padding: 0 0.2rem;
   }
 
   #section2 .list span {
@@ -847,7 +887,6 @@ footer .text span {
   #section2 .list span,
   #section2 .list p {
     font-size: 0.9rem;
-    height: 24px;
   }
 
   #section2 .list span {
@@ -856,12 +895,12 @@ footer .text span {
 
   #section2 .list h4 {
     font-size: 1.1rem;
-    height: 36px;
   }
 
   /* section3 */
   #section3 {
     height: fit-content;
+    margin-top: 6rem;
   }
 
   #section3 .container-md {
@@ -883,6 +922,7 @@ footer .text span {
     width: 100%;
     margin-top: 58px;
     margin-bottom: 6.5rem;
+    display: block;
   }
 
   #section3 .left .l_title {
@@ -902,13 +942,21 @@ footer .text span {
 
 
   /* section4 */
+  #section4 {
+    margin-top: 7rem;
+  }
+
   #section4 .col-sm-6 {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 
   /* section5 */
   #section5 {
-    margin-top: 12rem;
+    margin-top: 4rem;
+  }
+
+  footer {
+    margin-top: 9rem;
   }
 }
 
@@ -942,20 +990,15 @@ footer .text span {
 
   /*section1 */
   #section1 .col-12 {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 
   /* section2 */
-  #section2 .list span,
-  #section2 .list p {
-    height: 36px;
+  #section2 .list .list_box {
+
+    padding: 0 2.5rem;
+
   }
-
-  #section2 .list h4 {
-    height: 40px;
-  }
-
-
 
 
 
@@ -970,7 +1013,13 @@ footer .text span {
 
   /* section4 */
   #section4 .col-sm-6 {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  /* section5 */
+  #section5 a {
+    left: 16px;
+    bottom: 20px;
   }
 
   /* footer */
@@ -1004,4 +1053,16 @@ footer .text span {
   }
 
 
+}
+
+@media screen and (max-width:450px) {
+  #side_menu ul {
+    padding-top: 9rem;
+  }
+
+  #section2 .list .list_box {
+
+    padding: 0 1.2rem;
+
+  }
 }

@@ -62,7 +62,7 @@ $(function () {
   // section2
   var swiper = new Swiper(".mySwiper", {
 
-    slidesPerView: 2,
+    slidesPerView: 1,
     loop: true,
     spaceBetween: 10,
     centeredSlides: true,
@@ -73,11 +73,11 @@ $(function () {
     breakpoints: {
       576: {
         slidesPerView: 2,
-        spaceBetween: 16
+        spaceBetween: 10
       },
       860: {
         slidesPerView: 3,
-        spaceBetween: 24
+        spaceBetween: 12
       },
       1400: {
         slidesPerView: 4,
